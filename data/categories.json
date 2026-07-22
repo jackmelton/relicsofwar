@@ -1,0 +1,14 @@
+{
+  "belt-plates":    { "name": "Belt Plates & Buckles",       "blurb": "U.S. and Confederate belt plates, box plates, and frame buckles." },
+  "buttons":        { "name": "Uniform Buttons",             "blurb": "Federal eagle device buttons, Confederate state buttons, and backmarks." },
+  "edged-weapons":  { "name": "Swords & Edged Weapons",      "blurb": "Officer swords, cavalry sabers, bowie knives, and side knives." },
+  "bayonets":       { "name": "Bayonets",                    "blurb": "Socket and sword bayonets and their scabbards." },
+  "firearms":       { "name": "Firearms",                    "blurb": "Muskets, rifle-muskets, carbines, and revolvers." },
+  "accoutrements":  { "name": "Accoutrements & Leather",     "blurb": "Cartridge and cap boxes, holsters, slings, and canteens." },
+  "headgear":       { "name": "Headgear",                    "blurb": "Kepis, forage caps, slouch hats, and hardee hats." },
+  "insignia":       { "name": "Insignia & Hardware",         "blurb": "Corps badges, shoulder scales, hat devices, and hardware." },
+  "photographs":    { "name": "Photographs & Images",        "blurb": "Cartes de visite, tintypes, ambrotypes, and albumen prints." },
+  "documents":      { "name": "Documents & Autographs",      "blurb": "Letters, discharge papers, orders, and signatures." },
+  "currency":       { "name": "Currency & Bonds",            "blurb": "Confederate currency, state notes, bonds, and coins." },
+  "flags":          { "name": "Flags & Colors",              "blurb": "Battle flags, guidons, and patriotic bunting." }
+}
