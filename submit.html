@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Your Relic for Free Identification — Relics of War</title>
+<meta name="description" content="Send us photos of your Civil War relic for free identification and authentication help. Tell us what you know and we'll help you identify the piece.">
+<meta property="og:title" content="Submit Your Relic for Free Identification">
+<meta property="og:description" content="Free help identifying and authenticating your Civil War artifact.">
+<meta property="og:url" content="https://relicsofwar.com/submit.html">
+<link rel="canonical" href="https://relicsofwar.com/submit.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Crimson+Text:ital@0;1&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/relics.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap navbar">
+    <a class="brand" href="/">Relics <span class="mark">of</span> War</a>
+    <nav class="links">
+      <a href="/identify/">Identify a Relic</a>
+      <a href="/submit.html">Submit Your Relic</a>
+      <a href="/#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap narrow"><div class="breadcrumb"><a href="/">Home</a> &rsaquo; Submit Your Relic</div></div>
+
+  <section style="padding-top:1.5rem">
+    <div class="wrap narrow" style="text-align:center;margin-bottom:2.4rem">
+      <div class="eyebrow">Free Expert Review</div>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.6rem);color:var(--navy);margin-top:.4rem">Submit Your Relic for Identification</h2>
+      <div class="rule" style="margin:1.4rem auto"></div>
+      <p style="color:var(--muted);font-size:1.12rem;max-width:640px;margin:0 auto">
+        Tell us about your piece and we'll help you identify it, judge whether it's an original, and point you toward what it may be worth — at no charge. The more detail and the clearer your photos, the better we can help.
+      </p>
+    </div>
+
+    <div class="edit-note wrap narrow" style="max-width:720px">
+      <strong>Editor's note (not public — Jack):</strong> This starter form opens the visitor's own email app pre-filled and asks them to attach their photos, so it works with no backend or third-party account. When you're ready, I can upgrade this to a true drag-and-drop photo uploader (Cloudflare Pages Function + email/R2) so submissions and images land in your inbox automatically. Change the destination address below if you'd prefer a dedicated inbox.
+    </div>
+
+    <form class="formcard" id="relicForm">
+      <div class="field">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        <div class="hint">So we can reply with what we find.</div>
+      </div>
+      <div class="field">
+        <label for="category">What Kind of Relic Is It?</label>
+        <select id="category" name="category">
+          <option value="Not sure">I'm not sure</option>
+          <option value="Belt plate or buckle">Belt plate or buckle</option>
+          <option value="Uniform button">Uniform button</option>
+          <option value="Bayonet">Bayonet</option>
+          <option value="Soldier ID disc or pin">Soldier ID disc or pin</option>
+          <option value="Cartridge or cap box">Cartridge or cap box</option>
+          <option value="Firearm">Firearm</option>
+          <option value="Edged weapon (sword/knife)">Edged weapon (sword/knife)</option>
+          <option value="Photograph or image">Photograph or image</option>
+          <option value="Document or paper">Document or paper</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="details">Tell Us About It</label>
+        <textarea id="details" name="details" placeholder="Any markings, letters, or stamps? Where did it come from (family, dug, purchased)? Dimensions? Anything you already know or were told." required></textarea>
+      </div>
+      <div class="field">
+        <label>Your Photos</label>
+        <div class="hint">Clear, well-lit photos of the <strong>front, back, and any markings</strong> are the single most helpful thing. When your email app opens after you submit, simply <strong>attach your photos to that email</strong> before sending.</div>
+      </div>
+      <button type="submit" class="cta" style="width:100%;justify-content:center">Prepare My Submission</button>
+      <p class="hint" style="text-align:center;margin-top:1rem">This opens an email to <strong>info@historicalpublicationsllc.com</strong> with your details filled in. Attach your photos and hit send.</p>
+    </form>
+  </section>
+
+  <section class="alt">
+    <div class="wrap narrow" style="text-align:center">
+      <div class="section-head"><h2>Prefer to Look It Up Yourself?</h2><p>Browse the identification library and work through the guide for your artifact type.</p></div>
+      <a href="/identify/" class="cta dark">Open the Identification Library</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="brand" href="/">Relics <span class="mark">of</span> War</a>
+    <div class="meta">A publication of <a href="https://historicalpublicationsllc.com">Historical Publications LLC</a><br>Blue Ridge, Georgia &nbsp;&middot;&nbsp; <a href="tel:+18007771862">800-777-1862</a><br><a href="mailto:info@historicalpublicationsllc.com">info@historicalpublicationsllc.com</a></div>
+    <div class="fine">&copy; 2026 Historical Publications LLC — History Brought to Life</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('relicForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var category = document.getElementById('category').value;
+    var details = document.getElementById('details').value.trim();
+    var to = 'info@historicalpublicationsllc.com';
+    var subject = 'Relic Identification Request: ' + category;
+    var body =
+      'Name: ' + name + '\n' +
+      'Email: ' + email + '\n' +
+      'Type of relic: ' + category + '\n\n' +
+      'Details:\n' + details + '\n\n' +
+      '--- Please ATTACH your photos (front, back, and any markings) to this email before sending. ---\n' +
+      'Submitted via relicsofwar.com';
+    window.location.href = 'mailto:' + to +
+      '?subject=' + encodeURIComponent(subject) +
+      '&body=' + encodeURIComponent(body);
+  });
+</script>
+
+</body>
+</html>
