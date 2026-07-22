@@ -25,3 +25,5 @@ Jack Melton Editorial & Design Standard — Navy · Gold · Parchment · Rust;
 Cinzel / Cinzel Decorative / Playfair Display / Crimson Text.
 
 © 2026 Historical Publications LLC — "History Brought to Life"
+
+# Deployed via Cloudflare Pages on 2026-07-22.
