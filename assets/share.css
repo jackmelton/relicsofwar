@@ -1,0 +1,56 @@
+/* Share row — Relics of War. Standalone sheet so it can be dropped into any
+   page without touching relics.css; every custom property has a literal
+   fallback in case it is used outside a page that loads the site tokens. */
+.share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 30px 0 4px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line, rgba(143, 58, 31, .16));
+  border-bottom: 1px solid var(--line, rgba(143, 58, 31, .16));
+}
+.share-label {
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted, #6b6455);
+  margin-right: 4px;
+}
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  border: 1px solid var(--line, rgba(143, 58, 31, .16));
+  border-radius: 3px;
+  background: #fff;
+  color: var(--navy, #1a2436);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: .85rem;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+.share-btn svg { width: 16px; height: 16px; flex: none; }
+.share-btn:hover,
+.share-btn.is-copied {
+  background: var(--navy, #1a2436);
+  border-color: var(--navy, #1a2436);
+  color: #fff;
+}
+.share-btn:focus-visible {
+  outline: 2px solid var(--gold, #c19a3e);
+  outline-offset: 2px;
+}
+.share-btn[hidden] { display: none; }
+.share-status { font-size: .8rem; color: var(--muted, #6b6455); }
+.share-status:not(:empty) { margin-left: 4px; }
+@media (max-width: 520px) {
+  .share { gap: 6px; }
+  .share-btn { padding: 8px 11px; font-size: .8rem; }
+}
