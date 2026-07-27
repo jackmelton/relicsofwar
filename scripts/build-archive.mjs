@@ -60,7 +60,7 @@ const NAV = `
     <nav class="links">
       <a href="/price-guide/">Price Guide</a>
       <a href="/identify/">Identify</a>
-      <a href="/membership.html">Membership</a>
+      <a href="/membership">Membership</a>
     </nav>
   </div>
 </header>`;
@@ -72,7 +72,8 @@ const FOOT = `
     <div class="meta">A publication of <a href="https://historicalpublicationsllc.com">Historical Publications LLC</a><br>
       Blue Ridge, Georgia &nbsp;&middot;&nbsp; <a href="tel:+18007771862">800-777-1862</a><br>
       <a href="mailto:info@historicalpublicationsllc.com">info@historicalpublicationsllc.com</a></div>
-    <p class="meta" style="margin-top:1rem"><a href="/price-guide/">Price Guide</a> &middot; <a href="/identify/">Identification Library</a> &middot; <a href="/membership.html">Membership</a></p>
+    <p class="meta" style="margin-top:1rem"><a href="/price-guide/">Price Guide</a> &middot; <a href="/identify/">Identification Library</a> &middot; <a href="/membership">Membership</a> &nbsp;&middot;&nbsp;
+      <a href="https://historicalpublicationsllc.com/mission" rel="noopener">Mission Statement</a></p>
     <div class="fine">&copy; 2026 Historical Publications LLC — History Brought to Life</div>
   </div>
 </footer>
@@ -100,7 +101,7 @@ function lockPanel(cat) {
       </div>
       <div class="veil">
         <div class="lockicon">&#9679;</div>
-        <div><a href="/membership.html" class="cta">Unlock the Full ${esc(catName)} Price History</a></div>
+        <div><a href="/membership" class="cta">Unlock the Full ${esc(catName)} Price History</a></div>
       </div>
     </div>`;
 }
@@ -138,7 +139,7 @@ function itemPage(rec) {
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
 </head>
 <body>
-${rec.sample ? `<div class="samplebanner">Sample data for layout only &mdash; not an actual sale. <a href="/membership.html">How real data works &rsaquo;</a></div>` : ''}
+${rec.sample ? `<div class="samplebanner">Sample data for layout only &mdash; not an actual sale. <a href="/membership">How real data works &rsaquo;</a></div>` : ''}
 ${NAV}
 <main>
   <div class="wrap narrow pg-breadcrumb"><div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/price-guide/">Price Guide</a> &rsaquo; <a href="/price-guide/${cat}/">${esc(catName)}</a> &rsaquo; ${esc(rec.name)}</div></div>
@@ -152,7 +153,7 @@ ${NAV}
         <div class="figure">${money(rec.soldPrice)}</div>
         <div class="meta">${esc(prettyDate(rec.saleDate))}${rec.source ? ' &middot; ' + esc(rec.source) : ''}</div>
       </div>
-      <a href="/membership.html" class="cta">See Comparable Sales</a>
+      <a href="/membership" class="cta">See Comparable Sales</a>
     </div>
 
     <div class="pg-img">${rec.image ? `<img src="${esc(rec.image)}" alt="${esc(rec.name)}">` : `${esc(rec.name)} — add photo`}</div>
@@ -184,7 +185,7 @@ function categoryPage(cat) {
   return `${head(title, desc, url, { noindex: anySample && items.every(i => i.sample) })}
 </head>
 <body>
-${anySample ? `<div class="samplebanner">Sample data for layout only &mdash; not actual sales. <a href="/membership.html">How real data works &rsaquo;</a></div>` : ''}
+${anySample ? `<div class="samplebanner">Sample data for layout only &mdash; not actual sales. <a href="/membership">How real data works &rsaquo;</a></div>` : ''}
 ${NAV}
 <main>
   <div class="wrap pg-breadcrumb"><div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/price-guide/">Price Guide</a> &rsaquo; ${esc(c.name)}</div></div>
@@ -199,7 +200,7 @@ ${NAV}
   <section class="submitband">
     <div class="wrap"><div class="section-head"><div class="eyebrow" style="color:var(--gold-bright)">Members See Everything</div><h2>Full ${esc(c.name)} Price History</h2></div>
     <p>Every recorded sale, value trends, and alerts when a new one sells.</p>
-    <a href="/membership.html" class="cta">View Membership</a></div>
+    <a href="/membership" class="cta">View Membership</a></div>
   </section>
 </main>
 ${FOOT}`;
@@ -221,7 +222,7 @@ function hubPage() {
   return `${head(title, desc, url)}
 </head>
 <body>
-${anySample ? `<div class="samplebanner">Preview built with sample data &mdash; not actual sales. <a href="/membership.html">How real data works &rsaquo;</a></div>` : ''}
+${anySample ? `<div class="samplebanner">Preview built with sample data &mdash; not actual sales. <a href="/membership">How real data works &rsaquo;</a></div>` : ''}
 ${NAV}
 <main>
   <section class="pg-intro">
@@ -247,7 +248,7 @@ ${NAV}
   <section class="submitband">
     <div class="wrap"><div class="section-head"><div class="eyebrow" style="color:var(--gold-bright)">Go Deeper</div><h2>Unlock the Full Price History</h2></div>
     <p>Members see every recorded sale, value trends over time, and get alerts when pieces like theirs come to market.</p>
-    <a href="/membership.html" class="cta">View Membership</a></div>
+    <a href="/membership" class="cta">View Membership</a></div>
   </section>
 </main>
 ${FOOT}`;
@@ -258,7 +259,7 @@ function buildSitemap() {
   const today = new Date().toISOString().slice(0, 10); // note: fine at build time
   const staticUrls = [
     ['/', '1.0', 'weekly'], ['/price-guide/', '0.9', 'daily'], ['/identify/', '0.8', 'weekly'],
-    ['/membership.html', '0.7', 'monthly'],
+    ['/membership', '0.7', 'monthly'],
     ['/identify/confederate-belt-plates', '0.7', 'monthly'], ['/identify/civil-war-buttons', '0.7', 'monthly'],
     ['/identify/civil-war-bayonets', '0.7', 'monthly'], ['/identify/soldier-id-discs', '0.7', 'monthly'],
     ['/identify/cartridge-boxes', '0.7', 'monthly']
