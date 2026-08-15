@@ -21,9 +21,9 @@ night. The report is attached to the failed run (Actions → run → Artifacts).
 
 You never need to touch the generated files at the repo root.
 
-## 2. One-time setup (still open)
+## 2. One-time setup
 
-- **`AS_EXPORT_TOKEN` GitHub secret.** Render → `artifactsearch-web` →
+- ✅ **Token secret** (done 2026-08-15, stored as `RELICSOFWAR_EXPORT_TOKEN`). Render → `artifactsearch-web` →
   Environment → copy `RELICSOFWAR_EXPORT_TOKEN` → GitHub → jackmelton/relicsofwar
   → Settings → Secrets and variables → Actions → New secret `AS_EXPORT_TOKEN` (the workflow also accepts the name `RELICSOFWAR_EXPORT_TOKEN`).
   Until this exists the nightly job fails at step 1 and the site stays on the
