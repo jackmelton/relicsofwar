@@ -1,0 +1,84 @@
+{
+  "_comment": "SEO Index-Worthiness Engine policy. This file IS the 'administration' — RelicsOfWar has no admin UI; edit here, commit, the nightly build applies it. See docs/SEO-INDEX-QUALITY-REQUIREMENTS.md §3–§6 and docs/ARCHITECTURE.md.",
+  "version": 1,
+  "site": "https://relicsofwar.com",
+  "artifactsearch": "https://artifactsearch.com",
+
+  "thresholds": {
+    "_comment": "score >= index → INDEX; reviewBand <= score < index → INDEX only if the page has verified editorial content or price intelligence (unique value), else NOINDEX; noindex <= score < reviewBand → NOINDEX; below noindex → NOINDEX, and not generated at all when the page would also be empty.",
+    "index": 80,
+    "reviewBand": 60,
+    "noindex": 30
+  },
+
+  "weights": {
+    "_comment": "Maximum contribution of each factor. Positive factors sum to 100; risks subtract.",
+    "inventoryDepth": 25,
+    "sourceDiversity": 15,
+    "uniqueContent": 15,
+    "historicalContext": 10,
+    "userUtility": 15,
+    "internalLinkValue": 10,
+    "searchDemand": 10,
+    "duplicateContentRisk": -15,
+    "thinContentRisk": -20
+  },
+
+  "inventory": {
+    "_comment": "Active-listing counts for era × category market pages. thinItems: below this a page is thin (risk applied). minItemsForIndex: below this INDEX is never awarded regardless of score. cardsPerPage/maxPages bound the crawlable pagination; beyond maxPages the page hands off to ArtifactSearch.",
+    "thinItems": 5,
+    "minItemsForIndex": 10,
+    "cardsPerPage": 24,
+    "maxPages": 5,
+    "minSourcesForIndex": 2
+  },
+
+  "priceGuide": {
+    "_comment": "Recorded-sale counts for era × category price-guide pages. Never imply more precision than the data supports: below minSalesToGenerate no page exists; below minSalesToIndex/minSourcesToIndex the page exists for visitors but is NOINDEX.",
+    "minSalesToGenerate": 5,
+    "minSalesToIndex": 10,
+    "minSourcesToIndex": 2,
+    "recentSalesShown": 40,
+    "minSalesForYearRow": 3
+  },
+
+  "eraHub": {
+    "minItemsForIndex": 25,
+    "minCategoriesForIndex": 2
+  },
+
+  "duplicate": {
+    "_comment": "Two generated pages whose listing sets overlap at or above this Jaccard similarity are a duplicate cluster; only the largest is eligible for INDEX, the rest canonicalize to it (CANONICAL_TO_PARENT).",
+    "jaccardThreshold": 0.8,
+    "eraDominanceShare": 0.9
+  },
+
+  "itemPages": {
+    "_comment": "Phase 1: RelicsOfWar generates NO per-listing pages. A mirrored listing is canonical on ArtifactSearch (§7–§8); a research-enhanced item page (§9) is a later phase and will require verified editorial content to be generated at all.",
+    "policy": "none"
+  },
+
+  "growthGate": {
+    "_comment": "§13 / §51. The build refuses to publish when the INDEXable URL count grows by more than BOTH limits versus the last committed state, unless SEO_INDEX_EXPANSION_APPROVED=<new count> is set. hardCap is an absolute ceiling regardless of approval.",
+    "maxIncreasePct": 25,
+    "maxIncreaseAbs": 300,
+    "hardCap": 15000
+  },
+
+  "indexnow": {
+    "_comment": "§26–§27. Only URLs whose meaningful content hash changed (or that were added/removed from the INDEX set) are submitted, at most maxUrlsPerRun per build. The key is public by design (served at /<key>.txt).",
+    "enabled": true,
+    "key": "b5eb9b5a78559d11af9ef4ecfd06fb23",
+    "maxUrlsPerRun": 500,
+    "endpoint": "https://api.indexnow.org/indexnow"
+  },
+
+  "sitemaps": {
+    "maxUrlsPerFile": 5000
+  },
+
+  "titles": {
+    "suffix": " | Relics of War",
+    "maxLength": 65
+  }
+}

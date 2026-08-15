@@ -1,0 +1,24 @@
+# Cloudflare Pages redirects — one canonical URL per resource (§18).
+# Membership lives on ArtifactSearch (free).
+/membership https://artifactsearch.com/account/register 301
+/membership.html https://artifactsearch.com/account/register 301
+/submit /price-guide/ 301
+/submit.html /price-guide/ 301
+/price-guide/accoutrements/ /price-guide/civil-war/accoutrements/ 301
+/price-guide/accoutrements/* /price-guide/civil-war/accoutrements/ 301
+/price-guide/bayonets/ /price-guide/civil-war/edged-weapons/ 301
+/price-guide/bayonets/* /price-guide/civil-war/edged-weapons/ 301
+/price-guide/belt-plates/ /price-guide/civil-war/belt-plates/ 301
+/price-guide/belt-plates/* /price-guide/civil-war/belt-plates/ 301
+/price-guide/buttons/ /price-guide/civil-war/buttons/ 301
+/price-guide/buttons/* /price-guide/civil-war/buttons/ 301
+/price-guide/currency/ /price-guide/civil-war/currency-bonds/ 301
+/price-guide/currency/* /price-guide/civil-war/currency-bonds/ 301
+/price-guide/edged-weapons/ /price-guide/civil-war/edged-weapons/ 301
+/price-guide/edged-weapons/* /price-guide/civil-war/edged-weapons/ 301
+/price-guide/firearms/ /price-guide/civil-war/firearms/ 301
+/price-guide/firearms/* /price-guide/civil-war/firearms/ 301
+/price-guide/headgear/ /price-guide/civil-war/uniforms/ 301
+/price-guide/headgear/* /price-guide/civil-war/uniforms/ 301
+/price-guide/photographs/ /price-guide/civil-war/photography/ 301
+/price-guide/photographs/* /price-guide/civil-war/photography/ 301

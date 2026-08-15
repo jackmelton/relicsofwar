@@ -1,162 +1,122 @@
 # Relics of War — Operations Runbook
 
-The goal: **100,000+ visitors/month** built on three engines — a programmatic
-**sold-price guide** (SEO volume), **original visual content** (Discover/Pinterest/FB
-magnets), and **distribution** across the audience we already own. This file is the
-week-to-week operating manual.
+_Rewritten 2026-08-15 for the ArtifactSearch-fed build. The 2026-07 sample-data
+price guide (`data/sales.json` + `scripts/build-archive.mjs`) is retired; nothing
+here requires typing a sale in by hand._
 
----
+## 1. What runs by itself
 
-## 1. The site at a glance
+Every night at 11:30 UTC (about 7:30 AM Eastern) GitHub Actions
+(`.github/workflows/nightly-build.yml`):
 
-| Area | Path | What it is |
-|------|------|------------|
-| Homepage | `/` | Leads with "What is your relic worth?" → funnels to price guide |
-| **Price Guide** | `/price-guide/` | The engine. Category + item pages generated from data |
-| Identification Library | `/identify/` | Free reference guides (content magnet + SEO) |
-| Membership | `/membership.html` | Buyer subscription (founding-member capture today) |
+1. pulls the public catalog from ArtifactSearch (`/api/export/relicsofwar`),
+2. rebuilds every page, runs the **index-worthiness engine**, sitemaps, robots,
+3. runs the SEO release checks (canonicals, robots meta, H1s, titles,
+   descriptions, sitemap hygiene, orphans, broken links) and the **growth gate**,
+4. pings IndexNow for INDEX URLs that were added / changed / removed,
+5. commits — Cloudflare Pages deploys the commit within a minute or two.
 
-Static site. Hosted on **Cloudflare Pages**, auto-deploys on every push to `main`.
-No server, no build command — the price-guide pages are pre-generated HTML.
+If any step fails, **nothing is committed** and the live site is unchanged that
+night. The report is attached to the failed run (Actions → run → Artifacts).
 
----
+You never need to touch the generated files at the repo root.
 
-## 2. The sold-price engine — how it works
+## 2. One-time setup (still open)
 
-Everything flows from one data file:
+- **`AS_EXPORT_TOKEN` GitHub secret.** Render → `artifactsearch-web` →
+  Environment → copy `RELICSOFWAR_EXPORT_TOKEN` → GitHub → jackmelton/relicsofwar
+  → Settings → Secrets and variables → Actions → New secret `AS_EXPORT_TOKEN`.
+  Until this exists the nightly job fails at step 1 and the site stays on the
+  last committed build.
+- **Google Search Console + Bing Webmaster Tools** for relicsofwar.com — submit
+  `https://relicsofwar.com/sitemap.xml` to both. IndexNow is already keyed
+  (`config/seo-index-policy.json` → `indexnow.key`, served at `/<key>.txt`).
+
+## 3. Weekly: read the report
+
+`reports/seo-index-report.md` (rewritten every build, history in git):
+
+- **Index state table** — INDEX / NOINDEX / canonicalized counts by page type,
+  with week-over-week change.
+- **Growth gate** — did the indexable count jump? (See §5.)
+- **Release checks** — should always be 0 errors; warnings are long titles etc.
+- **Review queue** — (a) editorial content sitting in DRAFT / REVIEW that will
+  render as soon as it is VERIFIED; (b) *nearest to INDEX*: pages a verified
+  intro would tip over the line; (c) duplicate clusters.
+
+## 4. The main lever: editorial content
+
+The engine cannot award `UniqueContent` or full `HistoricalContext` on its own —
+those points exist only for text a person has verified. That is by design (brief
+§11–§12). To lift a page:
+
+1. Create `content/era-category/<era>--<category>.md` (market page intro) or
+   `content/price-guide/<era>--<category>.md` (price-guide intro) or
+   `content/eras/<era>.md` (era hub intro). Slugs are ArtifactSearch's.
+2. Front matter:
+   ```
+   ---
+   status: HUMAN_REVIEW_REQUIRED     # DRAFT | AI_ASSISTED | HUMAN_REVIEW_REQUIRED | VERIFIED | PUBLISHED
+   ---
+   ```
+   then the intro in plain Markdown (paragraphs, ## headings, lists, links).
+3. When you have checked every factual claim, change status to `VERIFIED` (or
+   `PUBLISHED`), commit, push. The push triggers a build; the intro renders and
+   the page rescored that night.
+
+**Never publish invented history, provenance, rarity or values.** Text that is
+not `VERIFIED`/`PUBLISHED` is not rendered anywhere — it only shows up in the
+report's review queue.
+
+New identification guides: add the HTML under `identify/`, then map it in
+`content/guides.json` (era + categories) so the market and price-guide pages link
+to it and it counts toward `HistoricalContext`.
+
+## 5. Growth gate — when a build is BLOCKED
+
+If a change (a new page type, a loosened threshold, a big data jump) would raise
+the INDEX count by more than **both** `growthGate.maxIncreaseAbs` (300) and
+`growthGate.maxIncreasePct` (25%) at once, the build fails with
 
 ```
-data/sales.json        ← the dataset (one object per recorded sale)
-data/categories.json   ← the category taxonomy
-scripts/build-archive.mjs   ← the generator
+SEO INDEX EXPANSION WARNING — BUILD BLOCKED
+Current: N  Proposed: M  Increase: +X (+Y%)
 ```
 
-Run the generator any time the data changes:
+Read the report's "Every decision" table, and if the new pages are wanted:
+Actions → *Nightly build* → *Run workflow* → `approve_expansion` = **M** (the
+proposed count). Approval is for that exact number, once.
 
-```bash
-node scripts/build-archive.mjs
-```
+## 6. Tuning the engine
 
-It (re)creates every page under `/price-guide/` and rewrites `sitemap.xml`.
-Then commit + push — Cloudflare deploys automatically.
+`config/seo-index-policy.json` — weights, thresholds, minimums, pagination,
+price-guide minimums, duplicate detection, growth gate, IndexNow cap. Change,
+commit, push; the next build applies it and the report shows the effect. Loosen
+in small steps and watch Search Console for a week before the next step.
 
-### Adding a real sale (the core weekly task)
+`config/homepage-featured.json` — hand-pick up to 25 `era/category` keys for
+homepage prominence. Empty = the build features the largest INDEXed market pages.
+This never affects index state (brief §61).
 
-Add an object to `data/sales.json`:
+`config/search-demand.json` — optional 0–10 `SearchDemand` per page key from
+Search Console data.
 
-```json
-{
-  "slug": "us-m1839-oval-belt-plate",   // URL-safe, unique
-  "name": "U.S. Model 1839 Oval Belt Plate",
-  "category": "belt-plates",            // must match a key in categories.json
-  "soldPrice": 425,
-  "saleDate": "2025-11-14",             // YYYY-MM-DD
-  "source": "Heritage Auctions",
-  "lot": "Lot 214",
-  "condition": "Excavated, strong detail",
-  "markings": "Lead-filled reverse, arrow hook",
-  "dimensions": "3.4 x 2.2 in",
-  "provenance": "",
-  "description": "One honest paragraph — real detail, not filler.",
-  "image": "/assets/img/us-m1839-oval-belt-plate.jpg"
-}
-```
+## 7. Things the site does on purpose
 
-Then: `node scripts/build-archive.mjs` → commit → push. Done.
+- **No item pages.** A listing shown here is canonical on ArtifactSearch; the
+  card links there. Research-enhanced item pages are a later phase and would
+  need verified editorial before one is generated at all.
+- **Pagination pages are `noindex,follow`**, self-canonical, and capped at 5;
+  page 5 hands off to ArtifactSearch search.
+- **Price-guide figures never appear below 5 recorded sales**, and pages under
+  10 sales or from a single seller stay NOINDEX. Medians, not averages.
+- **Retired URLs** (`/membership`, `/submit`, `/price-guide/<category>/`)
+  301 via `_redirects` — membership goes to ArtifactSearch's free registration.
 
-### The `sample` flag (IMPORTANT)
+## 8. If the site looks wrong
 
-Records with `"sample": true` get a visible "sample data" banner, a `noindex`
-tag, and are **kept out of the sitemap** — so no placeholder price is ever
-treated as real by Google. **The site ships seeded with sample records.**
-Replace them with real sales (omit `sample`, or delete and add your own) to make
-pages indexable and live for SEO.
-
-> ⚠️ Never publish a made-up price without `sample: true`. Accuracy is the brand.
-
-### Why this scales
-
-~200 well-ranked pages ≈ ~100k organic visits/month in a niche. Each real sale
-you add is a permanent, indexable "what X sold for" page — exactly the query
-collectors search. Target **≥8–12 real data fields per record** (we do): thin
-pages don't get indexed. **Volume of real records is the flywheel.**
-
----
-
-## 3. Free vs. paid (the revenue line)
-
-- **Free / indexed:** one recorded sold price per item, full details, images.
-  This is the SEO magnet — it must be visible to rank.
-- **Members ($79/yr or $8/mo, adjustable):** full sold-price *history* per piece,
-  value trends, every comparable, and alerts. This is the locked panel on each
-  item page and the `/membership.html` product.
-
-Today membership captures **founding-member interest by email**. The next build
-step is **Stripe checkout** so members pay and unlock instantly — ask Claude to
-wire it when you're ready (needs a Stripe account + a serverless function).
-
----
-
-## 4. Weekly operating cadence
-
-The number comes from consistency, not bursts. A sustainable week:
-
-- **Price guide (the SEO base):** add **10–25 real recorded sales**. Batch from
-  auction results you already follow. Regenerate + push.
-- **Visual magnet (Discover/Pinterest/FB):** publish **1–2 original pieces** —
-  a colorized photo, a "most valuable X ever sold," or a strong identification
-  guide. Original photography wins on Google Discover.
-- **Distribution (below):** seed everything you publish.
-
-Realistically this is a part-time content role. The colorization and expert
-voice are yours; the page generation is automated.
-
----
-
-## 5. Distribution checklist (every new page)
-
-| Channel | Action | Why |
-|---------|--------|-----|
-| **Facebook** (90k) | Post the piece with the image + link | Early engagement = ranking signal + direct traffic |
-| **Pinterest** | Pin the image; keyword the title/description | Evergreen — pins drive traffic for years |
-| **Google Discover** | Ship original photos, faces/emotion, fast mobile pages | One placement can beat weeks of search |
-| **Email** (8k Constant Contact) | Include in the newsletter | Loyal recirculation + engagement |
-| **Cross-links** | Link from civilwarnews / historicalpublicationsllc / civilwarartillery | Passes domain authority to a new domain |
-
-The last row is the unfair advantage: internal links from the established sites
-jump-start authority that a cold domain lacks. Do this early.
-
----
-
-## 6. Measurement
-
-- **Google Search Console** — submit `sitemap.xml`; watch indexed-page count and
-  Discover impressions. (Indexed pages is the leading indicator.)
-- **Cloudflare Web Analytics** — traffic by source (already available on the zone).
-- **North-star:** real indexed price-guide pages. More indexed real records →
-  more long-tail traffic → more members.
-
----
-
-## 7. Guardrails
-
-- **No fabricated prices live** — sample flag or real data only.
-- **Rights** — only publish images we own or that are public domain / licensed; credit sources.
-- **Thin pages hurt** — every record carries real, specific data.
-- **Discover/Pinterest are rented land** — great volume, volatile; the durable
-  half is the price-guide SEO base, so never skip adding real records.
-
----
-
-## 8. Quick reference
-
-```bash
-# regenerate the price guide after editing data/sales.json
-node scripts/build-archive.mjs
-
-# preview locally
-python3 -m http.server 8791    # then open http://localhost:8791/
-
-# publish (auto-deploys via Cloudflare Pages)
-git add -A && git commit -m "price guide: add sales" && git push
-```
+- Check the latest run in GitHub Actions; a red run means last night didn't
+  publish — the error is in the log and the report artifact.
+- `node build/build.mjs --check --from-dir <snapshot>` reproduces the whole
+  build locally without touching the repo.
+- Rolling back = `git revert` the nightly commit; Pages redeploys.

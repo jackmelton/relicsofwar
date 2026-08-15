@@ -1,3 +1,23 @@
-# Internal planning docs — served by Pages but kept out of search indexes
+# Cloudflare Pages headers
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+/assets/*
+  Cache-Control: public, max-age=604800
+/sitemaps/*
+  Cache-Control: public, max-age=3600
+# Internal folders that ride along in the repo — never index them
 /docs/*
+  X-Robots-Tag: noindex
+/build/*
+  X-Robots-Tag: noindex
+/config/*
+  X-Robots-Tag: noindex
+/content/*
+  X-Robots-Tag: noindex
+/state/*
+  X-Robots-Tag: noindex
+/reports/*
   X-Robots-Tag: noindex

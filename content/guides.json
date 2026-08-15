@@ -1,0 +1,10 @@
+{
+  "_comment": "Maps the Identification Library guides (identify/*.html — hand-written, already published) onto the era × category pages that should link to them. Titles/descriptions are read from the HTML at build time; only the mapping lives here.",
+  "guides": [
+    { "url": "/identify/confederate-belt-plates", "era": "civil-war", "categories": ["belt-plates"] },
+    { "url": "/identify/civil-war-buttons",       "era": "civil-war", "categories": ["buttons", "uniforms"] },
+    { "url": "/identify/civil-war-bayonets",      "era": "civil-war", "categories": ["edged-weapons"] },
+    { "url": "/identify/soldier-id-discs",        "era": "civil-war", "categories": ["personal-items"] },
+    { "url": "/identify/cartridge-boxes",         "era": "civil-war", "categories": ["accoutrements"] }
+  ]
+}

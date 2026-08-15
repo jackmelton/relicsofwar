@@ -1,0 +1,63 @@
+# Relics of War — nightly rebuild from the ArtifactSearch export.
+#
+# Runs after ArtifactSearch's own overnight pipeline (crawl → recategorize →
+# sensitive scan → sold archive → data quality; last job ends ~10:30 UTC), builds
+# the whole static site, runs the SEO release checks + growth gate, and commits
+# the result. Cloudflare Pages deploys the commit. If anything fails nothing is
+# committed and the live site is simply unchanged that night.
+name: Nightly build
+
+on:
+  schedule:
+    - cron: '30 11 * * *'   # 11:30 UTC = 7:30 AM ET (DST) / 6:30 AM ET (standard)
+  workflow_dispatch:
+    inputs:
+      approve_expansion:
+        description: 'Approve an index expansion: the NEW indexable-URL count shown in the blocked report'
+        required: false
+        default: ''
+  push:
+    branches: [main]
+    paths:
+      - 'build/**'
+      - 'config/**'
+      - 'content/**'
+      - 'assets/**'
+      - '.github/workflows/nightly-build.yml'
+
+concurrency:
+  group: relicsofwar-build
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build site
+        env:
+          AS_EXPORT_TOKEN: ${{ secrets.AS_EXPORT_TOKEN }}
+          ROW_INDEXNOW: '1'
+          SEO_INDEX_EXPANSION_APPROVED: ${{ inputs.approve_expansion }}
+        run: node build/build.mjs
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-index-report
+          path: reports/seo-index-report.md
+          if-no-files-found: ignore
+      - name: Commit and push
+        run: |
+          git config user.name "relicsofwar-build"
+          git config user.email "asadmin@artifactsearch.com"
+          git add -A
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Nightly build $(date -u +%Y-%m-%d): $(grep -m1 -oE '\*\*[0-9]+\*\*' reports/seo-index-report.md | tr -d '*') indexable URLs"
+          git push

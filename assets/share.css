@@ -16,7 +16,7 @@
   font-weight: 700;
   letter-spacing: .18em;
   text-transform: uppercase;
-  color: var(--muted, #6b6455);
+  color: var(--muted, #625a4c);
   margin-right: 4px;
 }
 .share-btn {
@@ -27,7 +27,7 @@
   border: 1px solid var(--line, rgba(143, 58, 31, .16));
   border-radius: 3px;
   background: #fff;
-  color: var(--navy, #1a2436);
+  color: var(--forest, #1f3d2b);
   cursor: pointer;
   font-family: inherit;
   font-size: .85rem;
@@ -39,16 +39,16 @@
 .share-btn svg { width: 16px; height: 16px; flex: none; }
 .share-btn:hover,
 .share-btn.is-copied {
-  background: var(--navy, #1a2436);
-  border-color: var(--navy, #1a2436);
+  background: var(--forest, #1f3d2b);
+  border-color: var(--forest, #1f3d2b);
   color: #fff;
 }
 .share-btn:focus-visible {
-  outline: 2px solid var(--gold, #c19a3e);
+  outline: 2px solid var(--brass, #b8923a);
   outline-offset: 2px;
 }
 .share-btn[hidden] { display: none; }
-.share-status { font-size: .8rem; color: var(--muted, #6b6455); }
+.share-status { font-size: .8rem; color: var(--muted, #625a4c); }
 .share-status:not(:empty) { margin-left: 4px; }
 @media (max-width: 520px) {
   .share { gap: 6px; }

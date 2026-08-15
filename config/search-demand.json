@@ -1,0 +1,4 @@
+{
+  "_comment": "Optional SearchDemand signal for the index score (0–10 per page key). Populate from Search Console / keyword data when available; absent keys score 0. Keys are 'era/category' (market pages) or 'price-guide/era/category'.",
+  "demand": {}
+}

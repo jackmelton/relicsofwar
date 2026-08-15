@@ -1,4 +1,15 @@
+# RelicsOfWar.com — static site; there are no dynamic routes or crawl traps.
+# Internal build/config folders are not pages. Nothing here substitutes for the
+# per-page <meta name="robots"> directives (§28–§29).
 User-agent: *
+Disallow: /build/
+Disallow: /config/
+Disallow: /content/
+Disallow: /state/
+Disallow: /reports/
+Disallow: /docs/
+Disallow: /scripts/
+Disallow: /data/
 Allow: /
 
 Sitemap: https://relicsofwar.com/sitemap.xml
