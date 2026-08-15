@@ -1,0 +1,3 @@
+# Internal planning docs — served by Pages but kept out of search indexes
+/docs/*
+  X-Robots-Tag: noindex
