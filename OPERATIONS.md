@@ -25,7 +25,7 @@ You never need to touch the generated files at the repo root.
 
 - **`AS_EXPORT_TOKEN` GitHub secret.** Render → `artifactsearch-web` →
   Environment → copy `RELICSOFWAR_EXPORT_TOKEN` → GitHub → jackmelton/relicsofwar
-  → Settings → Secrets and variables → Actions → New secret `AS_EXPORT_TOKEN`.
+  → Settings → Secrets and variables → Actions → New secret `AS_EXPORT_TOKEN` (the workflow also accepts the name `RELICSOFWAR_EXPORT_TOKEN`).
   Until this exists the nightly job fails at step 1 and the site stays on the
   last committed build.
 - **Google Search Console + Bing Webmaster Tools** for relicsofwar.com — submit

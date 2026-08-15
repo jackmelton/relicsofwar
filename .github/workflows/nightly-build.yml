@@ -42,7 +42,7 @@ jobs:
           node-version: '22'
       - name: Build site
         env:
-          AS_EXPORT_TOKEN: ${{ secrets.AS_EXPORT_TOKEN }}
+          AS_EXPORT_TOKEN: ${{ secrets.AS_EXPORT_TOKEN || secrets.RELICSOFWAR_EXPORT_TOKEN }}
           ROW_INDEXNOW: '1'
           SEO_INDEX_EXPANSION_APPROVED: ${{ inputs.approve_expansion }}
         run: node build/build.mjs
