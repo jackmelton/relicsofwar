@@ -31,10 +31,16 @@ You never need to touch the generated files at the repo root.
 - ✅ **Google Search Console** — property `https://relicsofwar.com/` verified
   2026-08-15 by HTML file (`/google504039a36c16289e.html` — committed at the repo
   root; **never delete it**); `/sitemap.xml` submitted, status Success.
-- **Bing Webmaster Tools** — still to do: verify relicsofwar.com and submit
-  `https://relicsofwar.com/sitemap.xml` (Bing can import the site straight from
-  Search Console). IndexNow is already keyed (`config/seo-index-policy.json` →
-  `indexnow.key`, served at `/<key>.txt`).
+- ✅ **Bing Webmaster Tools** — property `https://relicsofwar.com/` verified
+  2026-08-15 (Google sign-in, jackmelton@gmail.com) via `/BingSiteAuth.xml` +
+  the `msvalidate.01` meta tag the build emits on every page — **keep both**;
+  `/sitemap.xml` submitted. IndexNow is keyed (`config/seo-index-policy.json` →
+  `indexnow.key`, served at `/<key>.txt`) and Bing acknowledged the first batch.
+- ✅ **ArtifactSearch banner ads** on every page (`assets/ads.js`,
+  publisher=relicsofwar): leaderboard under the header, rectangle in the footer;
+  house ads when nothing is booked; viewable-impression counting; paid links
+  carry rel="sponsored". Reports break out in ArtifactSearch's ad analytics under
+  publisher **relicsofwar**.
 
 ## 3. Weekly: read the report
 
