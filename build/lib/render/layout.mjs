@@ -67,6 +67,7 @@ export function nav(path) {
     </nav>
   </div>
 </header>
+<div class="wrap"><div class="row-ad" data-zone="leaderboard" aria-label="Advertisement"></div></div>
 `;
 }
 
@@ -75,6 +76,7 @@ export function foot(pages = []) {
   return `
 <footer class="site">
   <div class="wrap">
+    <div class="row-ad" data-zone="medium_rectangle" aria-label="Advertisement"></div>
     <a class="brand" href="/">Relics <span class="mark">of</span> War</a>
     <div class="meta">
       A publication of <a href="https://historicalpublicationsllc.com">Historical Publications LLC</a><br>
@@ -93,6 +95,7 @@ export function foot(pages = []) {
   </div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+<script src="/assets/ads.js" defer></script>
 </body>
 </html>
 `;

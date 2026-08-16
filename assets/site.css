@@ -98,3 +98,9 @@ article.prose table{width:100%;border-collapse:collapse;margin:1rem 0}
 article.prose td,article.prose th{border:1px solid var(--line);padding:.5rem .7rem;text-align:left}
 footer .meta.small{font-size:.85rem}
 .cta.ghost.dark-text{color:var(--copper);border-color:var(--copper)}
+
+/* ArtifactSearch network ad slots (assets/ads.js fills them) */
+.row-ad{min-height:0}
+header.site + .wrap .row-ad{margin:1rem auto .2rem}
+footer.site .row-ad{margin:0 auto 1.6rem}
+footer.site .row-ad-label{color:rgba(245,239,225,.55)}
