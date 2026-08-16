@@ -28,9 +28,13 @@ You never need to touch the generated files at the repo root.
   → Settings → Secrets and variables → Actions → New secret `AS_EXPORT_TOKEN` (the workflow also accepts the name `RELICSOFWAR_EXPORT_TOKEN`).
   Until this exists the nightly job fails at step 1 and the site stays on the
   last committed build.
-- **Google Search Console + Bing Webmaster Tools** for relicsofwar.com — submit
-  `https://relicsofwar.com/sitemap.xml` to both. IndexNow is already keyed
-  (`config/seo-index-policy.json` → `indexnow.key`, served at `/<key>.txt`).
+- ✅ **Google Search Console** — property `https://relicsofwar.com/` verified
+  2026-08-15 by HTML file (`/google504039a36c16289e.html` — committed at the repo
+  root; **never delete it**); `/sitemap.xml` submitted, status Success.
+- **Bing Webmaster Tools** — still to do: verify relicsofwar.com and submit
+  `https://relicsofwar.com/sitemap.xml` (Bing can import the site straight from
+  Search Console). IndexNow is already keyed (`config/seo-index-policy.json` →
+  `indexnow.key`, served at `/<key>.txt`).
 
 ## 3. Weekly: read the report
 
