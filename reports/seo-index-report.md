@@ -1,8 +1,8 @@
 # RelicsOfWar — SEO Index Report
 
-_Generated 2026-08-15 from ArtifactSearch data exported 2026-08-15T20:41:39.876Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
+_Generated 2026-08-16 from ArtifactSearch data exported 2026-08-16T01:50:42.492Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
 
-## Index state (2026-08-15)
+## Index state (2026-08-16)
 
 | | Count | Week-over-week |
 |---|---:|---|
