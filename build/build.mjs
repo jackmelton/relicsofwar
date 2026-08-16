@@ -269,7 +269,7 @@ function refreshChrome(html, path, sitePages, legacyTarget) {
   let out = html;
   const navHtml = nav(path).trim();
   // header + the leaderboard slot that follows it (idempotent: the optional group swallows a previous run's slot)
-  out = out.replace(/<header class="site">[\s\S]*?<\/header>(\s*<div class="wrap"><div class="row-ad"[^>]*><\/div><\/div>)?/, navHtml);
+  out = out.replace(/<header class="site">[\s\S]*?<\/header>(\s*<div class="wrap"><(?:div|aside) class="row-ad"[^>]*><\/(?:div|aside)><\/div>)?/, navHtml);
   const footHtml = foot(sitePages).replace(/^\s*/, '').replace(/<\/body>\s*<\/html>\s*$/, '').trim();
   out = out.replace(/<footer class="site">[\s\S]*?<\/footer>(\s*<script>document\.getElementById\('yr'\)[^<]*<\/script>)?(\s*<script src="\/assets\/ads\.js" defer><\/script>)?/, footHtml);
   if (!/assets\/site\.css/.test(out)) out = out.replace('<link rel="stylesheet" href="/assets/relics.css">', '<link rel="stylesheet" href="/assets/relics.css">\n<link rel="stylesheet" href="/assets/site.css">');

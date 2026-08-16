@@ -5,6 +5,11 @@ import { esc, attr, money, cents, num, prettyDate, monthYear, isoDate } from '..
 import { head, foot, breadcrumbs, SITE, AS, ORG_LD, WEBSITE_LD } from './layout.mjs';
 
 const T = (s, config) => `${s}${config.titles.suffix}`;
+/* Short era names for <title> only (the H1 keeps the full name). */
+const ERA_SHORT = { 'pre-wwi': 'Pre-WWI', 'early-republic': 'Early Republic', 'antebellum-frontier': 'Antebellum', 'indian-wars': 'Indian Wars', 'postwar-occupation': 'Postwar', 'early-american': 'Early American', 'colonial': 'Colonial' };
+const eraT = (era) => ERA_SHORT[era.slug] || era.name;
+/* Category names for <title>: drop an "& …" tail when the whole title would run long. */
+const catT = (name, budget = 40) => (name.length > budget && name.includes(' & ') ? name.split(' & ')[0] : name);
 const span = (from, to) => { if (!from) return ''; const a = from.slice(0, 4), b = (to || from).slice(0, 4); return a === b ? a : `${a}–${b}`; };
 
 /* ── shared fragments ─────────────────────────────────────── */
@@ -174,8 +179,8 @@ export function renderEra({ era, model, decisions, d, config }) {
   const priced = era.nodeList.filter((n) => decisions.get(n.priceGuideUrl)?.state !== 'NOT_GENERATED').sort((a, b) => b.stats.n - a.stats.n);
   const bc = breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Browse by Era', url: '/eras/' }, { name: era.name, url: era.url }]);
   const yrs = `${era.startYear ?? ''}${era.endYear ? '–' + era.endYear : ''}`;
-  const title = T(`${era.name} Military Antiques & Relics`, config);
-  const description = `${era.name} (${yrs}) military antiques — ${gen.slice(0, 3).map((n) => n.category.name.toLowerCase()).join(', ')}${gen.length > 3 ? ' and more' : ''}: ${num(era.itemCount)} listings from vetted sellers${era.soldCount ? `, ${num(era.soldCount)} recorded sales` : ''}.`;
+  const title = T(`${eraT(era)} Military Antiques & Relics`, config);
+  const description = `${era.name} (${yrs}) military antiques — ${gen.slice(0, 2).map((n) => catT(n.category.name, 24).toLowerCase()).join(', ')}${gen.length > 2 ? ' and more' : ''}: ${num(era.itemCount)} listings from vetted sellers${era.soldCount ? `, ${num(era.soldCount)} recorded sales` : ''}.`;
   const jsonld = [bc.ld, { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${era.name} Military Antiques`, url: SITE + era.url, isPartOf: { '@id': `${SITE}/#website` }, about: era.name }];
   const canonical = SITE + d.canonical;
   const html = head({ title, description, path: era.url, canonical, state: d.state, jsonld, stateNote: d.note }) + `
@@ -226,7 +231,7 @@ export function renderMarket({ node: n, model, decisions, d, config }) {
     const path = p === 1 ? n.url : `${n.url}page/${p}/`;
     const slice = n.items.slice((p - 1) * per, p * per);
     const bc = breadcrumbs(p === 1 ? bcBase : [...bcBase, { name: `Page ${p}`, url: path }]);
-    const baseTitle = `${eraName} ${catName}`;
+    const baseTitle = `${eraT(n.era)} ${catT(catName)}`;
     const title = T(p === 1 ? `${baseTitle} for Sale` : `${baseTitle} — Page ${p}`, config);
     const description = p === 1
       ? `${num(n.items.length)} ${eraName} ${catName.toLowerCase()} listings from ${n.sourceCount} dealer${n.sourceCount === 1 ? '' : 's'} and auction house${n.sourceCount === 1 ? '' : 's'}${n.stats.n >= config.priceGuide.minSalesToGenerate ? `, plus sold prices from ${num(n.stats.n)} recorded sales` : ''}. Each links to its seller.`
@@ -310,7 +315,7 @@ export function renderPriceGuide({ node: n, model, decisions, d, config, methodo
   const s = n.stats;
   const eraName = n.era.name, catName = n.category.name;
   const bc = breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Price Guide', url: '/price-guide/' }, { name: eraName, url: n.era.url }, { name: `${catName} Price Guide`, url: n.priceGuideUrl }]);
-  const title = T(`${eraName} ${catName} Price Guide`, config);
+  const title = T(`${eraT(n.era)} ${catT(catName)} Price Guide`, config);
   const description = `${eraName} ${catName.toLowerCase()} values from ${num(s.n)} recorded sales${s.from ? ` (${span(s.from, s.to)})` : ''}: median ${cents(s.median)}, range ${cents(s.low)}–${cents(s.high)}, with every sale listed.`;
   const md = decisions.get(n.url);
   const hasMarket = md && md.state !== 'NOT_GENERATED';

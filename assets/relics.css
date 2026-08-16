@@ -117,7 +117,7 @@ article strong{color:var(--forest)}
 /* Quick-ID summary box */
 .quickid{background:#fff;border:1px solid var(--line);border-left:4px solid var(--brass);
   padding:1.6rem 1.8rem;margin:2rem 0;box-shadow:var(--shadow)}
-.quickid h3{margin-top:0;color:var(--forest);font-family:'Cinzel',serif;font-size:1.05rem;
+.quickid h3,.quickid h2.qi{margin-top:0;color:var(--forest);font-family:'Cinzel',serif;font-size:1.05rem;
   letter-spacing:.08em;text-transform:uppercase}
 .quickid dl{display:grid;grid-template-columns:auto 1fr;gap:.5rem 1.2rem;margin-top:.8rem}
 .quickid dt{font-weight:600;color:var(--copper);font-family:'Cinzel',serif;font-size:.82rem;
