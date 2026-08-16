@@ -1,6 +1,6 @@
 # RelicsOfWar — SEO Index Report
 
-_Generated 2026-08-16 from ArtifactSearch data exported 2026-08-16T01:54:53.700Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
+_Generated 2026-08-16 from ArtifactSearch data exported 2026-08-16T02:00:36.959Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
 
 ## Index state (2026-08-16)
 
@@ -31,49 +31,49 @@ Data: 28,429 public listings (6,570 without an era, so on no market page), 17,62
 ## Release checks (§75)
 
 - Errors: **0** ✓
-- Warnings: 216
+- Warnings: 85
 
 - ⚠️ /: description 173 chars
-- ⚠️ /colonial/: description 172 chars
-- ⚠️ /early-republic/: title 79 chars
-- ⚠️ /early-republic/: description 204 chars
-- ⚠️ /mexican-american-war/: description 177 chars
-- ⚠️ /indian-wars/: description 220 chars
-- ⚠️ /spanish-american-war/: description 175 chars
-- ⚠️ /pre-wwi/: title 87 chars
-- ⚠️ /pre-wwi/: description 217 chars
-- ⚠️ /wwi/: description 193 chars
-- ⚠️ /wwii/: description 196 chars
-- ⚠️ /postwar-occupation/: description 178 chars
-- ⚠️ /korea/: description 181 chars
-- ⚠️ /vietnam/: description 183 chars
-- ⚠️ /indian-wars/photography/: title 76 chars
-- ⚠️ /indian-wars/photography/page/2/: title 76 chars
-- ⚠️ /indian-wars/photography/page/3/: title 76 chars
-- ⚠️ /indian-wars/photography/page/4/: title 76 chars
-- ⚠️ /indian-wars/photography/page/5/: title 76 chars
-- ⚠️ /price-guide/indian-wars/photography/: title 79 chars
-- ⚠️ /indian-wars/veteran-organizations/: title 96 chars
+- ⚠️ /early-republic/: description 178 chars
+- ⚠️ /indian-wars/veteran-organizations/: title 81 chars
 - ⚠️ /indian-wars/veteran-organizations/: description 187 chars
-- ⚠️ /indian-wars/veteran-organizations/page/2/: title 96 chars
-- ⚠️ /indian-wars/veteran-organizations/page/3/: title 96 chars
-- ⚠️ /indian-wars/veteran-organizations/page/4/: title 96 chars
-- ⚠️ /indian-wars/veteran-organizations/page/5/: title 96 chars
-- ⚠️ /price-guide/indian-wars/veteran-organizations/: title 99 chars
+- ⚠️ /indian-wars/veteran-organizations/page/2/: title 81 chars
+- ⚠️ /indian-wars/veteran-organizations/page/3/: title 81 chars
+- ⚠️ /indian-wars/veteran-organizations/page/4/: title 81 chars
+- ⚠️ /indian-wars/veteran-organizations/page/5/: title 81 chars
+- ⚠️ /price-guide/indian-wars/veteran-organizations/: title 84 chars
 - ⚠️ /civil-war/veteran-organizations/: title 79 chars
 - ⚠️ /civil-war/veteran-organizations/page/2/: title 79 chars
 - ⚠️ /civil-war/veteran-organizations/page/3/: title 79 chars
 - ⚠️ /civil-war/veteran-organizations/page/4/: title 79 chars
 - ⚠️ /civil-war/veteran-organizations/page/5/: title 79 chars
 - ⚠️ /price-guide/civil-war/veteran-organizations/: title 82 chars
-- ⚠️ /pre-wwi/veteran-organizations/: title 110 chars
+- ⚠️ /pre-wwi/veteran-organizations/: title 77 chars
 - ⚠️ /pre-wwi/veteran-organizations/: description 201 chars
-- ⚠️ /pre-wwi/veteran-organizations/page/2/: title 110 chars
-- ⚠️ /pre-wwi/veteran-organizations/page/3/: title 110 chars
-- ⚠️ /pre-wwi/veteran-organizations/page/4/: title 110 chars
-- ⚠️ /pre-wwi/veteran-organizations/page/5/: title 110 chars
-- ⚠️ /price-guide/pre-wwi/veteran-organizations/: title 113 chars
-- … 176 more warnings
+- ⚠️ /pre-wwi/veteran-organizations/page/2/: title 77 chars
+- ⚠️ /pre-wwi/veteran-organizations/page/3/: title 77 chars
+- ⚠️ /pre-wwi/veteran-organizations/page/4/: title 77 chars
+- ⚠️ /pre-wwi/veteran-organizations/page/5/: title 77 chars
+- ⚠️ /price-guide/pre-wwi/veteran-organizations/: title 80 chars
+- ⚠️ /price-guide/pre-wwi/veteran-organizations/: description 176 chars
+- ⚠️ /early-republic/uniforms/: description 171 chars
+- ⚠️ /pre-wwi/photography/: description 180 chars
+- ⚠️ /wwi/veteran-organizations/: title 81 chars
+- ⚠️ /wwi/veteran-organizations/page/2/: title 81 chars
+- ⚠️ /wwi/veteran-organizations/page/3/: title 81 chars
+- ⚠️ /wwi/veteran-organizations/page/4/: title 81 chars
+- ⚠️ /price-guide/wwi/veteran-organizations/: title 84 chars
+- ⚠️ /early-republic/photography/: description 171 chars
+- ⚠️ /indian-wars/accoutrements/: description 171 chars
+- ⚠️ /indian-wars/prints-paintings/: title 78 chars
+- ⚠️ /indian-wars/prints-paintings/page/2/: title 78 chars
+- ⚠️ /indian-wars/prints-paintings/page/3/: title 78 chars
+- ⚠️ /pre-wwi/documents/: description 179 chars
+- ⚠️ /pre-wwi/uniforms/: description 178 chars
+- ⚠️ /spanish-american-war/veteran-organizations/: title 90 chars
+- ⚠️ /spanish-american-war/veteran-organizations/: description 179 chars
+- ⚠️ /spanish-american-war/veteran-organizations/page/2/: title 90 chars
+- … 45 more warnings
 
 ## IndexNow (§26–§27)
 
