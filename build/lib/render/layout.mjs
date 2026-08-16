@@ -31,6 +31,7 @@ export function head(o) {
 <title>${esc(o.title)}</title>
 <meta name="description" content="${attr(o.description)}">
 <meta name="robots" content="${robots}">
+<meta name="msvalidate.01" content="C8B0ADE1253C8CE114D93C615D8C5255">
 <link rel="canonical" href="${attr(o.canonical)}">
 <meta property="og:site_name" content="${SITE_NAME}">
 <meta property="og:type" content="${o.ogType || 'website'}">
