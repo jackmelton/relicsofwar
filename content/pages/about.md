@@ -7,7 +7,7 @@ nav: footer
 order: 1
 lastReviewed: 2026-08-15
 ---
-Relics of War is a publication of **Historical Publications LLC** of Blue Ridge, Georgia — the publishers of *Civil War News*, *Military Antique Collector*, and *The Rampant Colt*, the official publication of the Colt Collectors Association.
+Relics of War is a publication of **Historical Publications LLC** of Mount Pleasant, South Carolina — the publishers of *Civil War News*, *Military Antique Collector*, and *The Rampant Colt*, the official publication of the Colt Collectors Association.
 
 ## What this site is
 

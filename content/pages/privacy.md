@@ -7,7 +7,7 @@ nav: footer
 order: 9
 lastReviewed: 2026-08-15
 ---
-Relics of War (relicsofwar.com) is published by Historical Publications LLC, Blue Ridge, Georgia.
+Relics of War (relicsofwar.com) is published by Historical Publications LLC, Mount Pleasant, South Carolina.
 
 ## What we collect
 

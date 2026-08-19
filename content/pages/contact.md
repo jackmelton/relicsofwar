@@ -5,10 +5,11 @@ description: How to reach Relics of War and Historical Publications LLC.
 status: PUBLISHED
 nav: footer
 order: 8
-lastReviewed: 2026-08-15
+lastReviewed: 2026-08-19
 ---
 **Historical Publications LLC**
-Blue Ridge, Georgia
+
+Jack W. Melton Jr. · 3022 South Morgans Point Road, Suite 222 · Mount Pleasant, SC 29466
 
 - Phone: **800-777-1862**
 - Email: **info@historicalpublicationsllc.com**

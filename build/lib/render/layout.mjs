@@ -80,7 +80,7 @@ export function foot(pages = []) {
     <a class="brand" href="/">Relics <span class="mark">of</span> War</a>
     <div class="meta">
       A publication of <a href="https://historicalpublicationsllc.com">Historical Publications LLC</a><br>
-      Blue Ridge, Georgia &nbsp;&middot;&nbsp; <a href="tel:+18007771862">800-777-1862</a><br>
+      Mount Pleasant, South Carolina &nbsp;&middot;&nbsp; <a href="tel:+18007771862">800-777-1862</a><br>
       <a href="mailto:info@historicalpublicationsllc.com">info@historicalpublicationsllc.com</a>
     </div>
     <p class="meta" style="margin-top:1rem">
@@ -120,7 +120,7 @@ export const ORG_LD = {
   url: 'https://historicalpublicationsllc.com/',
   telephone: '+1-800-777-1862',
   email: 'info@historicalpublicationsllc.com',
-  address: { '@type': 'PostalAddress', addressLocality: 'Blue Ridge', addressRegion: 'GA', addressCountry: 'US' },
+  address: { '@type': 'PostalAddress', addressLocality: 'Mount Pleasant', addressRegion: 'SC', addressCountry: 'US' },
 };
 
 export const WEBSITE_LD = {
