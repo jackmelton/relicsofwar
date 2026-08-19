@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-08-19T18:29:45.506Z",
- "dataGeneratedAt": "2026-08-19T18:29:44.965Z",
+ "generatedAt": "2026-08-19T19:05:21.189Z",
+ "dataGeneratedAt": "2026-08-19T19:05:20.616Z",
  "urls": {
   "/": {
    "type": "static",
@@ -6213,10 +6213,10 @@
   "/terms/": {
    "type": "static",
    "state": "INDEX",
-   "contentHash": "22bd0909045fe306a1aab2a66280c10a6946bc0f",
-   "lastmod": "2026-08-15",
+   "contentHash": "20cb7015839b81cab5407a5f102ecc8f49ae7334",
+   "lastmod": "2026-08-19",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
+   "lastSubmittedHash": "20cb7015839b81cab5407a5f102ecc8f49ae7334"
   },
   "/404.html": {
    "type": "static",
