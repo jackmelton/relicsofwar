@@ -5,7 +5,7 @@ description: The plain terms under which Relics of War is offered — informatio
 status: PUBLISHED
 nav: footer
 order: 10
-lastReviewed: 2026-08-15
+lastReviewed: 2026-08-19
 ---
 By using relicsofwar.com you agree to these terms.
 
@@ -27,4 +27,4 @@ Editorial text and the organization of this site are © Historical Publications 
 
 ## Governing law
 
-These terms are governed by the laws of the State of Georgia, USA.
+These terms are governed by the laws of the State of South Carolina, USA.
