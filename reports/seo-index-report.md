@@ -1,8 +1,8 @@
 # RelicsOfWar — SEO Index Report
 
-_Generated 2026-08-18 from ArtifactSearch data exported 2026-08-18T11:41:44.783Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
+_Generated 2026-08-19 from ArtifactSearch data exported 2026-08-19T11:41:44.069Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
 
-## Index state (2026-08-18)
+## Index state (2026-08-19)
 
 | | Count | Week-over-week |
 |---|---:|---|
@@ -10,19 +10,19 @@ _Generated 2026-08-18 from ArtifactSearch data exported 2026-08-18T11:41:44.783Z
 | **INDEX** | **82** | 82 |
 | NOINDEX | 702 | 702 |
 | Canonicalized (to parent / ArtifactSearch) | 0 | 0 |
-| Not generated (would be empty/thin) | 275 | 275 |
+| Not generated (would be empty/thin) | 276 | 276 |
 
 | Page type | INDEX | NOINDEX | Canonicalized |
 |---|---:|---:|---:|
 | Era hubs | 10 | 5 | — |
-| Market pages (era × category) | 36 | 303 | 0 |
-| Pagination pages | 0 | 272 | — |
+| Market pages (era × category) | 36 | 304 | 0 |
+| Pagination pages | 0 | 271 | — |
 | Price-guide pages | 17 | 121 | — |
 | Research / identification guides | 6 | 0 | — |
 | Site & trust pages | 13 | 1 | — |
 | Item pages | 0 | 0 | 0 |
 
-Data: 28,399 public listings (6,543 without an era, so on no market page), 17,714 recorded sales (8,813 without era+category), 48 sources.
+Data: 28,408 public listings (6,548 without an era, so on no market page), 17,744 recorded sales (8,825 without era+category), 48 sources.
 
 ## Growth gate (§13 / §51)
 
@@ -77,7 +77,7 @@ Data: 28,399 public listings (6,543 without an era, so on no market page), 17,71
 
 ## IndexNow (§26–§27)
 
-Added 0 · Updated 32 · Removed 0 · Submitted this run 32
+Added 0 · Updated 35 · Removed 0 · Submitted this run 35
 
 ## Review queue (§49)
 
@@ -116,7 +116,7 @@ Added 0 · Updated 32 · Removed 0 · Submitted this run 32
 
 ## Every decision
 
-<details><summary>767 evaluated URLs</summary>
+<details><summary>769 evaluated URLs</summary>
 
 | URL | Type | State | Score | Why |
 |---|---|---|---:|---|
@@ -279,6 +279,7 @@ Added 0 · Updated 32 · Removed 0 · Submitted this run 32
 | /korea/grenades-ordnance/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /korea/helmets/ | market | NOINDEX | 18 | only 8 active listings (< 10) |
 | /korea/id-discs/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
+| /korea/medals-orders/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
 | /korea/medical/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /korea/photography/ | market | NOT_GENERATED | 0 | no active listings |
 | /korea/post-wwii-militaria/ | market | NOINDEX | 37 | score 37 < 60 |
@@ -410,7 +411,7 @@ Added 0 · Updated 32 · Removed 0 · Submitted this run 32
 | /price-guide/civil-war/post-1945-firearms/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/civil-war/prints-paintings/ | price-guide | NOINDEX | 44 | score 44 < 60 |
 | /price-guide/civil-war/uniforms/ | price-guide | INDEX | 65 |  |
-| /price-guide/civil-war/veteran-organizations/ | price-guide | NOINDEX | 51 | score 51 < 60 |
+| /price-guide/civil-war/veteran-organizations/ | price-guide | NOINDEX | 52 | score 52 < 60 |
 | /price-guide/cold-war/accoutrements/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/cold-war/belt-plates/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/cold-war/books-publications/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
@@ -511,6 +512,7 @@ Added 0 · Updated 32 · Removed 0 · Submitted this run 32
 | /price-guide/korea/grenades-ordnance/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/korea/helmets/ | price-guide | NOT_GENERATED | 0 | 3 recorded sales (< 5) |
 | /price-guide/korea/id-discs/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
+| /price-guide/korea/medals-orders/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/korea/medical/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/korea/photography/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/korea/post-wwii-militaria/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
@@ -639,7 +641,7 @@ Added 0 · Updated 32 · Removed 0 · Submitted this run 32
 | /price-guide/spanish-american-war/prints-paintings/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/uniforms/ | price-guide | NOINDEX | 48 | score 48 < 60 |
 | /price-guide/spanish-american-war/veteran-organizations/ | price-guide | NOINDEX | 48 | score 48 < 60 |
-| /price-guide/vietnam/accoutrements/ | price-guide | NOINDEX | 48 | score 48 < 60 |
+| /price-guide/vietnam/accoutrements/ | price-guide | NOINDEX | 49 | score 49 < 60 |
 | /price-guide/vietnam/aircraft/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/vietnam/antique-toys/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/vietnam/armor/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
@@ -664,7 +666,7 @@ Added 0 · Updated 32 · Removed 0 · Submitted this run 32
 | /price-guide/vietnam/trench-art/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/vietnam/uniforms/ | price-guide | NOINDEX | 46 | score 46 < 60 |
 | /price-guide/vietnam/veteran-organizations/ | price-guide | NOT_GENERATED | 0 | 3 recorded sales (< 5) |
-| /price-guide/wwi/accoutrements/ | price-guide | NOINDEX | 53 | score 53 < 60 |
+| /price-guide/wwi/accoutrements/ | price-guide | NOINDEX | 54 | score 54 < 60 |
 | /price-guide/wwi/african-american/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/wwi/aircraft/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/wwi/antique-toys/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
@@ -799,7 +801,7 @@ Added 0 · Updated 32 · Removed 0 · Submitted this run 32
 | /vietnam/currency-bonds/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /vietnam/documents/ | market | NOINDEX | 4 | only 4 active listings (< 10) |
 | /vietnam/edged-weapons/ | market | NOINDEX | 51 | score 51 < 60 |
-| /vietnam/firearms/ | market | NOINDEX | 51 | score 51 < 60 |
+| /vietnam/firearms/ | market | NOINDEX | 52 | score 52 < 60 |
 | /vietnam/flags/ | market | NOINDEX | 18 | only 8 active listings (< 10) |
 | /vietnam/grenades-ordnance/ | market | NOINDEX | 29 | score 29 < 60 |
 | /vietnam/helmets/ | market | NOINDEX | 41 | score 41 < 60 |
@@ -870,7 +872,7 @@ Added 0 · Updated 32 · Removed 0 · Submitted this run 32
 | /wwii/fine-art/ | market | NOT_GENERATED | 0 | no active listings |
 | /wwii/firearms/ | market | INDEX | 62 |  |
 | /wwii/flags/ | market | NOINDEX | 57 | score 57 < 60 |
-| /wwii/grenades-ordnance/ | market | NOINDEX | 36 | score 36 < 60 |
+| /wwii/grenades-ordnance/ | market | NOINDEX | 38 | score 38 < 60 |
 | /wwii/helmets/ | market | NOINDEX | 58 | score 58 < 60 |
 | /wwii/id-discs/ | market | NOINDEX | 13 | only 5 active listings (< 10) |
 | /wwii/medals-orders/ | market | NOINDEX | 51 | score 51 < 60 |
