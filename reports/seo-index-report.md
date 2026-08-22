@@ -1,6 +1,6 @@
 # RelicsOfWar — SEO Index Report
 
-_Generated 2026-08-22 from ArtifactSearch data exported 2026-08-22T11:42:16.911Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
+_Generated 2026-08-22 from ArtifactSearch data exported 2026-08-22T13:07:44.988Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
 
 ## Index state (2026-08-22)
 
@@ -77,7 +77,7 @@ Data: 28,842 public listings (6,777 without an era, so on no market page), 18,04
 
 ## IndexNow (§26–§27)
 
-Added 0 · Updated 56 · Removed 0 · Submitted this run 56
+Added 0 · Updated 6 · Removed 0 · Submitted this run 6
 
 ## Review queue (§49)
 

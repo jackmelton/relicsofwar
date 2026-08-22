@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-08-22T11:42:17.353Z",
- "dataGeneratedAt": "2026-08-22T11:42:16.911Z",
+ "generatedAt": "2026-08-22T13:07:46.282Z",
+ "dataGeneratedAt": "2026-08-22T13:07:44.988Z",
  "urls": {
   "/": {
    "type": "static",
@@ -6237,50 +6237,50 @@
   "/identify/confederate-belt-plates": {
    "type": "guide",
    "state": "INDEX",
-   "contentHash": "9215154f94abc394a8df084eec7defbec6609b66",
-   "lastmod": "2026-08-16",
+   "contentHash": "db42130e24876c570667302a218b127a7492de59",
+   "lastmod": "2026-08-22",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "9215154f94abc394a8df084eec7defbec6609b66"
+   "lastSubmittedHash": "db42130e24876c570667302a218b127a7492de59"
   },
   "/identify/civil-war-buttons": {
    "type": "guide",
    "state": "INDEX",
-   "contentHash": "3f356c36393e7ffcd7f612e4c08b3497ac2f508b",
-   "lastmod": "2026-08-16",
+   "contentHash": "15cde0af843a90ce1ca562555295b2a7c8a7e218",
+   "lastmod": "2026-08-22",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "3f356c36393e7ffcd7f612e4c08b3497ac2f508b"
+   "lastSubmittedHash": "15cde0af843a90ce1ca562555295b2a7c8a7e218"
   },
   "/identify/civil-war-bayonets": {
    "type": "guide",
    "state": "INDEX",
-   "contentHash": "232114c2fc74b5ada621001d309dd740a59fa447",
-   "lastmod": "2026-08-16",
+   "contentHash": "072ee475a6141d9bba9de621e1966e5d3e92bc3e",
+   "lastmod": "2026-08-22",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "232114c2fc74b5ada621001d309dd740a59fa447"
+   "lastSubmittedHash": "072ee475a6141d9bba9de621e1966e5d3e92bc3e"
   },
   "/identify/soldier-id-discs": {
    "type": "guide",
    "state": "INDEX",
-   "contentHash": "4a70190a204247105c428e270eefa8ed037eb16f",
-   "lastmod": "2026-08-16",
+   "contentHash": "567b3ff6a67eac2b473f11462678a83e9c42286e",
+   "lastmod": "2026-08-22",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "4a70190a204247105c428e270eefa8ed037eb16f"
+   "lastSubmittedHash": "567b3ff6a67eac2b473f11462678a83e9c42286e"
   },
   "/identify/cartridge-boxes": {
    "type": "guide",
    "state": "INDEX",
-   "contentHash": "16043245c77f30a0e07557bcfc0766477e114fe6",
-   "lastmod": "2026-08-16",
+   "contentHash": "9b9912d9103087a8b949272f55f38cfb8d36e23d",
+   "lastmod": "2026-08-22",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "16043245c77f30a0e07557bcfc0766477e114fe6"
+   "lastSubmittedHash": "9b9912d9103087a8b949272f55f38cfb8d36e23d"
   },
   "/identify/": {
    "type": "guide",
    "state": "INDEX",
-   "contentHash": "dbb4c9b6267fa6fccb7b5708948a9ad2afde0206",
-   "lastmod": "2026-08-16",
+   "contentHash": "f6bbad0655c4da56371a245eab2474692b6ae662",
+   "lastmod": "2026-08-22",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "dbb4c9b6267fa6fccb7b5708948a9ad2afde0206"
+   "lastSubmittedHash": "f6bbad0655c4da56371a245eab2474692b6ae662"
   }
  },
  "generatedFiles": [
