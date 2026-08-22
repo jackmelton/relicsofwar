@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-08-22T13:07:46.282Z",
- "dataGeneratedAt": "2026-08-22T13:07:44.988Z",
+ "generatedAt": "2026-08-22T15:18:14.626Z",
+ "dataGeneratedAt": "2026-08-22T15:18:14.048Z",
  "urls": {
   "/": {
    "type": "static",
@@ -6197,34 +6197,34 @@
   "/corrections/": {
    "type": "static",
    "state": "INDEX",
-   "contentHash": "87486770e94ebfe4bac2bfa7360bd515865023ab",
-   "lastmod": "2026-08-15",
+   "contentHash": "320c0d4c93dbcbd11c5296d7b7d979d7ae33b027",
+   "lastmod": "2026-08-22",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
+   "lastSubmittedHash": "320c0d4c93dbcbd11c5296d7b7d979d7ae33b027"
   },
   "/contact/": {
    "type": "static",
    "state": "INDEX",
-   "contentHash": "7cb0a0888a362b94de6d0c6f4fefa24759a24184",
-   "lastmod": "2026-08-19",
+   "contentHash": "a0726e3e67283dec02f02e1b42680ff89a5be69c",
+   "lastmod": "2026-08-22",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "7cb0a0888a362b94de6d0c6f4fefa24759a24184"
+   "lastSubmittedHash": "a0726e3e67283dec02f02e1b42680ff89a5be69c"
   },
   "/privacy/": {
    "type": "static",
    "state": "INDEX",
-   "contentHash": "9212d45fa5223c756bb770e078d5bcd661f7543c",
-   "lastmod": "2026-08-19",
+   "contentHash": "2a8a5b4e48043ec504b3207b0a6b412f4d3e74cc",
+   "lastmod": "2026-08-22",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "9212d45fa5223c756bb770e078d5bcd661f7543c"
+   "lastSubmittedHash": "2a8a5b4e48043ec504b3207b0a6b412f4d3e74cc"
   },
   "/terms/": {
    "type": "static",
    "state": "INDEX",
-   "contentHash": "20cb7015839b81cab5407a5f102ecc8f49ae7334",
-   "lastmod": "2026-08-19",
+   "contentHash": "1ceccb92c15369471ccf1c954e4e842aeca6292a",
+   "lastmod": "2026-08-22",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "20cb7015839b81cab5407a5f102ecc8f49ae7334"
+   "lastSubmittedHash": "1ceccb92c15369471ccf1c954e4e842aeca6292a"
   },
   "/404.html": {
    "type": "static",

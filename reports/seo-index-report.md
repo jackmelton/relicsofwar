@@ -1,6 +1,6 @@
 # RelicsOfWar — SEO Index Report
 
-_Generated 2026-08-22 from ArtifactSearch data exported 2026-08-22T13:07:44.988Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
+_Generated 2026-08-22 from ArtifactSearch data exported 2026-08-22T15:18:14.048Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
 
 ## Index state (2026-08-22)
 
@@ -31,53 +31,23 @@ Data: 28,842 public listings (6,777 without an era, so on no market page), 18,04
 ## Release checks (§75)
 
 - Errors: **0** ✓
-- Warnings: 88
+- Warnings: 11
 
 - ⚠️ /: description 173 chars
-- ⚠️ /early-republic/: description 178 chars
-- ⚠️ /indian-wars/veteran-organizations/: title 81 chars
-- ⚠️ /indian-wars/veteran-organizations/: description 187 chars
-- ⚠️ /indian-wars/veteran-organizations/page/2/: title 81 chars
-- ⚠️ /indian-wars/veteran-organizations/page/3/: title 81 chars
-- ⚠️ /indian-wars/veteran-organizations/page/4/: title 81 chars
-- ⚠️ /indian-wars/veteran-organizations/page/5/: title 81 chars
-- ⚠️ /price-guide/indian-wars/veteran-organizations/: title 84 chars
-- ⚠️ /civil-war/veteran-organizations/: title 79 chars
-- ⚠️ /civil-war/veteran-organizations/page/2/: title 79 chars
-- ⚠️ /civil-war/veteran-organizations/page/3/: title 79 chars
-- ⚠️ /civil-war/veteran-organizations/page/4/: title 79 chars
-- ⚠️ /civil-war/veteran-organizations/page/5/: title 79 chars
-- ⚠️ /price-guide/civil-war/veteran-organizations/: title 82 chars
-- ⚠️ /pre-wwi/veteran-organizations/: title 77 chars
-- ⚠️ /pre-wwi/veteran-organizations/: description 201 chars
-- ⚠️ /pre-wwi/veteran-organizations/page/2/: title 77 chars
-- ⚠️ /pre-wwi/veteran-organizations/page/3/: title 77 chars
-- ⚠️ /pre-wwi/veteran-organizations/page/4/: title 77 chars
-- ⚠️ /pre-wwi/veteran-organizations/page/5/: title 77 chars
-- ⚠️ /price-guide/pre-wwi/veteran-organizations/: title 80 chars
-- ⚠️ /price-guide/pre-wwi/veteran-organizations/: description 176 chars
-- ⚠️ /early-republic/uniforms/: description 171 chars
-- ⚠️ /wwi/veteran-organizations/: title 81 chars
-- ⚠️ /wwi/veteran-organizations/page/2/: title 81 chars
-- ⚠️ /wwi/veteran-organizations/page/3/: title 81 chars
-- ⚠️ /wwi/veteran-organizations/page/4/: title 81 chars
-- ⚠️ /price-guide/wwi/veteran-organizations/: title 84 chars
-- ⚠️ /pre-wwi/photography/: description 180 chars
-- ⚠️ /early-republic/photography/: description 171 chars
-- ⚠️ /indian-wars/accoutrements/: description 171 chars
-- ⚠️ /indian-wars/prints-paintings/: title 78 chars
-- ⚠️ /indian-wars/prints-paintings/: description 181 chars
-- ⚠️ /indian-wars/prints-paintings/page/2/: title 78 chars
-- ⚠️ /indian-wars/prints-paintings/page/3/: title 78 chars
-- ⚠️ /price-guide/indian-wars/prints-paintings/: title 81 chars
-- ⚠️ /pre-wwi/documents/: description 180 chars
-- ⚠️ /wwii/veteran-organizations/: title 82 chars
-- ⚠️ /wwii/veteran-organizations/page/2/: title 82 chars
-- … 48 more warnings
+- ⚠️ /pre-wwi/veteran-organizations/: description 175 chars
+- ⚠️ /price-guide/spanish-american-war/veteran-organizations/: title 77 chars
+- ⚠️ /about/: description 203 chars
+- ⚠️ /identify/confederate-belt-plates: title 87 chars
+- ⚠️ /identify/confederate-belt-plates: description 178 chars
+- ⚠️ /identify/civil-war-buttons: title 88 chars
+- ⚠️ /identify/civil-war-bayonets: title 80 chars
+- ⚠️ /identify/soldier-id-discs: title 78 chars
+- ⚠️ /identify/soldier-id-discs: description 171 chars
+- ⚠️ /identify/cartridge-boxes: title 77 chars
 
 ## IndexNow (§26–§27)
 
-Added 0 · Updated 6 · Removed 0 · Submitted this run 6
+Added 0 · Updated 4 · Removed 0 · Submitted this run 4
 
 ## Review queue (§49)
 
