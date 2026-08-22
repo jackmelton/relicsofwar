@@ -89,6 +89,11 @@ export function inlineMd(s) {
     .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]*)\)/g, (m, t, u) => `<a href="${u}"${u.startsWith('http') ? ' rel="noopener"' : ''}>${t}</a>`);
 }
 
+/** Wrap e-mail addresses so Cloudflare's Email Address Obfuscation leaves them
+ *  alone. Obfuscated addresses become /cdn-cgi/l/email-protection links — a URL
+ *  that answers 404 to crawlers and shows up as a broken internal link. */
+export const protectEmails = (html) => String(html).replace(/(?<![\w.@/:-])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})(?![\w@])/g, '<!--email_off-->$1<!--/email_off-->');
+
 export function markdownToHtml(md) {
   const lines = md.split('\n');
   const out = [];
@@ -107,7 +112,7 @@ export function markdownToHtml(md) {
     para.push(line.trim());
   }
   flushPara(); flushList();
-  return out.join('\n');
+  return protectEmails(out.join('\n'));
 }
 
 export const PUBLISHABLE_STATES = new Set(['VERIFIED', 'PUBLISHED']);

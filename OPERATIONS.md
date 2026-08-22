@@ -36,6 +36,32 @@ You never need to touch the generated files at the repo root.
   the `msvalidate.01` meta tag the build emits on every page — **keep both**;
   `/sitemap.xml` submitted. IndexNow is keyed (`config/seo-index-policy.json` →
   `indexnow.key`, served at `/<key>.txt`) and Bing acknowledged the first batch.
+- ⬜ **`www` → apex redirect** (Cloudflare dashboard, zone `relicsofwar.com`).
+  `https://www.relicsofwar.com/` currently answers 200 with a copy of the site
+  (canonical tags point at the apex, so it is not indexed, but it is still a
+  duplicate host). Cloudflare Pages `_redirects` cannot match on hostname, so
+  this has to be a zone Redirect Rule — Rules → Redirect Rules → Create rule:
+  *When incoming requests match* — Field `Hostname`, Operator `equals`, Value
+  `www.relicsofwar.com`; *Then* — Dynamic redirect, expression
+  `concat("https://relicsofwar.com", http.request.uri.path)`, status `301`,
+  *Preserve query string* on. (Same as the built-in "Redirect from WWW to
+  root" template.) Verify with
+  `curl -sI https://www.relicsofwar.com/about/` → `301` + `location: https://relicsofwar.com/about/`.
+- ⬜ **Search Console sitemap children.** `/sitemap.xml` is a sitemap *index*
+  (five children under `/sitemaps/`). Google read the index once at submission
+  and reports 0 discovered URLs until it gets round to the children, which for
+  a new property can take weeks. Submit the children directly in Search Console
+  → Sitemaps (each is processed at once and reports its own count):
+  `/sitemaps/core.xml`, `/sitemaps/eras.xml`, `/sitemaps/categories.xml`,
+  `/sitemaps/price-guide.xml`, `/sitemaps/research.xml`. Leave `/sitemap.xml`
+  submitted as well.
+- ℹ️ **Cloudflare managed robots.txt.** The zone has Cloudflare's *Content
+  Signals* managed robots.txt on, so the live `/robots.txt` is prefixed with a
+  Cloudflare block (`Content-Signal: search=yes,ai-train=no,use=reference` plus
+  `Disallow: /` for GPTBot, ClaudeBot, CCBot, Bytespider, Google-Extended and
+  similar AI crawlers). Our own rules and the `Sitemap:` line follow it intact;
+  Googlebot and Bingbot are unaffected. Turn it off under Security → Bots if
+  AI-search visibility is wanted.
 - ✅ **ArtifactSearch banner ads** on every page (`assets/ads.js`,
   publisher=relicsofwar): leaderboard under the header, rectangle in the footer;
   house ads when nothing is booked; viewable-impression counting; paid links

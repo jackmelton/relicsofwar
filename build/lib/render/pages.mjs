@@ -5,6 +5,18 @@ import { esc, attr, money, cents, num, prettyDate, monthYear, isoDate } from '..
 import { head, foot, breadcrumbs, SITE, AS, ORG_LD, WEBSITE_LD, FALLBACK_IMAGE, pageLd, itemListLd } from './layout.mjs';
 
 const T = (s, config) => `${s}${config.titles.suffix}`;
+/* Fit a title inside config.titles.maxLength without ever cutting the era or
+   category name (master brief §6): try the full form, then without the site
+   suffix, then without the optional qualifier ("for Sale"), then the bare name. */
+const fitTitle = (core, optional, config) => {
+  const max = config.titles.maxLength;
+  const tries = [T(core + optional, config), core + optional, T(core, config), core];
+  return tries.find((t) => t.length <= max) || core;
+};
+/* Meta descriptions: keep every fact, drop only the optional tail when the
+   result would run past what search engines display. */
+const DESC_MAX = 160;
+const fitDesc = (core, tail, end = '') => ((core + tail + end).length <= DESC_MAX ? core + tail + end : core + end);
 /* Short era names for <title> only (the H1 keeps the full name). */
 const ERA_SHORT = { 'pre-wwi': 'Pre-WWI', 'early-republic': 'Early Republic', 'antebellum-frontier': 'Antebellum', 'indian-wars': 'Indian Wars', 'postwar-occupation': 'Postwar', 'early-american': 'Early American', 'colonial': 'Colonial' };
 const eraT = (era) => ERA_SHORT[era.slug] || era.name;
@@ -181,7 +193,7 @@ export function renderEra({ era, model, decisions, d, config }) {
   const bc = breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Browse by Era', url: '/eras/' }, { name: era.name, url: era.url }]);
   const yrs = `${era.startYear ?? ''}${era.endYear ? '–' + era.endYear : ''}`;
   const title = T(`${eraT(era)} Military Antiques & Relics`, config);
-  const description = `${era.name} (${yrs}) military antiques — ${gen.slice(0, 2).map((n) => catT(n.category.name, 24).toLowerCase()).join(', ')}${gen.length > 2 ? ' and more' : ''}: ${num(era.itemCount)} listings from vetted sellers${era.soldCount ? `, ${num(era.soldCount)} recorded sales` : ''}.`;
+  const description = fitDesc(`${era.name} (${yrs}) military antiques — ${gen.slice(0, 2).map((n) => catT(n.category.name, 24).toLowerCase()).join(', ')}${gen.length > 2 ? ' and more' : ''}: ${num(era.itemCount)} listings`, ' from vetted sellers', `${era.soldCount ? `, ${num(era.soldCount)} recorded sales` : ''}.`);
   const jsonld = [bc.ld, pageLd({ type: 'CollectionPage', path: era.url, name: `${era.name} Military Antiques`, description, breadcrumb: bc.ld, about: { '@type': 'Thing', name: era.name }, mainEntity: itemListLd({ name: `${era.name} categories`, items: gen.map((n) => ({ name: n.category.name, url: SITE + n.url })) }) })];
   const canonical = SITE + d.canonical;
   const html = head({ title, description, path: era.url, canonical, state: d.state, jsonld, stateNote: d.note }) + `
@@ -233,9 +245,9 @@ export function renderMarket({ node: n, model, decisions, d, config }) {
     const slice = n.items.slice((p - 1) * per, p * per);
     const bc = breadcrumbs(p === 1 ? bcBase : [...bcBase, { name: `Page ${p}`, url: path }]);
     const baseTitle = `${eraT(n.era)} ${catT(catName)}`;
-    const title = T(p === 1 ? `${baseTitle} for Sale` : `${baseTitle} — Page ${p}`, config);
+    const title = p === 1 ? fitTitle(baseTitle, ' for Sale', config) : fitTitle(`${baseTitle} — Page ${p}`, '', config);
     const description = p === 1
-      ? `${num(n.items.length)} ${eraName} ${catName.toLowerCase()} listings from ${n.sourceCount} dealer${n.sourceCount === 1 ? '' : 's'} and auction house${n.sourceCount === 1 ? '' : 's'}${n.stats.n >= config.priceGuide.minSalesToGenerate ? `, plus sold prices from ${num(n.stats.n)} recorded sales` : ''}. Each links to its seller.`
+      ? fitDesc(`${num(n.items.length)} ${eraName} ${catName.toLowerCase()} listings from ${n.sourceCount} dealer${n.sourceCount === 1 ? '' : 's'} and auction house${n.sourceCount === 1 ? '' : 's'}${n.stats.n >= config.priceGuide.minSalesToGenerate ? `, plus sold prices from ${num(n.stats.n)} recorded sales` : ''}.`, ' Each links to its seller.')
       : `${eraName} ${catName.toLowerCase()} — page ${p} of ${totalPages}. Current listings from vetted dealers and auction houses.`;
     const state = p === 1 ? d.state : 'NOINDEX';
     const canonical = p === 1 ? SITE + d.canonical : SITE + path;
@@ -323,8 +335,8 @@ export function renderPriceGuide({ node: n, model, decisions, d, config, methodo
   const s = n.stats;
   const eraName = n.era.name, catName = n.category.name;
   const bc = breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Price Guide', url: '/price-guide/' }, { name: eraName, url: n.era.url }, { name: `${catName} Price Guide`, url: n.priceGuideUrl }]);
-  const title = T(`${eraT(n.era)} ${catT(catName)} Price Guide`, config);
-  const description = `${eraName} ${catName.toLowerCase()} values from ${num(s.n)} recorded sales${s.from ? ` (${span(s.from, s.to)})` : ''}: median ${cents(s.median)}, range ${cents(s.low)}–${cents(s.high)}, with every sale listed.`;
+  const title = fitTitle(`${eraT(n.era)} ${catT(catName)} Price Guide`, '', config);
+  const description = fitDesc(`${eraName} ${catName.toLowerCase()} values from ${num(s.n)} recorded sales${s.from ? ` (${span(s.from, s.to)})` : ''}: median ${cents(s.median)}, range ${cents(s.low)}–${cents(s.high)}`, ', with every sale listed', '.');
   const md = decisions.get(n.url);
   const hasMarket = md && md.state !== 'NOT_GENERATED';
   const jsonld = [bc.ld, pageLd({ type: 'CollectionPage', path: n.priceGuideUrl, name: `${eraName} ${catName} Price Guide`, description, breadcrumb: bc.ld, about: { '@type': 'Thing', name: `${eraName} ${catName}` }, mainEntity: itemListLd({ name: `Recent recorded ${eraName} ${catName.toLowerCase()} sales`, items: s.recent.map((r) => ({ name: r.title, url: r.url })) }) })];
