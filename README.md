@@ -29,7 +29,8 @@ ArtifactSearch  ──/api/export/relicsofwar──▶  build/build.mjs  ──�
 | `config/seo-index-policy.json` | **The administration.** Score weights, thresholds, minimums, growth gate, IndexNow. |
 | `config/homepage-featured.json` | Homepage prominence (Top-25 style) — never indexability. |
 | `content/` | Editorial: era / market / price-guide intros and site pages, each with a status. Only `VERIFIED` / `PUBLISHED` renders. |
-| `identify/` | The Identification Library — hand-written guides (the build refreshes their header/footer). |
+| `identify/` | The Identification Library — hand-written guides (the build refreshes their header/footer and the managed `<!-- SEO:auto -->` head block: robots, share image, Twitter card, BreadcrumbList + page entity). |
+| `assets/og/relics-of-war-social.png` | The site share image (1200×630) — `og:image` / `twitter:image` on every page that shows no artifact photo of its own. Never generated; keep the URL stable. |
 | `state/index-state.json` | Per-URL state, score, content hash, lastmod. Drives sitemaps, IndexNow and the growth gate. |
 | `reports/seo-index-report.md` | The index-bloat dashboard, rewritten every build. |
 | `docs/` | `SEO-INDEX-QUALITY-REQUIREMENTS.md` (the controlling brief) · `ARCHITECTURE.md` (how each requirement is met). |

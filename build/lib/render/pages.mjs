@@ -2,7 +2,7 @@
    URL; the writer maps /a/b/ → a/b/index.html). Nothing here decides
    indexability — that arrived in `d` (the engine decision). */
 import { esc, attr, money, cents, num, prettyDate, monthYear, isoDate } from '../util.mjs';
-import { head, foot, breadcrumbs, SITE, AS, ORG_LD, WEBSITE_LD } from './layout.mjs';
+import { head, foot, breadcrumbs, SITE, AS, ORG_LD, WEBSITE_LD, FALLBACK_IMAGE, pageLd, itemListLd } from './layout.mjs';
 
 const T = (s, config) => `${s}${config.titles.suffix}`;
 /* Short era names for <title> only (the H1 keeps the full name). */
@@ -84,7 +84,7 @@ export function renderHome({ model, decisions, config, featured }) {
   const civilWar = model.eraBySlug.get('civil-war');
   const title = 'Relics of War — Military Antiques by Era, Guides & Prices';
   const description = 'Military antiques by war and category, Revolution through Vietnam — recorded sold prices, identification guides, and current listings from vetted dealers and auction houses.';
-  const jsonld = [WEBSITE_LD, ORG_LD];
+  const jsonld = [WEBSITE_LD, ORG_LD, pageLd({ path: '/', name: title, description, image: FALLBACK_IMAGE })];
   const html = head({ title, description, path: '/', canonical: `${SITE}/`, state: 'INDEX', jsonld }) + `
 <main>
   <section class="hero">
@@ -152,7 +152,8 @@ export function renderErasIndex({ model, decisions, config }) {
   const bc = breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Browse by Era', url: '/eras/' }]);
   const title = T('Browse Military Antiques by War & Era', config);
   const description = `Every war and era in the marketplace, from ${eras[0]?.name ?? 'the Colonial period'} to ${eras.at(-1)?.name ?? 'Vietnam'} — current listings by category and recorded sold prices for each.`;
-  const html = head({ title, description, path: '/eras/', canonical: `${SITE}/eras/`, state: 'INDEX', jsonld: [bc.ld] }) + `
+  const jsonld = [bc.ld, pageLd({ type: 'CollectionPage', path: '/eras/', name: 'Browse Military Antiques by War & Era', description, breadcrumb: bc.ld, mainEntity: itemListLd({ name: 'Wars and eras', items: eras.map((e) => ({ name: e.name, url: SITE + e.url })) }) })];
+  const html = head({ title, description, path: '/eras/', canonical: `${SITE}/eras/`, state: 'INDEX', jsonld }) + `
 <main class="wrap">
   ${bc.html}
   <article class="hub">
@@ -181,7 +182,7 @@ export function renderEra({ era, model, decisions, d, config }) {
   const yrs = `${era.startYear ?? ''}${era.endYear ? '–' + era.endYear : ''}`;
   const title = T(`${eraT(era)} Military Antiques & Relics`, config);
   const description = `${era.name} (${yrs}) military antiques — ${gen.slice(0, 2).map((n) => catT(n.category.name, 24).toLowerCase()).join(', ')}${gen.length > 2 ? ' and more' : ''}: ${num(era.itemCount)} listings from vetted sellers${era.soldCount ? `, ${num(era.soldCount)} recorded sales` : ''}.`;
-  const jsonld = [bc.ld, { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${era.name} Military Antiques`, url: SITE + era.url, isPartOf: { '@id': `${SITE}/#website` }, about: era.name }];
+  const jsonld = [bc.ld, pageLd({ type: 'CollectionPage', path: era.url, name: `${era.name} Military Antiques`, description, breadcrumb: bc.ld, about: { '@type': 'Thing', name: era.name }, mainEntity: itemListLd({ name: `${era.name} categories`, items: gen.map((n) => ({ name: n.category.name, url: SITE + n.url })) }) })];
   const canonical = SITE + d.canonical;
   const html = head({ title, description, path: era.url, canonical, state: d.state, jsonld, stateNote: d.note }) + `
 <main class="wrap">
@@ -238,9 +239,14 @@ export function renderMarket({ node: n, model, decisions, d, config }) {
       : `${eraName} ${catName.toLowerCase()} — page ${p} of ${totalPages}. Current listings from vetted dealers and auction houses.`;
     const state = p === 1 ? d.state : 'NOINDEX';
     const canonical = p === 1 ? SITE + d.canonical : SITE + path;
-    const jsonld = [bc.ld];
-    if (p === 1) jsonld.push({ '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${eraName} ${catName}`, url: SITE + n.url, isPartOf: { '@id': `${SITE}/#website` }, about: `${eraName} ${catName}` });
-    const ogImage = slice[0]?.imageUrl ? imgUrl(slice[0].imageUrl, 800) : undefined;
+    // Share image: the first listing photo on this page (a representative artifact the page shows), else the site image.
+    const ogImage = slice[0]?.imageUrl ? { url: imgUrl(slice[0].imageUrl, 1200), alt: slice[0].title } : FALLBACK_IMAGE;
+    const jsonld = [bc.ld, pageLd({
+      type: 'CollectionPage', path, name: p === 1 ? `${eraName} ${catName}` : `${eraName} ${catName} — page ${p}`, description, image: ogImage, breadcrumb: bc.ld,
+      about: { '@type': 'Thing', name: `${eraName} ${catName}` },
+      // Only the cards actually rendered on page 1 (§8: never hidden records); pagination pages are noindex and carry just the page entity.
+      mainEntity: p === 1 ? itemListLd({ name: `${eraName} ${catName} listings`, items: slice.map((l) => ({ name: l.title, url: l.url, ...(l.imageUrl ? { image: imgUrl(l.imageUrl, 800) } : {}) })) }) : undefined,
+    })];
 
     const pager = totalPages > 1 ? `<nav class="pager" aria-label="Pagination">
       ${p > 1 ? `<a href="${p === 2 ? n.url : `${n.url}page/${p - 1}/`}" rel="prev">&larr; Newer</a>` : '<span></span>'}
@@ -285,7 +291,9 @@ export function renderPriceGuideIndex({ model, decisions, config, methodologyUrl
   const bc = breadcrumbs([{ name: 'Home', url: '/' }, { name: 'Price Guide', url: '/price-guide/' }]);
   const title = T('Military Antique Price Guide — Recorded Sold Prices', config);
   const description = `What military antiques actually sell for: medians and ranges from ${num(totalSales)} recorded auction and dealer sales, by war and category, with the sample size on every figure.`;
-  const html = head({ title, description, path: '/price-guide/', canonical: `${SITE}/price-guide/`, state: 'INDEX', jsonld: [bc.ld] }) + `
+  for (const list of byEra.values()) list.sort((a, b) => b.stats.n - a.stats.n);
+  const jsonld = [bc.ld, pageLd({ type: 'CollectionPage', path: '/price-guide/', name: 'Military Antique Price Guide — Recorded Sold Prices', description, breadcrumb: bc.ld, mainEntity: itemListLd({ name: 'Price guides by war and category', items: eras.flatMap((e) => byEra.get(e.slug).map((n) => ({ name: `${e.name} ${n.category.name} Price Guide`, url: SITE + n.priceGuideUrl }))) }) })];
+  const html = head({ title, description, path: '/price-guide/', canonical: `${SITE}/price-guide/`, state: 'INDEX', jsonld }) + `
 <main class="wrap">
   ${bc.html}
   <article class="hub">
@@ -319,7 +327,8 @@ export function renderPriceGuide({ node: n, model, decisions, d, config, methodo
   const description = `${eraName} ${catName.toLowerCase()} values from ${num(s.n)} recorded sales${s.from ? ` (${span(s.from, s.to)})` : ''}: median ${cents(s.median)}, range ${cents(s.low)}–${cents(s.high)}, with every sale listed.`;
   const md = decisions.get(n.url);
   const hasMarket = md && md.state !== 'NOT_GENERATED';
-  const html = head({ title, description, path: n.priceGuideUrl, canonical: SITE + d.canonical, state: d.state, jsonld: [bc.ld], stateNote: d.note }) + `
+  const jsonld = [bc.ld, pageLd({ type: 'CollectionPage', path: n.priceGuideUrl, name: `${eraName} ${catName} Price Guide`, description, breadcrumb: bc.ld, about: { '@type': 'Thing', name: `${eraName} ${catName}` }, mainEntity: itemListLd({ name: `Recent recorded ${eraName} ${catName.toLowerCase()} sales`, items: s.recent.map((r) => ({ name: r.title, url: r.url })) }) })];
+  const html = head({ title, description, path: n.priceGuideUrl, canonical: SITE + d.canonical, state: d.state, jsonld, stateNote: d.note }) + `
 <main class="wrap">
   ${bc.html}
   <article class="pg">
@@ -357,8 +366,8 @@ export function renderPriceGuide({ node: n, model, decisions, d, config, methodo
 export function renderStaticPage({ page, model, config }) {
   const bc = breadcrumbs([{ name: 'Home', url: '/' }, { name: page.title, url: page.url }]);
   const title = T(page.title, config);
-  const jsonld = [bc.ld];
-  if (page.article) jsonld.push({ '@context': 'https://schema.org', '@type': 'Article', headline: page.title, url: SITE + page.url, publisher: { '@id': 'https://historicalpublicationsllc.com/#organization' } });
+  const pageType = page.slug === 'about' ? 'AboutPage' : page.slug === 'contact' ? 'ContactPage' : 'WebPage';
+  const jsonld = [bc.ld, pageLd({ type: pageType, path: page.url, name: page.title, description: page.description, breadcrumb: bc.ld })];
   const html = head({ title, description: page.description, path: page.url, canonical: SITE + page.url, state: 'INDEX', jsonld }) + `
 <main class="wrap">
   ${bc.html}

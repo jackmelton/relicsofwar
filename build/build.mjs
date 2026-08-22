@@ -14,16 +14,16 @@
    the build owns is tracked in state/index-state.json and swept each run.
    Everything else in the repo (identify/, assets/, docs/, content/…) is left alone.
    ========================================================================== */
-import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, readdirSync, appendFileSync, mkdtempSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, cpSync, appendFileSync, mkdtempSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { tmpdir } from 'node:os';
-import { sha1, isoDate } from './lib/util.mjs';
+import { sha1, isoDate, esc } from './lib/util.mjs';
 import { loadFromDir, loadFromApi } from './lib/fetch.mjs';
 import { buildModel } from './lib/model.mjs';
 import { evaluate, explain } from './lib/engine.mjs';
 import { renderHome, renderErasIndex, renderEra, renderMarket, renderPriceGuideIndex, renderPriceGuide, renderStaticPage, render404 } from './lib/render/pages.mjs';
-import { nav, foot } from './lib/render/layout.mjs';
+import { nav, foot, breadcrumbs, pageLd, itemListLd, socialImageTags, jsonLdScript, FALLBACK_IMAGE, SITE, SITE_NAME } from './lib/render/layout.mjs';
 import { buildSitemaps, robotsTxt } from './lib/sitemaps.mjs';
 import { validateSite } from './lib/validate.mjs';
 import { planIndexNow, submitIndexNow } from './lib/indexnow.mjs';
@@ -106,7 +106,7 @@ for (const g of model.guides.filter((x) => x.exists)) guidePages.push({ path: g.
 if (existsSync(join(ROOT, 'identify/index.html'))) guidePages.push({ path: '/identify/', file: join(ROOT, 'identify/index.html') });
 for (const gp of guidePages) {
   let html = readFileSync(gp.file, 'utf8');
-  const fresh = refreshChrome(html, gp.path, model.pages, legacyPriceGuideTarget);
+  const fresh = refreshChrome(html, gp.path, model, legacyPriceGuideTarget);
   if (fresh !== html && !CHECK) writeFileSync(gp.file, fresh);
   html = fresh;
   pages.push({ path: gp.path, html, type: 'guide', state: 'INDEX', group: 'research', hash: sha1(html.replace(/<footer[\s\S]*?<\/footer>/, '').replace(/<header[\s\S]*?<\/header>/, '')), external: true, file: gp.file });
@@ -143,7 +143,7 @@ if (!CHECK) for (const era of model.eras) if (existsSync(join(ROOT, era.slug))) 
 for (const p of pages) if (!p.external) writeOut(p.path, p.html);
 // guides in check mode: write the refreshed copies so the validator sees what a real build would commit
 if (CHECK) for (const p of pages.filter((x) => x.external)) { const rel = p.path.endsWith('/') ? p.path.slice(1) + 'index.html' : p.path.slice(1) + '.html'; mkdirSync(dirname(join(OUT, rel)), { recursive: true }); writeFileSync(join(OUT, rel), p.html); }
-if (CHECK) { mkdirSync(join(OUT, 'assets'), { recursive: true }); for (const f of readdirSync(join(ROOT, 'assets'))) if (f.endsWith('.css') || f.endsWith('.js')) writeFileSync(join(OUT, 'assets', f), readFileSync(join(ROOT, 'assets', f))); }
+if (CHECK) cpSync(join(ROOT, 'assets'), join(OUT, 'assets'), { recursive: true });
 
 const sitemapEntries = pages.filter((p) => p.state === 'INDEX').map((p) => ({ url: p.path, group: p.group, lastmod: nextState.urls[p.path].lastmod }));
 for (const f of buildSitemaps({ entries: sitemapEntries, config, today })) writeOut(f.path, f.xml);
@@ -264,17 +264,61 @@ function redirectsFile({ model, decisions }) {
 }
 
 /** Replace the header/footer chrome inside a hand-written page (identify/*.html)
- *  with the current site chrome; add site.css. Idempotent. */
-function refreshChrome(html, path, sitePages, legacyTarget) {
+ *  with the current site chrome; add site.css; regenerate the managed SEO block
+ *  in <head> (robots, share image, Twitter card, BreadcrumbList + page entity).
+ *  Idempotent. The page's own title, description, og:title/description, Article
+ *  and FAQ markup are curated by hand and never touched (§6). */
+function refreshChrome(html, path, model, legacyTarget) {
   let out = html;
   const navHtml = nav(path).trim();
   // header + the leaderboard slot that follows it (idempotent: the optional group swallows a previous run's slot)
   out = out.replace(/<header class="site">[\s\S]*?<\/header>(\s*<div class="wrap"><(?:div|aside) class="row-ad"[^>]*><\/(?:div|aside)><\/div>)?/, navHtml);
-  const footHtml = foot(sitePages).replace(/^\s*/, '').replace(/<\/body>\s*<\/html>\s*$/, '').trim();
+  const footHtml = foot(model.pages).replace(/^\s*/, '').replace(/<\/body>\s*<\/html>\s*$/, '').trim();
   out = out.replace(/<footer class="site">[\s\S]*?<\/footer>(\s*<script>document\.getElementById\('yr'\)[^<]*<\/script>)?(\s*<script src="\/assets\/ads\.js" defer><\/script>)?/, footHtml);
   if (!/assets\/site\.css/.test(out)) out = out.replace('<link rel="stylesheet" href="/assets/relics.css">', '<link rel="stylesheet" href="/assets/relics.css">\n<link rel="stylesheet" href="/assets/site.css">');
+  // managed SEO block — replaces the one a previous run (or SEO/tools/inject-seo.mjs) left behind
+  const block = guideSeoBlock(out, path, model);
+  const BLOCK = /<!-- SEO:auto[\s\S]*?<!-- \/SEO:auto -->/;
+  out = BLOCK.test(out) ? out.replace(BLOCK, block) : out.replace('</head>', `${block}\n</head>`);
   // retired destinations inside guide bodies
   out = out.replace(/href="\/membership"/g, 'href="https://artifactsearch.com/account/register" rel="noopener"').replace(/href="\/submit"/g, 'href="/price-guide/"');
   out = out.replace(/href="\/price-guide\/([a-z-]+)\/"/g, (m, cat) => `href="${legacyTarget(cat)}"`);
   return out;
+}
+
+/** The managed <head> block for a hand-written guide: everything here is derived
+ *  from the page's own visible content (title, description, breadcrumb trail) or
+ *  the site constants — nothing is invented (§8, §9). */
+function guideSeoBlock(html, path, model) {
+  const decode = (v) => String(v ?? '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\s+/g, ' ').trim();
+  const meta = (re) => decode(re.exec(html)?.[1]);
+  const title = meta(/<title>([^<]*)<\/title>/i);
+  const name = title.replace(/\s*[—|-]\s*Relics of War\s*$/i, '');
+  const description = meta(/<meta name="description" content="([^"]*)"/i);
+  const ogTitle = meta(/<meta property="og:title" content="([^"]*)"/i) || title;
+  const ogDescription = meta(/<meta property="og:description" content="([^"]*)"/i) || description;
+  // BreadcrumbList from the visible trail: <div class="breadcrumb"><a href="/">Home</a> › <a href="/identify/">Identify</a> › Current</div>
+  const trail = /<div class="breadcrumb">([\s\S]*?)<\/div>/i.exec(html)?.[1] ?? '';
+  const crumbs = trail.split(/&rsaquo;|›/).map((t) => t.trim()).filter(Boolean).map((t) => {
+    const a = /<a href="([^"]+)">([^<]*)<\/a>/.exec(t);
+    return a ? { name: decode(a[2]), url: a[1] } : { name: decode(t.replace(/<[^>]+>/g, '')), url: path };
+  });
+  const bc = crumbs.length >= 2 ? breadcrumbs(crumbs) : null;
+  const isLibrary = path === '/identify/';
+  const guides = model.guides.filter((g) => g.exists);
+  const page = pageLd({
+    type: isLibrary ? 'CollectionPage' : 'WebPage',
+    path, name, description, image: FALLBACK_IMAGE, breadcrumb: bc?.ld,
+    mainEntity: isLibrary ? itemListLd({ name: 'Identification guides', items: guides.map((g) => ({ name: g.title, url: SITE + g.url })) }) : undefined,
+  });
+  return [
+    '<!-- SEO:auto — managed by build/build.mjs (refreshChrome). Edit the page, not this block. -->',
+    '<meta name="robots" content="index,follow,max-image-preview:large">',
+    `<meta property="og:site_name" content="${SITE_NAME}">`,
+    `<meta property="og:type" content="${isLibrary ? 'website' : 'article'}">`,
+    '<meta property="og:locale" content="en_US">',
+    socialImageTags(FALLBACK_IMAGE, { title: ogTitle, description: ogDescription }),
+    jsonLdScript([bc?.ld, page]),
+    '<!-- /SEO:auto -->',
+  ].join('\n');
 }

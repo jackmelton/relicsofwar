@@ -82,8 +82,22 @@ export function validateSite({ root, pages, decisions, config }) {
     }
 
     // JSON-LD parses
-    for (const m of html.matchAll(RX.jsonld)) {
+    const ldBlocks = [...html.matchAll(RX.jsonld)];
+    for (const m of ldBlocks) {
       try { JSON.parse(m[1]); } catch { err(`${p.path}: invalid JSON-LD`); }
+    }
+
+    // social metadata + structured data on every INDEX page (master brief §8–§9)
+    const ogImage = (/<meta property="og:image" content="([^"]*)"/.exec(html)?.[1] ?? '').replace(/&amp;/g, '&');
+    if (p.state === 'INDEX') {
+      if (!ogImage) err(`${p.path}: missing og:image`);
+      else if (!ogImage.startsWith('https://')) err(`${p.path}: og:image not https (${ogImage})`);
+      else if (ogImage.startsWith(SITE + '/') && !existsSync(join(root, ogImage.slice(SITE.length + 1)))) err(`${p.path}: og:image ${ogImage} is not a file in the output`);
+      if (!/<meta property="og:image:alt" content="[^"]+"/.test(html)) err(`${p.path}: missing og:image:alt`);
+      if (!/<meta name="twitter:card" content="[^"]+"/.test(html)) err(`${p.path}: missing twitter:card`);
+      if (!/<meta name="twitter:image" content="[^"]+"/.test(html)) err(`${p.path}: missing twitter:image`);
+      if (!ldBlocks.length) err(`${p.path}: no JSON-LD`);
+      if (p.path !== '/' && !/"@type":"BreadcrumbList"/.test(html)) err(`${p.path}: no BreadcrumbList JSON-LD`);
     }
 
     // internal links resolve; count inbound
