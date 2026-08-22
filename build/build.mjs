@@ -283,6 +283,10 @@ function refreshChrome(html, path, model, legacyTarget) {
   // retired destinations inside guide bodies
   out = out.replace(/href="\/membership"/g, 'href="https://artifactsearch.com/account/register" rel="noopener"').replace(/href="\/submit"/g, 'href="/price-guide/"');
   out = out.replace(/href="\/price-guide\/([a-z-]+)\/"/g, (m, cat) => `href="${legacyTarget(cat)}"`);
+  // Cloudflare's Email Address Obfuscation rewrites ANY mailto: href — even the
+  // address-less "share by e-mail" button — into /cdn-cgi/l/email-protection,
+  // which answers 404 to crawlers. Wrap it so Cloudflare leaves it alone (idempotent).
+  out = out.replace(/(?<!<!--email_off-->)(<a class="share-btn" href="mailto:[^"]*"[^>]*>[\s\S]*?<\/a>)/g, '<!--email_off-->$1<!--/email_off-->');
   return out;
 }
 

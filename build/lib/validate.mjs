@@ -100,6 +100,13 @@ export function validateSite({ root, pages, decisions, config }) {
       if (p.path !== '/' && !/"@type":"BreadcrumbList"/.test(html)) err(`${p.path}: no BreadcrumbList JSON-LD`);
     }
 
+    // every mailto: must sit inside <!--email_off--> … <!--/email_off-->, or Cloudflare's
+    // Email Address Obfuscation turns it into a /cdn-cgi/l/email-protection link (404 to crawlers)
+    for (const m of html.matchAll(/<a\b[^>]*href="mailto:/g)) {
+      const before = html.slice(Math.max(0, m.index - 40), m.index);
+      if (!/<!--email_off-->\s*$/.test(before)) warn(`${p.path}: mailto: link outside <!--email_off--> (Cloudflare will obfuscate it)`);
+    }
+
     // internal links resolve; count inbound
     for (const m of html.matchAll(RX.href)) {
       let h = m[1];
