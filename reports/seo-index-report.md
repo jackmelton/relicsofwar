@@ -1,32 +1,32 @@
 # RelicsOfWar — SEO Index Report
 
-_Generated 2026-08-26 from ArtifactSearch data exported 2026-08-26T11:44:55.796Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
+_Generated 2026-08-27 from ArtifactSearch data exported 2026-08-27T15:12:56.186Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
 
-## Index state (2026-08-26)
+## Index state (2026-08-27)
 
 | | Count | Week-over-week |
 |---|---:|---|
-| Total public URLs generated | 836 | 836 (+52, +7% vs 2026-08-19) |
-| **INDEX** | **89** | 89 (+7, +9% vs 2026-08-19) |
-| NOINDEX | 747 | 747 (+45, +6% vs 2026-08-19) |
-| Canonicalized (to parent / ArtifactSearch) | 0 | 0 (+0, +0% vs 2026-08-19) |
-| Not generated (would be empty/thin) | 297 | 297 (+21, +8% vs 2026-08-19) |
+| Total public URLs generated | 814 | 814 (+27, +3% vs 2026-08-20) |
+| **INDEX** | **87** | 87 (+4, +5% vs 2026-08-20) |
+| NOINDEX | 727 | 727 (+23, +3% vs 2026-08-20) |
+| Canonicalized (to parent / ArtifactSearch) | 0 | 0 (+0, +0% vs 2026-08-20) |
+| Not generated (would be empty/thin) | 296 | 296 (+21, +8% vs 2026-08-20) |
 
 | Page type | INDEX | NOINDEX | Canonicalized |
 |---|---:|---:|---:|
 | Era hubs | 10 | 5 | — |
-| Market pages (era × category) | 42 | 316 | 0 |
-| Pagination pages | 0 | 304 | — |
-| Price-guide pages | 18 | 121 | — |
+| Market pages (era × category) | 40 | 316 | 0 |
+| Pagination pages | 0 | 285 | — |
+| Price-guide pages | 18 | 120 | — |
 | Research / identification guides | 6 | 0 | — |
 | Site & trust pages | 13 | 1 | — |
 | Item pages | 0 | 0 | 0 |
 
-Data: 35,754 public listings (9,867 without an era, so on no market page), 18,222 recorded sales (8,924 without era+category), 50 sources.
+Data: 34,430 public listings (9,754 without an era, so on no market page), 18,083 recorded sales (8,909 without era+category), 49 sources.
 
 ## Growth gate (§13 / §51)
 
-88 → **89** indexable URLs (+1, +1%).
+89 → **87** indexable URLs (-2, -2%).
 
 ## Release checks (§75)
 
@@ -47,7 +47,7 @@ Data: 35,754 public listings (9,867 without an era, so on no market page), 18,22
 
 ## IndexNow (§26–§27)
 
-Added 1 · Updated 60 · Removed 0 · Submitted this run 61
+Added 0 · Updated 52 · Removed 2 · Submitted this run 54
 
 ## Review queue (§49)
 
@@ -59,7 +59,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 - /wwii/documents/ — NOINDEX score=59 inventoryDepth=22 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 59 < 60
 - /wwi/veteran-organizations/ — NOINDEX score=59 inventoryDepth=22 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 59 < 60
 - /wwii/helmets/ — NOINDEX score=59 inventoryDepth=22 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 59 < 60
-- /early-republic/uniforms/ — NOINDEX score=59 inventoryDepth=22 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 59 < 60
+- /price-guide/civil-war/cavalry-equipment/ — NOINDEX score=59 inventoryDepth=24 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 59 < 60
 - /wwii/medical/ — NOINDEX score=58 inventoryDepth=22 sourceDiversity=14 userUtility=15 internalLinkValue=7 — score 58 < 60
 - /wwi/helmets/ — NOINDEX score=58 inventoryDepth=21 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 58 < 60
 - /wwi/books-publications/ — NOINDEX score=58 inventoryDepth=21 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 58 < 60
@@ -68,12 +68,12 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 - /pre-wwi/photography/ — NOINDEX score=58 inventoryDepth=21 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 58 < 60
 - /price-guide/wwii/accoutrements/ — NOINDEX score=58 inventoryDepth=23 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 58 < 60
 - /price-guide/indian-wars/photography/ — NOINDEX score=58 inventoryDepth=23 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 58 < 60
-- /price-guide/civil-war/cavalry-equipment/ — NOINDEX score=58 inventoryDepth=23 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 58 < 60
+- /spanish-american-war/uniforms/ — NOINDEX score=57 inventoryDepth=21 sourceDiversity=13 userUtility=15 internalLinkValue=7 — score 57 < 60
 - /early-republic/photography/ — NOINDEX score=57 inventoryDepth=20 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 57 < 60
 - /mexican-american-war/documents/ — NOINDEX score=57 inventoryDepth=20 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 57 < 60
 - /mexican-american-war/firearms/ — NOINDEX score=57 inventoryDepth=20 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 57 < 60
-- /wwii/bullets-cartridges/ — NOINDEX score=57 inventoryDepth=20 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 57 < 60
 - /wwi/photography/ — NOINDEX score=57 inventoryDepth=20 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 57 < 60
+- /early-republic/uniforms/ — NOINDEX score=57 inventoryDepth=20 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 57 < 60
 - /price-guide/wwi/uniforms/ — NOINDEX score=57 inventoryDepth=22 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 57 < 60
 - /price-guide/indian-wars/documents/ — NOINDEX score=57 inventoryDepth=22 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 57 < 60
 - /price-guide/wwi/edged-weapons/ — NOINDEX score=57 inventoryDepth=22 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 57 < 60
@@ -86,7 +86,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 
 ## Every decision
 
-<details><summary>809 evaluated URLs</summary>
+<details><summary>805 evaluated URLs</summary>
 
 | URL | Type | State | Score | Why |
 |---|---|---|---:|---|
@@ -170,8 +170,8 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /colonial/ | era | NOINDEX | 52 | score 52 < 60 |
 | /colonial/accoutrements/ | market | NOT_GENERATED | 0 | no active listings |
 | /colonial/artillery/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
-| /colonial/books-publications/ | market | NOINDEX | 15 | only 2 active listings (< 10) |
-| /colonial/bullets-cartridges/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
+| /colonial/books-publications/ | market | NOINDEX | 10 | only 1 active listings (< 10); only 1 source(s) (< 2) |
+| /colonial/bullets-cartridges/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /colonial/cavalry-equipment/ | market | NOT_GENERATED | 0 | no active listings |
 | /colonial/currency-bonds/ | market | NOINDEX | 10 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /colonial/docs-philatelic/ | market | NOT_GENERATED | 0 | no active listings |
@@ -188,15 +188,15 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /colonial/prints-paintings/ | market | NOINDEX | 2 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /colonial/silver-metalware/ | market | NOT_GENERATED | 0 | no active listings |
 | /colonial/steins-drinkware/ | market | NOT_GENERATED | 0 | no active listings |
-| /colonial/uniforms/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
+| /colonial/uniforms/ | market | NOT_GENERATED | 0 | no active listings |
 | /colonial/veteran-organizations/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /early-american/ | era | NOT_GENERATED | 0 | no listings or sales |
-| /early-republic/ | era | INDEX | 61 |  |
+| /early-republic/ | era | INDEX | 60 |  |
 | /early-republic/accoutrements/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
-| /early-republic/artillery/ | market | NOINDEX | 22 | only 5 active listings (< 10) |
+| /early-republic/artillery/ | market | NOINDEX | 15 | only 5 active listings (< 10) |
 | /early-republic/belt-plates/ | market | NOINDEX | 16 | only 5 active listings (< 10) |
 | /early-republic/books-publications/ | market | NOINDEX | 22 | only 5 active listings (< 10) |
-| /early-republic/buttons/ | market | NOINDEX | 19 | only 9 active listings (< 10) |
+| /early-republic/buttons/ | market | NOINDEX | 15 | only 5 active listings (< 10) |
 | /early-republic/currency-bonds/ | market | NOT_GENERATED | 0 | no active listings |
 | /early-republic/documents/ | market | NOINDEX | 53 | score 53 < 60 |
 | /early-republic/edged-weapons/ | market | NOINDEX | 48 | score 48 < 60 |
@@ -205,22 +205,21 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /early-republic/medals-orders/ | market | NOINDEX | 27 | score 27 < 60 |
 | /early-republic/native-american/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /early-republic/optical-photographic-equipment/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
-| /early-republic/personal-items/ | market | NOINDEX | 31 | score 31 < 60 |
+| /early-republic/personal-items/ | market | NOINDEX | 6 | only 4 active listings (< 10) |
 | /early-republic/photography/ | market | NOINDEX | 57 | score 57 < 60 |
 | /early-republic/prints-paintings/ | market | NOINDEX | 4 | only 4 active listings (< 10) |
 | /early-republic/steins-drinkware/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
-| /early-republic/uniforms/ | market | NOINDEX | 59 | score 59 < 60 |
+| /early-republic/uniforms/ | market | NOINDEX | 57 | score 57 < 60 |
 | /early-republic/veteran-organizations/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /indian-wars/ | era | INDEX | 65 |  |
 | /indian-wars/accoutrements/ | market | NOINDEX | 58 | score 58 < 60 |
 | /indian-wars/african-american/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /indian-wars/aircraft/ | market | NOT_GENERATED | 0 | no active listings |
 | /indian-wars/antique-toys/ | market | NOT_GENERATED | 0 | no active listings |
-| /indian-wars/artillery/ | market | NOINDEX | 46 | score 46 < 60 |
+| /indian-wars/artillery/ | market | NOINDEX | 45 | score 45 < 60 |
 | /indian-wars/belt-plates/ | market | NOINDEX | 47 | score 47 < 60 |
 | /indian-wars/books-publications/ | market | NOINDEX | 56 | score 56 < 60 |
-| /indian-wars/bottles-insulators/ | market | NOT_GENERATED | 0 | no active listings |
-| /indian-wars/bullets-cartridges/ | market | INDEX | 61 |  |
+| /indian-wars/bullets-cartridges/ | market | NOINDEX | 51 | score 51 < 60 |
 | /indian-wars/buttons/ | market | NOINDEX | 43 | score 43 < 60 |
 | /indian-wars/cavalry-equipment/ | market | NOINDEX | 51 | score 51 < 60 |
 | /indian-wars/challenge-coins/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
@@ -230,7 +229,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /indian-wars/firearms/ | market | INDEX | 62 |  |
 | /indian-wars/flags/ | market | NOINDEX | 37 | score 37 < 60 |
 | /indian-wars/helmets/ | market | NOINDEX | 30 | score 30 < 60 |
-| /indian-wars/medals-orders/ | market | NOINDEX | 38 | score 38 < 60 |
+| /indian-wars/medals-orders/ | market | NOINDEX | 36 | score 36 < 60 |
 | /indian-wars/medical/ | market | NOINDEX | 18 | only 6 active listings (< 10) |
 | /indian-wars/musical-instruments/ | market | NOINDEX | 3 | only 3 active listings (< 10) |
 | /indian-wars/native-american/ | market | NOINDEX | 14 | only 6 active listings (< 10) |
@@ -243,7 +242,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /indian-wars/prints-paintings/ | market | NOINDEX | 49 | score 49 < 60 |
 | /indian-wars/silver-metalware/ | market | NOT_GENERATED | 0 | no active listings |
 | /indian-wars/steins-drinkware/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
-| /indian-wars/uniforms/ | market | INDEX | 62 |  |
+| /indian-wars/uniforms/ | market | INDEX | 61 |  |
 | /indian-wars/veteran-organizations/ | market | INDEX | 62 |  |
 | /indian-wars/world-wars/ | market | NOINDEX | 30 | score 30 < 60 |
 | /interwar/ | era | NOT_GENERATED | 0 | no listings or sales |
@@ -272,8 +271,8 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /mexican-american-war/artillery/ | market | NOINDEX | 3 | only 3 active listings (< 10) |
 | /mexican-american-war/belt-plates/ | market | NOINDEX | 32 | score 32 < 60 |
 | /mexican-american-war/books-publications/ | market | NOINDEX | 28 | only 7 active listings (< 10) |
-| /mexican-american-war/bullets-cartridges/ | market | NOINDEX | 1 | only 3 active listings (< 10) |
-| /mexican-american-war/buttons/ | market | NOINDEX | 19 | only 9 active listings (< 10) |
+| /mexican-american-war/bullets-cartridges/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
+| /mexican-american-war/buttons/ | market | NOINDEX | 17 | only 8 active listings (< 10) |
 | /mexican-american-war/cavalry-equipment/ | market | NOINDEX | 1 | only 3 active listings (< 10) |
 | /mexican-american-war/currency-bonds/ | market | NOINDEX | 16 | only 5 active listings (< 10) |
 | /mexican-american-war/docs-philatelic/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
@@ -287,14 +286,13 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /mexican-american-war/personal-items/ | market | NOINDEX | 3 | only 3 active listings (< 10) |
 | /mexican-american-war/photography/ | market | INDEX | 60 |  |
 | /mexican-american-war/prints-paintings/ | market | NOINDEX | 34 | score 34 < 60 |
-| /mexican-american-war/uniforms/ | market | NOINDEX | 46 | score 46 < 60 |
+| /mexican-american-war/uniforms/ | market | NOINDEX | 45 | score 45 < 60 |
 | /mexican-american-war/veteran-organizations/ | market | NOINDEX | 12 | only 7 active listings (< 10); only 1 source(s) (< 2) |
-| /postwar-occupation/ | era | NOINDEX | 57 | score 57 < 60 |
+| /postwar-occupation/ | era | NOINDEX | 56 | score 56 < 60 |
 | /postwar-occupation/accoutrements/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /postwar-occupation/belt-plates/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
 | /postwar-occupation/books-publications/ | market | NOINDEX | 30 | score 30 < 60 |
-| /postwar-occupation/bullets-cartridges/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
-| /postwar-occupation/buttons/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
+| /postwar-occupation/bullets-cartridges/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /postwar-occupation/challenge-coins/ | market | NOT_GENERATED | 0 | no active listings |
 | /postwar-occupation/currency-bonds/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
 | /postwar-occupation/documents/ | market | NOINDEX | 20 | only 9 active listings (< 10) |
@@ -310,7 +308,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /postwar-occupation/postcards/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /postwar-occupation/prints-paintings/ | market | NOINDEX | 2 | only 4 active listings (< 10) |
 | /postwar-occupation/trench-art/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
-| /postwar-occupation/uniforms/ | market | NOINDEX | 37 | score 37 < 60 |
+| /postwar-occupation/uniforms/ | market | NOINDEX | 35 | score 35 < 60 |
 | /postwar-occupation/veteran-organizations/ | market | NOINDEX | 17 | only 8 active listings (< 10) |
 | /postwar-occupation/western-americana/ | market | NOT_GENERATED | 0 | no active listings |
 | /postwar-occupation/world-wars/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
@@ -321,7 +319,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /pre-wwi/artillery/ | market | NOINDEX | 17 | only 6 active listings (< 10) |
 | /pre-wwi/belt-plates/ | market | NOINDEX | 24 | only 5 active listings (< 10) |
 | /pre-wwi/books-publications/ | market | NOINDEX | 41 | score 41 < 60 |
-| /pre-wwi/bullets-cartridges/ | market | NOINDEX | 46 | score 46 < 60 |
+| /pre-wwi/bullets-cartridges/ | market | NOINDEX | 2 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /pre-wwi/buttons/ | market | NOINDEX | 15 | only 5 active listings (< 10) |
 | /pre-wwi/cavalry-equipment/ | market | NOINDEX | -2 | only 3 active listings (< 10); only 1 source(s) (< 2) |
 | /pre-wwi/challenge-coins/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
@@ -374,7 +372,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/civil-war/bottles-insulators/ | price-guide | NOT_GENERATED | 0 | 4 recorded sales (< 5) |
 | /price-guide/civil-war/bullets-cartridges/ | price-guide | INDEX | 60 |  |
 | /price-guide/civil-war/buttons/ | price-guide | INDEX | 63 |  |
-| /price-guide/civil-war/cavalry-equipment/ | price-guide | NOINDEX | 58 | score 58 < 60 |
+| /price-guide/civil-war/cavalry-equipment/ | price-guide | NOINDEX | 59 | score 59 < 60 |
 | /price-guide/civil-war/challenge-coins/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/civil-war/currency-bonds/ | price-guide | NOINDEX | 54 | score 54 < 60 |
 | /price-guide/civil-war/docs-philatelic/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
@@ -403,7 +401,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/cold-war/accoutrements/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/cold-war/belt-plates/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/cold-war/books-publications/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
-| /price-guide/cold-war/bullets-cartridges/ | price-guide | NOINDEX | 18 | 6 recorded sales (< 10 for INDEX) |
+| /price-guide/cold-war/bullets-cartridges/ | price-guide | NOINDEX | 14 | 5 recorded sales (< 10 for INDEX); 1 sale source(s) (< 2 for INDEX) |
 | /price-guide/cold-war/buttons/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/cold-war/currency-bonds/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/cold-war/documents/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
@@ -443,7 +441,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/colonial/uniforms/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
 | /price-guide/colonial/veteran-organizations/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
 | /price-guide/early-republic/accoutrements/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
-| /price-guide/early-republic/artillery/ | price-guide | NOINDEX | 18 | 6 recorded sales (< 10 for INDEX) |
+| /price-guide/early-republic/artillery/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/early-republic/belt-plates/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/early-republic/books-publications/ | price-guide | NOINDEX | 17 | 5 recorded sales (< 10 for INDEX) |
 | /price-guide/early-republic/buttons/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
@@ -459,7 +457,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/early-republic/photography/ | price-guide | NOINDEX | 46 | score 46 < 60 |
 | /price-guide/early-republic/prints-paintings/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/early-republic/steins-drinkware/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
-| /price-guide/early-republic/uniforms/ | price-guide | NOINDEX | 47 | score 47 < 60 |
+| /price-guide/early-republic/uniforms/ | price-guide | NOINDEX | 45 | score 45 < 60 |
 | /price-guide/early-republic/veteran-organizations/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/indian-wars/accoutrements/ | price-guide | NOINDEX | 52 | score 52 < 60 |
 | /price-guide/indian-wars/african-american/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
@@ -467,9 +465,8 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/indian-wars/antique-toys/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/indian-wars/artillery/ | price-guide | NOINDEX | 25 | 7 recorded sales (< 10 for INDEX) |
 | /price-guide/indian-wars/belt-plates/ | price-guide | NOINDEX | 26 | 9 recorded sales (< 10 for INDEX) |
-| /price-guide/indian-wars/books-publications/ | price-guide | NOINDEX | 49 | score 49 < 60 |
-| /price-guide/indian-wars/bottles-insulators/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
-| /price-guide/indian-wars/bullets-cartridges/ | price-guide | NOINDEX | 50 | score 50 < 60 |
+| /price-guide/indian-wars/books-publications/ | price-guide | NOINDEX | 50 | score 50 < 60 |
+| /price-guide/indian-wars/bullets-cartridges/ | price-guide | NOINDEX | 46 | score 46 < 60 |
 | /price-guide/indian-wars/buttons/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/indian-wars/cavalry-equipment/ | price-guide | NOINDEX | 43 | score 43 < 60 |
 | /price-guide/indian-wars/challenge-coins/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
@@ -519,7 +516,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/mexican-american-war/belt-plates/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
 | /price-guide/mexican-american-war/books-publications/ | price-guide | NOINDEX | 20 | 6 recorded sales (< 10 for INDEX) |
 | /price-guide/mexican-american-war/bullets-cartridges/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
-| /price-guide/mexican-american-war/buttons/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
+| /price-guide/mexican-american-war/buttons/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/mexican-american-war/cavalry-equipment/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/mexican-american-war/currency-bonds/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/mexican-american-war/docs-philatelic/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
@@ -539,7 +536,6 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/postwar-occupation/belt-plates/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/postwar-occupation/books-publications/ | price-guide | NOT_GENERATED | 0 | 4 recorded sales (< 5) |
 | /price-guide/postwar-occupation/bullets-cartridges/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
-| /price-guide/postwar-occupation/buttons/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/postwar-occupation/challenge-coins/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/postwar-occupation/currency-bonds/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/postwar-occupation/documents/ | price-guide | NOT_GENERATED | 0 | 4 recorded sales (< 5) |
@@ -565,7 +561,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/pre-wwi/artillery/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/pre-wwi/belt-plates/ | price-guide | NOINDEX | 21 | 5 recorded sales (< 10 for INDEX) |
 | /price-guide/pre-wwi/books-publications/ | price-guide | NOT_GENERATED | 0 | 4 recorded sales (< 5) |
-| /price-guide/pre-wwi/bullets-cartridges/ | price-guide | NOINDEX | 44 | score 44 < 60 |
+| /price-guide/pre-wwi/bullets-cartridges/ | price-guide | NOINDEX | 20 | 5 recorded sales (< 10 for INDEX) |
 | /price-guide/pre-wwi/buttons/ | price-guide | NOT_GENERATED | 0 | 3 recorded sales (< 5) |
 | /price-guide/pre-wwi/cavalry-equipment/ | price-guide | NOT_GENERATED | 0 | 3 recorded sales (< 5) |
 | /price-guide/pre-wwi/challenge-coins/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
@@ -587,7 +583,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/pre-wwi/prints-paintings/ | price-guide | NOT_GENERATED | 0 | 4 recorded sales (< 5) |
 | /price-guide/pre-wwi/steins-drinkware/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/pre-wwi/uniforms/ | price-guide | NOINDEX | 20 | 6 recorded sales (< 10 for INDEX) |
-| /price-guide/pre-wwi/veteran-organizations/ | price-guide | NOINDEX | 49 | score 49 < 60 |
+| /price-guide/pre-wwi/veteran-organizations/ | price-guide | NOINDEX | 47 | score 47 < 60 |
 | /price-guide/pre-wwi/western-americana/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/pre-wwi/world-wars/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/revolution/accoutrements/ | price-guide | NOINDEX | 18 | 6 recorded sales (< 10 for INDEX) |
@@ -595,7 +591,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/revolution/artillery/ | price-guide | NOINDEX | 43 | score 43 < 60 |
 | /price-guide/revolution/belt-plates/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/revolution/books-publications/ | price-guide | NOINDEX | 48 | score 48 < 60 |
-| /price-guide/revolution/bullets-cartridges/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
+| /price-guide/revolution/bullets-cartridges/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/revolution/buttons/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/revolution/cavalry-equipment/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/revolution/challenge-coins/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
@@ -611,22 +607,22 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/revolution/personal-items/ | price-guide | NOINDEX | 18 | 6 recorded sales (< 10 for INDEX) |
 | /price-guide/revolution/photography/ | price-guide | NOINDEX | 20 | 9 recorded sales (< 10 for INDEX) |
 | /price-guide/revolution/prints-paintings/ | price-guide | NOT_GENERATED | 0 | 3 recorded sales (< 5) |
-| /price-guide/revolution/uniforms/ | price-guide | NOINDEX | 50 | score 50 < 60 |
+| /price-guide/revolution/uniforms/ | price-guide | NOINDEX | 48 | score 48 < 60 |
 | /price-guide/revolution/veteran-organizations/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
-| /price-guide/spanish-american-war/accoutrements/ | price-guide | NOT_GENERATED | 0 | 3 recorded sales (< 5) |
+| /price-guide/spanish-american-war/accoutrements/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
 | /price-guide/spanish-american-war/african-american/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/antique-toys/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/artillery/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/belt-plates/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
 | /price-guide/spanish-american-war/books-publications/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
-| /price-guide/spanish-american-war/bullets-cartridges/ | price-guide | NOINDEX | 48 | score 48 < 60 |
-| /price-guide/spanish-american-war/buttons/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
-| /price-guide/spanish-american-war/cavalry-equipment/ | price-guide | NOT_GENERATED | 0 | 4 recorded sales (< 5) |
+| /price-guide/spanish-american-war/bullets-cartridges/ | price-guide | NOINDEX | 23 | 7 recorded sales (< 10 for INDEX) |
+| /price-guide/spanish-american-war/buttons/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
+| /price-guide/spanish-american-war/cavalry-equipment/ | price-guide | NOT_GENERATED | 0 | 3 recorded sales (< 5) |
 | /price-guide/spanish-american-war/challenge-coins/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/currency-bonds/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
 | /price-guide/spanish-american-war/documents/ | price-guide | NOINDEX | 14 | 5 recorded sales (< 10 for INDEX); 1 sale source(s) (< 2 for INDEX) |
 | /price-guide/spanish-american-war/edged-weapons/ | price-guide | NOINDEX | 24 | 6 recorded sales (< 10 for INDEX) |
-| /price-guide/spanish-american-war/firearms/ | price-guide | NOINDEX | 54 | score 54 < 60 |
+| /price-guide/spanish-american-war/firearms/ | price-guide | NOINDEX | 53 | score 53 < 60 |
 | /price-guide/spanish-american-war/flags/ | price-guide | NOT_GENERATED | 0 | 3 recorded sales (< 5) |
 | /price-guide/spanish-american-war/helmets/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/medals-orders/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
@@ -634,11 +630,11 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/spanish-american-war/musical-instruments/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/native-american/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/optics/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
-| /price-guide/spanish-american-war/personal-items/ | price-guide | NOINDEX | 25 | 9 recorded sales (< 10 for INDEX) |
+| /price-guide/spanish-american-war/personal-items/ | price-guide | NOINDEX | 23 | 8 recorded sales (< 10 for INDEX) |
 | /price-guide/spanish-american-war/photography/ | price-guide | NOT_GENERATED | 0 | 4 recorded sales (< 5) |
 | /price-guide/spanish-american-war/postcards/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/spanish-american-war/prints-paintings/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
-| /price-guide/spanish-american-war/uniforms/ | price-guide | NOINDEX | 48 | score 48 < 60 |
+| /price-guide/spanish-american-war/uniforms/ | price-guide | NOINDEX | 43 | score 43 < 60 |
 | /price-guide/spanish-american-war/veteran-organizations/ | price-guide | NOINDEX | 48 | score 48 < 60 |
 | /price-guide/spanish-american-war/world-wars/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/vietnam/accoutrements/ | price-guide | NOINDEX | 49 | score 49 < 60 |
@@ -675,8 +671,8 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/wwi/armor/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/wwi/artillery/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
 | /price-guide/wwi/belt-plates/ | price-guide | NOINDEX | 20 | 5 recorded sales (< 10 for INDEX) |
-| /price-guide/wwi/books-publications/ | price-guide | NOINDEX | 51 | score 51 < 60 |
-| /price-guide/wwi/bullets-cartridges/ | price-guide | NOT_GENERATED | 0 | 4 recorded sales (< 5) |
+| /price-guide/wwi/books-publications/ | price-guide | NOINDEX | 50 | score 50 < 60 |
+| /price-guide/wwi/bullets-cartridges/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
 | /price-guide/wwi/buttons/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/wwi/cavalry-equipment/ | price-guide | NOINDEX | 40 | score 40 < 60 |
 | /price-guide/wwi/challenge-coins/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
@@ -713,7 +709,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /price-guide/wwii/artillery/ | price-guide | NOINDEX | 25 | 9 recorded sales (< 10 for INDEX) |
 | /price-guide/wwii/belt-plates/ | price-guide | NOINDEX | 22 | 6 recorded sales (< 10 for INDEX) |
 | /price-guide/wwii/books-publications/ | price-guide | NOINDEX | 53 | score 53 < 60 |
-| /price-guide/wwii/bullets-cartridges/ | price-guide | NOINDEX | 54 | score 54 < 60 |
+| /price-guide/wwii/bullets-cartridges/ | price-guide | NOINDEX | 51 | score 51 < 60 |
 | /price-guide/wwii/buttons/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
 | /price-guide/wwii/cavalry-equipment/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/wwii/challenge-coins/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
@@ -745,11 +741,11 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /revolution/ | era | INDEX | 60 |  |
 | /revolution/accoutrements/ | market | NOINDEX | 22 | only 5 active listings (< 10) |
 | /revolution/african-american/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
-| /revolution/artillery/ | market | NOINDEX | 31 | only 5 active listings (< 10) |
+| /revolution/artillery/ | market | NOINDEX | 19 | only 4 active listings (< 10) |
 | /revolution/belt-plates/ | market | NOINDEX | 17 | only 8 active listings (< 10) |
-| /revolution/books-publications/ | market | NOINDEX | 50 | score 50 < 60 |
-| /revolution/bullets-cartridges/ | market | NOINDEX | 16 | only 6 active listings (< 10) |
-| /revolution/buttons/ | market | NOINDEX | 35 | score 35 < 60 |
+| /revolution/books-publications/ | market | NOINDEX | 49 | score 49 < 60 |
+| /revolution/bullets-cartridges/ | market | NOINDEX | 13 | only 5 active listings (< 10) |
+| /revolution/buttons/ | market | NOINDEX | 33 | score 33 < 60 |
 | /revolution/cavalry-equipment/ | market | NOINDEX | 18 | only 8 active listings (< 10) |
 | /revolution/challenge-coins/ | market | NOT_GENERATED | 0 | no active listings |
 | /revolution/currency-bonds/ | market | NOINDEX | 17 | only 6 active listings (< 10) |
@@ -766,34 +762,34 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /revolution/prints-paintings/ | market | NOINDEX | 18 | only 7 active listings (< 10) |
 | /revolution/uniforms/ | market | NOINDEX | 52 | score 52 < 60 |
 | /revolution/veteran-organizations/ | market | NOINDEX | 13 | only 5 active listings (< 10) |
-| /spanish-american-war/ | era | INDEX | 64 |  |
-| /spanish-american-war/accoutrements/ | market | NOINDEX | 38 | score 38 < 60 |
+| /spanish-american-war/ | era | INDEX | 62 |  |
+| /spanish-american-war/accoutrements/ | market | NOINDEX | 37 | score 37 < 60 |
 | /spanish-american-war/african-american/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /spanish-american-war/antique-toys/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
-| /spanish-american-war/artillery/ | market | NOINDEX | 32 | score 32 < 60 |
-| /spanish-american-war/belt-plates/ | market | NOINDEX | 30 | score 30 < 60 |
-| /spanish-american-war/books-publications/ | market | NOINDEX | 30 | score 30 < 60 |
-| /spanish-american-war/bullets-cartridges/ | market | NOINDEX | 53 | score 53 < 60 |
-| /spanish-american-war/buttons/ | market | NOINDEX | 42 | score 42 < 60 |
+| /spanish-american-war/artillery/ | market | NOINDEX | 20 | only 8 active listings (< 10) |
+| /spanish-american-war/belt-plates/ | market | NOINDEX | 14 | only 6 active listings (< 10) |
+| /spanish-american-war/books-publications/ | market | NOINDEX | 28 | score 28 < 60 |
+| /spanish-american-war/bullets-cartridges/ | market | NOINDEX | 36 | score 36 < 60 |
+| /spanish-american-war/buttons/ | market | NOINDEX | 34 | score 34 < 60 |
 | /spanish-american-war/cavalry-equipment/ | market | NOINDEX | 15 | only 8 active listings (< 10) |
 | /spanish-american-war/challenge-coins/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /spanish-american-war/currency-bonds/ | market | NOT_GENERATED | 0 | no active listings |
-| /spanish-american-war/documents/ | market | NOINDEX | 41 | score 41 < 60 |
+| /spanish-american-war/documents/ | market | NOINDEX | 39 | score 39 < 60 |
 | /spanish-american-war/edged-weapons/ | market | NOINDEX | 43 | score 43 < 60 |
-| /spanish-american-war/firearms/ | market | NOINDEX | 54 | score 54 < 60 |
+| /spanish-american-war/firearms/ | market | NOINDEX | 52 | score 52 < 60 |
 | /spanish-american-war/flags/ | market | NOINDEX | 3 | only 3 active listings (< 10) |
 | /spanish-american-war/helmets/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
-| /spanish-american-war/medals-orders/ | market | NOINDEX | 32 | score 32 < 60 |
+| /spanish-american-war/medals-orders/ | market | NOINDEX | 30 | score 30 < 60 |
 | /spanish-american-war/medical/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /spanish-american-war/musical-instruments/ | market | NOINDEX | 1 | only 3 active listings (< 10) |
 | /spanish-american-war/native-american/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /spanish-american-war/optics/ | market | NOINDEX | -2 | only 3 active listings (< 10); only 1 source(s) (< 2) |
-| /spanish-american-war/personal-items/ | market | NOINDEX | 44 | score 44 < 60 |
+| /spanish-american-war/personal-items/ | market | NOINDEX | 41 | score 41 < 60 |
 | /spanish-american-war/photography/ | market | NOINDEX | 41 | score 41 < 60 |
 | /spanish-american-war/postcards/ | market | NOINDEX | 1 | only 3 active listings (< 10) |
 | /spanish-american-war/prints-paintings/ | market | NOINDEX | 3 | only 3 active listings (< 10) |
-| /spanish-american-war/uniforms/ | market | INDEX | 61 |  |
-| /spanish-american-war/veteran-organizations/ | market | NOINDEX | 54 | score 54 < 60 |
+| /spanish-american-war/uniforms/ | market | NOINDEX | 57 | score 57 < 60 |
+| /spanish-american-war/veteran-organizations/ | market | NOINDEX | 53 | score 53 < 60 |
 | /spanish-american-war/world-wars/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
 | /vietnam/ | era | INDEX | 64 |  |
 | /vietnam/accoutrements/ | market | NOINDEX | 53 | score 53 < 60 |
@@ -830,10 +826,10 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /wwi/antique-toys/ | market | NOINDEX | -2 | only 3 active listings (< 10); only 1 source(s) (< 2) |
 | /wwi/armor/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
 | /wwi/artillery/ | market | NOINDEX | 38 | score 38 < 60 |
-| /wwi/belt-plates/ | market | NOINDEX | 46 | score 46 < 60 |
+| /wwi/belt-plates/ | market | NOINDEX | 45 | score 45 < 60 |
 | /wwi/books-publications/ | market | NOINDEX | 58 | score 58 < 60 |
-| /wwi/bullets-cartridges/ | market | NOINDEX | 37 | score 37 < 60 |
-| /wwi/buttons/ | market | NOINDEX | 16 | only 5 active listings (< 10) |
+| /wwi/bullets-cartridges/ | market | NOINDEX | 29 | score 29 < 60 |
+| /wwi/buttons/ | market | NOINDEX | 4 | only 4 active listings (< 10) |
 | /wwi/cavalry-equipment/ | market | NOINDEX | 49 | score 49 < 60 |
 | /wwi/challenge-coins/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
 | /wwi/currency-bonds/ | market | NOINDEX | 48 | score 48 < 60 |
@@ -845,13 +841,13 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /wwi/helmets/ | market | NOINDEX | 58 | score 58 < 60 |
 | /wwi/id-discs/ | market | NOINDEX | 36 | score 36 < 60 |
 | /wwi/jewelry-watches/ | market | NOT_GENERATED | 0 | no active listings |
-| /wwi/medals-orders/ | market | NOINDEX | 47 | score 47 < 60 |
+| /wwi/medals-orders/ | market | NOINDEX | 46 | score 46 < 60 |
 | /wwi/medical/ | market | NOINDEX | 46 | score 46 < 60 |
-| /wwi/musical-instruments/ | market | NOINDEX | 16 | only 7 active listings (< 10) |
+| /wwi/musical-instruments/ | market | NOINDEX | 14 | only 6 active listings (< 10) |
 | /wwi/old-west/ | market | NOT_GENERATED | 0 | no active listings |
 | /wwi/optical-photographic-equipment/ | market | NOT_GENERATED | 0 | no active listings |
 | /wwi/optics/ | market | NOINDEX | 34 | score 34 < 60 |
-| /wwi/personal-items/ | market | NOINDEX | 54 | score 54 < 60 |
+| /wwi/personal-items/ | market | NOINDEX | 53 | score 53 < 60 |
 | /wwi/photography/ | market | NOINDEX | 57 | score 57 < 60 |
 | /wwi/postcards/ | market | NOINDEX | 46 | score 46 < 60 |
 | /wwi/prints-paintings/ | market | NOINDEX | 53 | score 53 < 60 |
@@ -870,7 +866,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /wwii/artillery/ | market | NOINDEX | 46 | score 46 < 60 |
 | /wwii/belt-plates/ | market | NOINDEX | 42 | score 42 < 60 |
 | /wwii/books-publications/ | market | INDEX | 62 |  |
-| /wwii/bullets-cartridges/ | market | NOINDEX | 57 | score 57 < 60 |
+| /wwii/bullets-cartridges/ | market | NOINDEX | 56 | score 56 < 60 |
 | /wwii/buttons/ | market | NOINDEX | 1 | only 3 active listings (< 10) |
 | /wwii/cavalry-equipment/ | market | NOINDEX | 31 | score 31 < 60 |
 | /wwii/challenge-coins/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
@@ -895,7 +891,7 @@ Added 1 · Updated 60 · Removed 0 · Submitted this run 61
 | /wwii/postcards/ | market | NOINDEX | 33 | score 33 < 60 |
 | /wwii/prints-paintings/ | market | NOINDEX | 59 | score 59 < 60 |
 | /wwii/steins-drinkware/ | market | NOINDEX | -2 | only 3 active listings (< 10); only 1 source(s) (< 2) |
-| /wwii/trench-art/ | market | NOINDEX | 21 | only 9 active listings (< 10) |
+| /wwii/trench-art/ | market | NOINDEX | 20 | only 8 active listings (< 10) |
 | /wwii/uniforms/ | market | INDEX | 62 |  |
 | /wwii/veteran-organizations/ | market | NOINDEX | 48 | score 48 < 60 |
 | /wwii/world-wars/ | market | INDEX | 62 |  |
