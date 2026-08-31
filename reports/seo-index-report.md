@@ -1,16 +1,16 @@
 # RelicsOfWar — SEO Index Report
 
-_Generated 2026-08-30 from ArtifactSearch data exported 2026-08-30T11:37:31.417Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
+_Generated 2026-08-31 from ArtifactSearch data exported 2026-08-31T11:39:30.092Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
 
-## Index state (2026-08-30)
+## Index state (2026-08-31)
 
 | | Count | Week-over-week |
 |---|---:|---|
-| Total public URLs generated | 815 | 815 (+30, +4% vs 2026-08-23) |
-| **INDEX** | **87** | 87 (+3, +4% vs 2026-08-23) |
-| NOINDEX | 728 | 728 (+27, +4% vs 2026-08-23) |
-| Canonicalized (to parent / ArtifactSearch) | 0 | 0 (+0, +0% vs 2026-08-23) |
-| Not generated (would be empty/thin) | 297 | 297 (+22, +8% vs 2026-08-23) |
+| Total public URLs generated | 815 | 815 (-13, -2% vs 2026-08-24) |
+| **INDEX** | **87** | 87 (-1, -1% vs 2026-08-24) |
+| NOINDEX | 728 | 728 (-12, -2% vs 2026-08-24) |
+| Canonicalized (to parent / ArtifactSearch) | 0 | 0 (+0, +0% vs 2026-08-24) |
+| Not generated (would be empty/thin) | 297 | 297 (+4, +1% vs 2026-08-24) |
 
 | Page type | INDEX | NOINDEX | Canonicalized |
 |---|---:|---:|---:|
@@ -22,7 +22,7 @@ _Generated 2026-08-30 from ArtifactSearch data exported 2026-08-30T11:37:31.417Z
 | Site & trust pages | 13 | 1 | — |
 | Item pages | 0 | 0 | 0 |
 
-Data: 36,818 public listings (9,868 without an era, so on no market page), 18,191 recorded sales (8,936 without era+category), 52 sources.
+Data: 36,833 public listings (9,873 without an era, so on no market page), 18,201 recorded sales (8,938 without era+category), 52 sources.
 
 ## Growth gate (§13 / §51)
 
@@ -47,7 +47,7 @@ Data: 36,818 public listings (9,868 without an era, so on no market page), 18,19
 
 ## IndexNow (§26–§27)
 
-Added 0 · Updated 34 · Removed 0 · Submitted this run 34
+Added 0 · Updated 21 · Removed 0 · Submitted this run 21
 
 ## Review queue (§49)
 
@@ -588,7 +588,7 @@ Added 0 · Updated 34 · Removed 0 · Submitted this run 34
 | /price-guide/pre-wwi/veteran-organizations/ | price-guide | NOINDEX | 47 | score 47 < 60 |
 | /price-guide/pre-wwi/western-americana/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/pre-wwi/world-wars/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
-| /price-guide/revolution/accoutrements/ | price-guide | NOINDEX | 18 | 6 recorded sales (< 10 for INDEX) |
+| /price-guide/revolution/accoutrements/ | price-guide | NOINDEX | 21 | 7 recorded sales (< 10 for INDEX) |
 | /price-guide/revolution/african-american/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
 | /price-guide/revolution/artillery/ | price-guide | NOINDEX | 43 | score 43 < 60 |
 | /price-guide/revolution/belt-plates/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
@@ -874,7 +874,7 @@ Added 0 · Updated 34 · Removed 0 · Submitted this run 34
 | /wwii/challenge-coins/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /wwii/currency-bonds/ | market | NOINDEX | 47 | score 47 < 60 |
 | /wwii/documents/ | market | NOINDEX | 59 | score 59 < 60 |
-| /wwii/edged-weapons/ | market | INDEX | 61 |  |
+| /wwii/edged-weapons/ | market | INDEX | 62 |  |
 | /wwii/fine-art/ | market | NOT_GENERATED | 0 | no active listings |
 | /wwii/firearms/ | market | INDEX | 62 |  |
 | /wwii/flags/ | market | INDEX | 60 |  |
