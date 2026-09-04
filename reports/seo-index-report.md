@@ -1,16 +1,16 @@
 # RelicsOfWar — SEO Index Report
 
-_Generated 2026-09-03 from ArtifactSearch data exported 2026-09-03T11:38:04.188Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
+_Generated 2026-09-04 from ArtifactSearch data exported 2026-09-04T11:37:49.167Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
 
-## Index state (2026-09-03)
+## Index state (2026-09-04)
 
 | | Count | Week-over-week |
 |---|---:|---|
-| Total public URLs generated | 817 | 817 (+3, +0% vs 2026-08-27) |
-| **INDEX** | **88** | 88 (+1, +1% vs 2026-08-27) |
-| NOINDEX | 729 | 729 (+2, +0% vs 2026-08-27) |
-| Canonicalized (to parent / ArtifactSearch) | 0 | 0 (+0, +0% vs 2026-08-27) |
-| Not generated (would be empty/thin) | 296 | 296 (+0, +0% vs 2026-08-27) |
+| Total public URLs generated | 817 | 817 (+1, +0% vs 2026-08-28) |
+| **INDEX** | **88** | 88 (+0, +0% vs 2026-08-28) |
+| NOINDEX | 729 | 729 (+1, +0% vs 2026-08-28) |
+| Canonicalized (to parent / ArtifactSearch) | 0 | 0 (+0, +0% vs 2026-08-28) |
+| Not generated (would be empty/thin) | 296 | 296 (+0, +0% vs 2026-08-28) |
 
 | Page type | INDEX | NOINDEX | Canonicalized |
 |---|---:|---:|---:|
@@ -22,11 +22,11 @@ _Generated 2026-09-03 from ArtifactSearch data exported 2026-09-03T11:38:04.188Z
 | Site & trust pages | 13 | 1 | — |
 | Item pages | 0 | 0 | 0 |
 
-Data: 36,961 public listings (9,931 without an era, so on no market page), 18,286 recorded sales (8,956 without era+category), 52 sources.
+Data: 37,007 public listings (9,956 without an era, so on no market page), 18,300 recorded sales (8,959 without era+category), 52 sources.
 
 ## Growth gate (§13 / §51)
 
-87 → **88** indexable URLs (+1, +1%).
+88 → **88** indexable URLs (+0, +0%).
 
 ## Release checks (§75)
 
@@ -47,7 +47,7 @@ Data: 36,961 public listings (9,931 without an era, so on no market page), 18,28
 
 ## IndexNow (§26–§27)
 
-Added 1 · Updated 43 · Removed 0 · Submitted this run 44
+Added 0 · Updated 37 · Removed 0 · Submitted this run 37
 
 ## Review queue (§49)
 
@@ -62,8 +62,8 @@ Added 1 · Updated 43 · Removed 0 · Submitted this run 44
 - /price-guide/civil-war/cavalry-equipment/ — NOINDEX score=59 inventoryDepth=24 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 59 < 60
 - /wwii/medical/ — NOINDEX score=58 inventoryDepth=22 sourceDiversity=14 userUtility=15 internalLinkValue=7 — score 58 < 60
 - /wwi/books-publications/ — NOINDEX score=58 inventoryDepth=21 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 58 < 60
-- /pre-wwi/photography/ — NOINDEX score=58 inventoryDepth=21 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 58 < 60
 - /indian-wars/edged-weapons/ — NOINDEX score=58 inventoryDepth=21 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 58 < 60
+- /pre-wwi/photography/ — NOINDEX score=58 inventoryDepth=21 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 58 < 60
 - /indian-wars/accoutrements/ — NOINDEX score=58 inventoryDepth=21 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 58 < 60
 - /early-republic/photography/ — NOINDEX score=58 inventoryDepth=21 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 58 < 60
 - /price-guide/wwii/accoutrements/ — NOINDEX score=58 inventoryDepth=23 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 58 < 60
@@ -132,15 +132,15 @@ Added 1 · Updated 43 · Removed 0 · Submitted this run 44
 | /civil-war/helmets/ | market | NOT_GENERATED | 0 | no active listings |
 | /civil-war/id-discs/ | market | NOINDEX | -1 | only 4 active listings (< 10); only 1 source(s) (< 2) |
 | /civil-war/medals-orders/ | market | NOINDEX | 46 | score 46 < 60 |
-| /civil-war/medical/ | market | INDEX | 60 |  |
-| /civil-war/musical-instruments/ | market | NOINDEX | 32 | only 6 active listings (< 10) |
+| /civil-war/medical/ | market | INDEX | 61 |  |
+| /civil-war/musical-instruments/ | market | NOINDEX | 33 | only 7 active listings (< 10) |
 | /civil-war/native-american/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /civil-war/optical-photographic-equipment/ | market | NOINDEX | 4 | only 4 active listings (< 10) |
 | /civil-war/optics/ | market | NOINDEX | 22 | only 5 active listings (< 10) |
 | /civil-war/personal-items/ | market | INDEX | 69 |  |
 | /civil-war/photography/ | market | INDEX | 62 |  |
-| /civil-war/post-1945-firearms/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
-| /civil-war/postcards/ | market | NOINDEX | 10 | only 5 active listings (< 10); only 1 source(s) (< 2) |
+| /civil-war/post-1945-firearms/ | market | NOINDEX | 3 | only 3 active listings (< 10) |
+| /civil-war/postcards/ | market | NOINDEX | 11 | only 6 active listings (< 10); only 1 source(s) (< 2) |
 | /civil-war/prints-paintings/ | market | NOINDEX | 32 | only 6 active listings (< 10) |
 | /civil-war/steins-drinkware/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /civil-war/uniforms/ | market | INDEX | 69 |  |
@@ -269,7 +269,7 @@ Added 1 · Updated 43 · Removed 0 · Submitted this run 44
 | /mexican-american-war/african-american/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /mexican-american-war/antique-toys/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /mexican-american-war/artillery/ | market | NOINDEX | 3 | only 3 active listings (< 10) |
-| /mexican-american-war/belt-plates/ | market | NOINDEX | 22 | only 9 active listings (< 10) |
+| /mexican-american-war/belt-plates/ | market | NOINDEX | 33 | score 33 < 60 |
 | /mexican-american-war/books-publications/ | market | NOINDEX | 28 | only 7 active listings (< 10) |
 | /mexican-american-war/bullets-cartridges/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
 | /mexican-american-war/buttons/ | market | NOINDEX | 14 | only 7 active listings (< 10) |
@@ -303,7 +303,7 @@ Added 1 · Updated 43 · Removed 0 · Submitted this run 44
 | /postwar-occupation/medals-orders/ | market | NOINDEX | 26 | score 26 < 60 |
 | /postwar-occupation/optics/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
 | /postwar-occupation/personal-items/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
-| /postwar-occupation/photography/ | market | NOINDEX | 18 | only 7 active listings (< 10) |
+| /postwar-occupation/photography/ | market | NOINDEX | 17 | only 6 active listings (< 10) |
 | /postwar-occupation/post-1945-firearms/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /postwar-occupation/post-wwii-militaria/ | market | NOT_GENERATED | 0 | no active listings |
 | /postwar-occupation/postcards/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
@@ -664,7 +664,7 @@ Added 1 · Updated 43 · Removed 0 · Submitted this run 44
 | /price-guide/vietnam/prints-paintings/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/vietnam/steins-drinkware/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/vietnam/trench-art/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
-| /price-guide/vietnam/uniforms/ | price-guide | NOINDEX | 47 | score 47 < 60 |
+| /price-guide/vietnam/uniforms/ | price-guide | NOINDEX | 48 | score 48 < 60 |
 | /price-guide/vietnam/veteran-organizations/ | price-guide | NOT_GENERATED | 0 | 3 recorded sales (< 5) |
 | /price-guide/wwi/accoutrements/ | price-guide | NOINDEX | 54 | score 54 < 60 |
 | /price-guide/wwi/african-american/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
@@ -827,10 +827,10 @@ Added 1 · Updated 43 · Removed 0 · Submitted this run 44
 | /wwi/aircraft/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
 | /wwi/antique-toys/ | market | NOINDEX | -2 | only 3 active listings (< 10); only 1 source(s) (< 2) |
 | /wwi/armor/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
-| /wwi/artillery/ | market | NOINDEX | 38 | score 38 < 60 |
+| /wwi/artillery/ | market | NOINDEX | 39 | score 39 < 60 |
 | /wwi/belt-plates/ | market | NOINDEX | 45 | score 45 < 60 |
 | /wwi/books-publications/ | market | NOINDEX | 58 | score 58 < 60 |
-| /wwi/bullets-cartridges/ | market | NOINDEX | 29 | score 29 < 60 |
+| /wwi/bullets-cartridges/ | market | NOINDEX | 30 | score 30 < 60 |
 | /wwi/buttons/ | market | NOINDEX | 4 | only 4 active listings (< 10) |
 | /wwi/cavalry-equipment/ | market | NOINDEX | 49 | score 49 < 60 |
 | /wwi/challenge-coins/ | market | NOINDEX | -3 | only 2 active listings (< 10); only 1 source(s) (< 2) |
@@ -891,7 +891,7 @@ Added 1 · Updated 43 · Removed 0 · Submitted this run 44
 | /wwii/photography/ | market | INDEX | 62 |  |
 | /wwii/post-wwii-militaria/ | market | NOINDEX | 33 | score 33 < 60 |
 | /wwii/postcards/ | market | NOINDEX | 33 | score 33 < 60 |
-| /wwii/prints-paintings/ | market | INDEX | 60 |  |
+| /wwii/prints-paintings/ | market | INDEX | 61 |  |
 | /wwii/steins-drinkware/ | market | NOINDEX | -2 | only 3 active listings (< 10); only 1 source(s) (< 2) |
 | /wwii/trench-art/ | market | NOINDEX | 20 | only 8 active listings (< 10) |
 | /wwii/uniforms/ | market | INDEX | 62 |  |
