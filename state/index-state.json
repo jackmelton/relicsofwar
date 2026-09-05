@@ -1,30 +1,30 @@
 {
- "generatedAt": "2026-09-04T11:37:50.142Z",
- "dataGeneratedAt": "2026-09-04T11:37:49.167Z",
+ "generatedAt": "2026-09-05T11:37:32.422Z",
+ "dataGeneratedAt": "2026-09-05T11:37:31.774Z",
  "urls": {
   "/": {
    "type": "static",
    "state": "INDEX",
-   "contentHash": "677d83f5edcf27421d1ce359c2ade3a8afe41b94",
-   "lastmod": "2026-09-04",
+   "contentHash": "ef04ec0a6422b0074cf7264e437d2a8cdea8dc31",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "677d83f5edcf27421d1ce359c2ade3a8afe41b94"
+   "lastSubmittedHash": "ef04ec0a6422b0074cf7264e437d2a8cdea8dc31"
   },
   "/eras/": {
    "type": "static",
    "state": "INDEX",
-   "contentHash": "c2c2aa02b5934c460bfa848eb0b5547c5c8ef3ef",
-   "lastmod": "2026-09-04",
+   "contentHash": "45b6a7c13b012a83f6dac6a384e6a6fd32523df0",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "c2c2aa02b5934c460bfa848eb0b5547c5c8ef3ef"
+   "lastSubmittedHash": "45b6a7c13b012a83f6dac6a384e6a6fd32523df0"
   },
   "/price-guide/": {
    "type": "static",
    "state": "INDEX",
-   "contentHash": "6f212d9ead4386c82ef1af6aa88dda2dbb44baac",
-   "lastmod": "2026-09-04",
+   "contentHash": "29e17fe150ad5f667726b8a03a75e3d7c6b54fff",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "6f212d9ead4386c82ef1af6aa88dda2dbb44baac"
+   "lastSubmittedHash": "29e17fe150ad5f667726b8a03a75e3d7c6b54fff"
   },
   "/colonial/": {
    "type": "era",
@@ -37,24 +37,24 @@
   "/revolution/": {
    "type": "era",
    "state": "NOINDEX",
-   "contentHash": "f21a7d1b9cd21cefefe00e1d824af87fce533ed3",
-   "lastmod": "2026-08-31",
+   "contentHash": "84ff661291da88371e9e4bb38fd12ec4dbb582e4",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": "4b158d7641ab4d5f71dc495e8cbd36adf904c4fa"
   },
   "/early-republic/": {
    "type": "era",
    "state": "INDEX",
-   "contentHash": "00cbeb614cbc050a3d3a881376d42aca9bd9f92a",
-   "lastmod": "2026-09-03",
+   "contentHash": "4464b0bbb10c9df2e1f5e14f1bfe3b1c9a1d4399",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "00cbeb614cbc050a3d3a881376d42aca9bd9f92a"
+   "lastSubmittedHash": "4464b0bbb10c9df2e1f5e14f1bfe3b1c9a1d4399"
   },
   "/antebellum-frontier/": {
    "type": "era",
    "state": "NOINDEX",
-   "contentHash": "4ccc9df328bab9e508f3e9b53c2d37b150ba3666",
-   "lastmod": "2026-09-02",
+   "contentHash": "9a51a02172c4d392789479283c5ac27ed5e682e4",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -69,56 +69,56 @@
   "/civil-war/": {
    "type": "era",
    "state": "INDEX",
-   "contentHash": "6f90702549acbdb7edeae07d35a4b202ad3be46c",
-   "lastmod": "2026-09-04",
+   "contentHash": "2a5a0b2e7ec347f38d39527b829e12de6e93e31c",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "6f90702549acbdb7edeae07d35a4b202ad3be46c"
+   "lastSubmittedHash": "2a5a0b2e7ec347f38d39527b829e12de6e93e31c"
   },
   "/indian-wars/": {
    "type": "era",
    "state": "INDEX",
-   "contentHash": "9b92d3a65dc5751135091083cef7efb78a485241",
-   "lastmod": "2026-09-03",
+   "contentHash": "bd4f15bddc80d2056adcfb6c6e9c6c3ca2f6fe4c",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "9b92d3a65dc5751135091083cef7efb78a485241"
+   "lastSubmittedHash": "bd4f15bddc80d2056adcfb6c6e9c6c3ca2f6fe4c"
   },
   "/spanish-american-war/": {
    "type": "era",
    "state": "INDEX",
-   "contentHash": "73a411b75dca88c9fef984312827bffe56f0a251",
-   "lastmod": "2026-09-04",
+   "contentHash": "54d06952d36b5e3905a3e87236065cfe38196bfe",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "73a411b75dca88c9fef984312827bffe56f0a251"
+   "lastSubmittedHash": "54d06952d36b5e3905a3e87236065cfe38196bfe"
   },
   "/pre-wwi/": {
    "type": "era",
    "state": "INDEX",
-   "contentHash": "8405471d42f3c6fd9918a38f43f7a3fb6656441a",
-   "lastmod": "2026-09-04",
+   "contentHash": "433d8083469636fd44011426f328cb91ee9b195e",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "8405471d42f3c6fd9918a38f43f7a3fb6656441a"
+   "lastSubmittedHash": "433d8083469636fd44011426f328cb91ee9b195e"
   },
   "/wwi/": {
    "type": "era",
    "state": "INDEX",
-   "contentHash": "4bbf8c021650c08b3a475cd5bc85c468cb233d13",
-   "lastmod": "2026-09-04",
+   "contentHash": "1ac6f19358d462cdc366d6b537d427df3c6e92d5",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "4bbf8c021650c08b3a475cd5bc85c468cb233d13"
+   "lastSubmittedHash": "1ac6f19358d462cdc366d6b537d427df3c6e92d5"
   },
   "/wwii/": {
    "type": "era",
    "state": "INDEX",
-   "contentHash": "78fcf903033c2225ecb00a9e6ad6115b4219a365",
-   "lastmod": "2026-09-04",
+   "contentHash": "e458801eb422f036fa9f4418161778f9ad94e53a",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "78fcf903033c2225ecb00a9e6ad6115b4219a365"
+   "lastSubmittedHash": "e458801eb422f036fa9f4418161778f9ad94e53a"
   },
   "/postwar-occupation/": {
    "type": "era",
    "state": "NOINDEX",
-   "contentHash": "61947327161936ffdd7374340436f5b27a2bda4b",
-   "lastmod": "2026-09-04",
+   "contentHash": "dfdbe8a3b490c8f2ad5a9b9f355a852f93921c42",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -141,58 +141,58 @@
   "/vietnam/": {
    "type": "era",
    "state": "INDEX",
-   "contentHash": "d593a4241b117f143a34ee0540d7fd8416c2a6dc",
-   "lastmod": "2026-09-04",
+   "contentHash": "ffa5755886caaa745efd759a3d841eb7e3f57e8a",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "d593a4241b117f143a34ee0540d7fd8416c2a6dc"
+   "lastSubmittedHash": "ffa5755886caaa745efd759a3d841eb7e3f57e8a"
   },
   "/civil-war/photography/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "affa792bd95641f3205a2dd52715a017d4840173",
-   "lastmod": "2026-09-04",
+   "contentHash": "2eeabb82a3308498fd97df318351bb9832d3df5d",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "affa792bd95641f3205a2dd52715a017d4840173"
+   "lastSubmittedHash": "2eeabb82a3308498fd97df318351bb9832d3df5d"
   },
   "/civil-war/photography/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "185055c04730245e46c8abb0d6389316b68343c2",
-   "lastmod": "2026-09-04",
+   "contentHash": "98517ccae76d46419aaf397862f8e717bb748c23",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/photography/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "63ea6de64ec1e9dbf59a2d94e9b13f73b416f0f2",
-   "lastmod": "2026-09-04",
+   "contentHash": "c4684c9d08a04efc935fdd9d67923e450b23965e",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/photography/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "c63ce119e5f4158aff3636538f1940296bd42c3c",
-   "lastmod": "2026-09-04",
+   "contentHash": "9176ec88e404f1277462a02f2aca857de4d38141",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/photography/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "4b99dc87233fbefcccbfb8c86f1d6065bc48259c",
-   "lastmod": "2026-09-04",
+   "contentHash": "736e5b0505083e0d3283880fdb8df9d53c6ec324",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/price-guide/civil-war/photography/": {
    "type": "price-guide",
    "state": "INDEX",
-   "contentHash": "704cffdf11a7c1b30c22038fd065b2dd4c6123cc",
-   "lastmod": "2026-09-04",
+   "contentHash": "cdac2e445d9b96237509e180d9a3b0d96ae52b25",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "704cffdf11a7c1b30c22038fd065b2dd4c6123cc"
+   "lastSubmittedHash": "cdac2e445d9b96237509e180d9a3b0d96ae52b25"
   },
   "/wwii/uniforms/": {
    "type": "market",
@@ -245,40 +245,40 @@
   "/civil-war/firearms/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "06e8cca8bdc579a68d1735af7fc6eea1a89034d0",
-   "lastmod": "2026-09-04",
+   "contentHash": "7f7f71bd48384fc8173fc09ebc44a21f2a054707",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "06e8cca8bdc579a68d1735af7fc6eea1a89034d0"
+   "lastSubmittedHash": "7f7f71bd48384fc8173fc09ebc44a21f2a054707"
   },
   "/civil-war/firearms/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "ccece77f2a36cd1a81877ed9fe0b5a5e168ce892",
-   "lastmod": "2026-09-04",
+   "contentHash": "88466d849ff316fe867de66341879164c9711b9d",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/firearms/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "00c0db9ea943f5f6978b3209928ce2ccfdac55ed",
-   "lastmod": "2026-09-04",
+   "contentHash": "4dece455c66ac0bd31233220bad776f6e1074c15",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/firearms/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "cd834d68dacc193e4a761c46119023b95fbf67ad",
-   "lastmod": "2026-09-04",
+   "contentHash": "d6f03533769307aff353f236f11b5b31de859aac",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/firearms/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "c732dc04173fd544a4ec908e6ff1719cd2035921",
-   "lastmod": "2026-09-04",
+   "contentHash": "32833b887a0415a82a6ff32c5907ea186bb6029e",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -293,88 +293,88 @@
   "/civil-war/uniforms/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "b7d6e46098ce04ae95a8145a8d1287819b28e0cc",
-   "lastmod": "2026-09-04",
+   "contentHash": "e06b418490eb5755f28f2607f68a4c703ed59421",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "b7d6e46098ce04ae95a8145a8d1287819b28e0cc"
+   "lastSubmittedHash": "e06b418490eb5755f28f2607f68a4c703ed59421"
   },
   "/civil-war/uniforms/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "eea07351859d8806cc1347037991ef8c5087550e",
-   "lastmod": "2026-09-04",
+   "contentHash": "11f851decc7553247cb32292cca0c0fbf1339919",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/uniforms/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "65ec8ed48f76190b1e3e14e3ad89b2012f2a9ffd",
-   "lastmod": "2026-09-04",
+   "contentHash": "8d9992218268496a20f0ad6217a6d75846eeb6a9",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/uniforms/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "1df0a79f2abef1d78b093d0845481dc74823fa45",
-   "lastmod": "2026-09-04",
+   "contentHash": "896f55b7efc7c28326f294d1c72fa9e605c299bd",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/uniforms/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "96113985035a9d27f7237adeae40bdce4a82b967",
-   "lastmod": "2026-09-04",
+   "contentHash": "7312879a18b4d4c0eee0f76eec0779d9e01e5824",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/price-guide/civil-war/uniforms/": {
    "type": "price-guide",
    "state": "INDEX",
-   "contentHash": "cc3ba23be927c55f9837722d54833e3ae46946e1",
-   "lastmod": "2026-09-04",
+   "contentHash": "6262bdcc82a1165096fabfba0457977a654b3a66",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "cc3ba23be927c55f9837722d54833e3ae46946e1"
+   "lastSubmittedHash": "6262bdcc82a1165096fabfba0457977a654b3a66"
   },
   "/wwi/uniforms/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "b4fc44ef7617a10a873b66273ca9ad822e01364b",
-   "lastmod": "2026-09-01",
+   "contentHash": "47d68c7a4dd9f30ee5f6029ef4bb3743a55f7356",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "b4fc44ef7617a10a873b66273ca9ad822e01364b"
+   "lastSubmittedHash": "47d68c7a4dd9f30ee5f6029ef4bb3743a55f7356"
   },
   "/wwi/uniforms/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "a8e0629fb576b5741592386e2c93295aeefe9fd1",
-   "lastmod": "2026-09-01",
+   "contentHash": "e0956e95c3c31030f94a60c945cbf3268ebf207a",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwi/uniforms/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "d585b977d57c109e018a83059f2579940bd2d59a",
-   "lastmod": "2026-09-01",
+   "contentHash": "23d08952df5fa428af3d4cd68e086b9a1fba6cd6",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwi/uniforms/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "2a4d1a1c05c1f9f49776f488fafb137cf9862271",
-   "lastmod": "2026-09-01",
+   "contentHash": "0760b0e25950c981a19a5bdc22a147c04bfd2c4e",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwi/uniforms/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "7045acf86a3e0a71aec2ad3011f9d0e35a480eac",
-   "lastmod": "2026-09-01",
+   "contentHash": "f6360f3e1d1cfcab923ed8c4d189d9b7b17dd744",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -389,40 +389,40 @@
   "/civil-war/buttons/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "cb93253137990c2c861ec882e765261ae8293787",
-   "lastmod": "2026-09-04",
+   "contentHash": "edff2c0811c16856e7f1f73a03925509153662ff",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "cb93253137990c2c861ec882e765261ae8293787"
+   "lastSubmittedHash": "edff2c0811c16856e7f1f73a03925509153662ff"
   },
   "/civil-war/buttons/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "da54b4cb75a5024137a1c6b4d16ba2da26c49206",
-   "lastmod": "2026-09-04",
+   "contentHash": "180498671e20b30a482b96e191cb9f8f014dd499",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/buttons/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "d7538d7bb2f80a36c11be24aad1c886328f5e8e3",
-   "lastmod": "2026-09-04",
+   "contentHash": "acf7e7921ae0b2db5c79d719bfe9f08c860f8fa3",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/buttons/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "ce93b406d3f7422ebb5a5d9b00d6a380f5f71279",
-   "lastmod": "2026-09-04",
+   "contentHash": "2bea744e6f1bcffef7fde8bdf21c999ac43fcbb5",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/buttons/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "fd9f02698b9e2475bf52fe64792b2889cc722f4d",
-   "lastmod": "2026-09-04",
+   "contentHash": "27005dcf474ca34c2d9e49c23aa28009d89a1c25",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -485,40 +485,40 @@
   "/civil-war/belt-plates/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "bf1d099eb3331ee84b788030f6ecb6139d6b8102",
-   "lastmod": "2026-09-04",
+   "contentHash": "c5e44378cc2b8512ec234ad2670bd6cd40b12638",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "bf1d099eb3331ee84b788030f6ecb6139d6b8102"
+   "lastSubmittedHash": "c5e44378cc2b8512ec234ad2670bd6cd40b12638"
   },
   "/civil-war/belt-plates/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "59d89a524e6566c7d0e4d42b03a44a5d1d2ea125",
-   "lastmod": "2026-09-04",
+   "contentHash": "a8db0c572fcb199b4f647840d726f737298a0dfd",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/belt-plates/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "5abc175a5e723ec6882bd36b0778de442122ff86",
-   "lastmod": "2026-09-04",
+   "contentHash": "6de04a1cffed885b3670b90feb9d53b10860b019",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/belt-plates/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "4eb578fac2c4af42a520deb79d29353c0af7cec2",
-   "lastmod": "2026-09-04",
+   "contentHash": "717977a94daac8b6bf388aff1f196f82912b2f53",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/belt-plates/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "5e6f1d97245ffaf3b7acd41a4bd301f70859dde3",
-   "lastmod": "2026-09-04",
+   "contentHash": "0759dfcbf98283bff27f929f88c9ad87a108da72",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -533,40 +533,40 @@
   "/civil-war/edged-weapons/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "1d10179a12ff6164fe243c210eec4e901852a3ac",
-   "lastmod": "2026-09-04",
+   "contentHash": "5a22d0fd3fef205e88fbb6c37a3b8245c4e1b225",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "1d10179a12ff6164fe243c210eec4e901852a3ac"
+   "lastSubmittedHash": "5a22d0fd3fef205e88fbb6c37a3b8245c4e1b225"
   },
   "/civil-war/edged-weapons/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "3e5a0525c9f2d752d1bce24a4556e31e3dc36db9",
-   "lastmod": "2026-09-04",
+   "contentHash": "0c396c77f71d6a8106f7fda1458be6be5593ebb2",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/edged-weapons/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "0c140268fe1c5cded5d81c077ad2b82f5e4ec066",
-   "lastmod": "2026-09-04",
+   "contentHash": "2f9c439eadfe1f0a6c554b99bb62deef53d2ffc0",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/edged-weapons/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "e377510d53a637e977ccebeeb776a76751de556d",
-   "lastmod": "2026-09-04",
+   "contentHash": "ba28613f617712eecffcf6789504d06092b297c2",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/edged-weapons/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "dffd39069b9aa44184e5a0cd8719caee334503df",
-   "lastmod": "2026-09-04",
+   "contentHash": "170a7a099d698c1c182c024c4bc63965595817a4",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -629,50 +629,50 @@
   "/civil-war/bullets-cartridges/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "fe373da264e48a388270330173184a21b9304c04",
-   "lastmod": "2026-09-04",
+   "contentHash": "e6e824a0793bce1d0d6e1fd046904e7c596abf6b",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "fe373da264e48a388270330173184a21b9304c04"
+   "lastSubmittedHash": "e6e824a0793bce1d0d6e1fd046904e7c596abf6b"
   },
   "/civil-war/bullets-cartridges/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "610d1d4172c9f41a1d1378132b565aeccedebde6",
-   "lastmod": "2026-09-04",
+   "contentHash": "03b9c19a70259ffcf70dd4f01de4c9b6f60d4080",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/bullets-cartridges/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "a43d8d9cc02c027fe0a1b27f2a8656b1a8d0ab68",
-   "lastmod": "2026-09-04",
+   "contentHash": "dab5acd1a2b3100623af3b496672c4133b640e81",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/bullets-cartridges/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "7cbaddde0e6821a493a11b28879801330c59ade8",
-   "lastmod": "2026-09-04",
+   "contentHash": "36a93df51d437130c500911b26b420d7cdbe3cd3",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/bullets-cartridges/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "676db1d2980502dde0c43219d64877510633313e",
-   "lastmod": "2026-09-04",
+   "contentHash": "3a3811eb0eb769b095864c0b7af835d73675a8a4",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/price-guide/civil-war/bullets-cartridges/": {
    "type": "price-guide",
    "state": "INDEX",
-   "contentHash": "4854d8506ca22045861f7c0fe532639882dcd989",
-   "lastmod": "2026-09-02",
+   "contentHash": "75d3618d584bab17c27cd08a5e8b56aef012868f",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "4854d8506ca22045861f7c0fe532639882dcd989"
+   "lastSubmittedHash": "75d3618d584bab17c27cd08a5e8b56aef012868f"
   },
   "/civil-war/currency-bonds/": {
    "type": "market",
@@ -725,40 +725,40 @@
   "/civil-war/accoutrements/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "5abdfb149e9c02e51aa37723f96a1eb825533c8d",
-   "lastmod": "2026-09-04",
+   "contentHash": "f45b16a2627555e1c8c921604bd8419db92f4335",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "5abdfb149e9c02e51aa37723f96a1eb825533c8d"
+   "lastSubmittedHash": "f45b16a2627555e1c8c921604bd8419db92f4335"
   },
   "/civil-war/accoutrements/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "604d94be551db28d9a491c08d96ffea06eefa8da",
-   "lastmod": "2026-09-04",
+   "contentHash": "b3103b5d1e864b7f6bfbc333d88344184d335e19",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/accoutrements/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "d1ecbd3285e73c15c97b1136aee89b3d76a7d4d0",
-   "lastmod": "2026-09-04",
+   "contentHash": "8e955a952023f801189ca6ff03752d07b837c43e",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/accoutrements/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "efa67ef3b9c392f0fce51b514bf06806782cbc2a",
-   "lastmod": "2026-09-04",
+   "contentHash": "85d7a6fa987bec3a9d25d39a7dec92f97a360e8a",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/accoutrements/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "3f1600b2bdfedcc2e17818b578bd070baa51fc13",
-   "lastmod": "2026-09-04",
+   "contentHash": "6633db83ddfaa7ec0db23977c8738c0b2dfe8bdb",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -821,40 +821,40 @@
   "/wwii/world-wars/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "bbe76e1a547db2ee0260f4ae28133560994c95ce",
-   "lastmod": "2026-09-04",
+   "contentHash": "2fd8785d0e64aaff8981b2610a1e78cec1ece3b4",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "bbe76e1a547db2ee0260f4ae28133560994c95ce"
+   "lastSubmittedHash": "2fd8785d0e64aaff8981b2610a1e78cec1ece3b4"
   },
   "/wwii/world-wars/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "141c4b60baa089d01a9121a27b96f58c803640fc",
-   "lastmod": "2026-09-04",
+   "contentHash": "bf2f3d15e6f6a354ee85b193721ea8e34e569cef",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwii/world-wars/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "e0e607d64a72724bb3b1c2799e54b7e118dfeeae",
-   "lastmod": "2026-09-04",
+   "contentHash": "9bc19518fa938af413abba24a7d5a8d070c87915",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwii/world-wars/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "353bfb56efb8a6031ca253dcfe230a91ccfad949",
-   "lastmod": "2026-09-04",
+   "contentHash": "c724c63ead5c943a58c9912bee7a94e250afb622",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwii/world-wars/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "bd01fec9febef03bdead5ffd116a7a0d52ed3347",
-   "lastmod": "2026-09-04",
+   "contentHash": "11b02200a078c402ae9ab8334b652cc42f571bf2",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -866,91 +866,43 @@
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
-  "/indian-wars/photography/": {
-   "type": "market",
-   "state": "INDEX",
-   "contentHash": "df0a2a06f00cd3c01f5e1f275e30675aba92340c",
-   "lastmod": "2026-09-04",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "df0a2a06f00cd3c01f5e1f275e30675aba92340c"
-  },
-  "/indian-wars/photography/page/2/": {
-   "type": "pagination",
-   "state": "NOINDEX",
-   "contentHash": "8d32418a553f76c74da46030fe4e757882ff676e",
-   "lastmod": "2026-09-04",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
-  "/indian-wars/photography/page/3/": {
-   "type": "pagination",
-   "state": "NOINDEX",
-   "contentHash": "256265cdbbc381eab9168dbdd2712061bc30d118",
-   "lastmod": "2026-09-04",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
-  "/indian-wars/photography/page/4/": {
-   "type": "pagination",
-   "state": "NOINDEX",
-   "contentHash": "2248c60d77c1c6417b6c159c1eb81a0e34bd9e58",
-   "lastmod": "2026-09-04",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
-  "/indian-wars/photography/page/5/": {
-   "type": "pagination",
-   "state": "NOINDEX",
-   "contentHash": "7ca8fdaf04a9065246c6a4b2730ac70c16e94cdd",
-   "lastmod": "2026-09-04",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
-  "/price-guide/indian-wars/photography/": {
-   "type": "price-guide",
-   "state": "NOINDEX",
-   "contentHash": "cda9f786af23daedea28be67580f1b1524901257",
-   "lastmod": "2026-08-27",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
   "/wwii/firearms/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "516aff9754be32ad2d5d0c7729d18359e596174d",
-   "lastmod": "2026-09-04",
+   "contentHash": "ceb7f1638f04d17da52f5a9c12ca35c75cb4ab55",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "516aff9754be32ad2d5d0c7729d18359e596174d"
+   "lastSubmittedHash": "ceb7f1638f04d17da52f5a9c12ca35c75cb4ab55"
   },
   "/wwii/firearms/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "9ee967f2232eef02674b1f158f296d2ac46a8fba",
-   "lastmod": "2026-09-04",
+   "contentHash": "88396c03568d4eee97f45b80cb8455a86af08bc7",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwii/firearms/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "e1aa982f1459b30041b2074ea9b4d99db604fda3",
-   "lastmod": "2026-09-04",
+   "contentHash": "42cc06dd1d51f60fb6af397062dbfc76de08abd9",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwii/firearms/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "658970ae16f8a224d14e020013c3077f7dddbc38",
-   "lastmod": "2026-09-04",
+   "contentHash": "84a60ca1aa27b58eeefac5a47d7a228c6d26faa9",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwii/firearms/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "e9916c83cc9d852528aea019454645b4f275e21a",
-   "lastmod": "2026-09-04",
+   "contentHash": "74ad6e4c01770a7e6a081daf14ec144be0967e2e",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -961,6 +913,54 @@
    "lastmod": "2026-08-27",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": "85e46ee401ffe84703c76e7b264b0533404a30ee"
+  },
+  "/indian-wars/photography/": {
+   "type": "market",
+   "state": "INDEX",
+   "contentHash": "1d3e48fae825863135c6fb7a320a3ee6b10a4a15",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": "1d3e48fae825863135c6fb7a320a3ee6b10a4a15"
+  },
+  "/indian-wars/photography/page/2/": {
+   "type": "pagination",
+   "state": "NOINDEX",
+   "contentHash": "7478ebfa0ece826c49a94d2493d3d45f2f6b20e2",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
+  "/indian-wars/photography/page/3/": {
+   "type": "pagination",
+   "state": "NOINDEX",
+   "contentHash": "15388e543f94e931012aae6086a11f5f1b3ba5e4",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
+  "/indian-wars/photography/page/4/": {
+   "type": "pagination",
+   "state": "NOINDEX",
+   "contentHash": "87ee68bf4f22e9489f428928e05e82804ab83eb9",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
+  "/indian-wars/photography/page/5/": {
+   "type": "pagination",
+   "state": "NOINDEX",
+   "contentHash": "cc40f920a869780d1ccc53370ad8f7fa9f9d1718",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
+  "/price-guide/indian-wars/photography/": {
+   "type": "price-guide",
+   "state": "NOINDEX",
+   "contentHash": "d8ed9c0d3fec8181e13a41140d39c51813709191",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
   },
   "/civil-war/veteran-organizations/": {
    "type": "market",
@@ -1013,40 +1013,40 @@
   "/civil-war/artillery/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "8b4bd802f900fc9ae39e7557879b6ce183ad8d86",
-   "lastmod": "2026-09-04",
+   "contentHash": "2900b4ba7f90fc593a990122cc462d79f2aac7f4",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "8b4bd802f900fc9ae39e7557879b6ce183ad8d86"
+   "lastSubmittedHash": "2900b4ba7f90fc593a990122cc462d79f2aac7f4"
   },
   "/civil-war/artillery/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "96a0dd55651cb62ce345aa8da20b2089e073cef7",
-   "lastmod": "2026-09-04",
+   "contentHash": "15a13677f4f36bcd3d1851246c9935260fc9b150",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/artillery/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "c1b434ce8dcce12978191fc0f6e540734e0f7e44",
-   "lastmod": "2026-09-04",
+   "contentHash": "d109f6552466fb67a1e840a0aef388463922d094",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/artillery/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "0195d228a4fe595d50a18d81cc19a2eb337c7442",
-   "lastmod": "2026-09-04",
+   "contentHash": "ecb2147c4d0c511d5f066ee5cd23dcc090ee476d",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/artillery/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "0a0df79d9ceac01465ff929e2fc57c13baad0d4c",
-   "lastmod": "2026-09-04",
+   "contentHash": "fe72f1efdfc74fe869a051b6161321b430ed7af4",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -1157,40 +1157,40 @@
   "/civil-war/personal-items/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "d923b0a55e378c4087e30eae6e5fc7c2a15fa0d5",
-   "lastmod": "2026-09-04",
+   "contentHash": "17a6cfec69ebf95284deb681e45ae2a55b0fd51d",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "d923b0a55e378c4087e30eae6e5fc7c2a15fa0d5"
+   "lastSubmittedHash": "17a6cfec69ebf95284deb681e45ae2a55b0fd51d"
   },
   "/civil-war/personal-items/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "ffdd05933cb1825df1bcede7f2f22e962bcb639f",
-   "lastmod": "2026-09-04",
+   "contentHash": "95b3fb97f70ee94e3aaf43d189ac2a0b3cb1278f",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/personal-items/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "3a31df1e5508fc59bb0ffef1d5b5d03de96b0369",
-   "lastmod": "2026-09-04",
+   "contentHash": "c008af5c931b11a90a2106f2418ba9f20b27eac7",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/personal-items/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "1c977daa5bcdf6e03ba1d96882b65ce1fd109ae3",
-   "lastmod": "2026-09-04",
+   "contentHash": "9c6dab69eb53783e9b72b7bfd2e29918884dfebd",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/personal-items/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "0cab55d3c2020bec5a7e92c3a31f5b09f23ee541",
-   "lastmod": "2026-09-04",
+   "contentHash": "4de28458c6ca9b7e8398096f0b787699eb218778",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -1485,40 +1485,40 @@
   "/civil-war/cavalry-equipment/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "9aa40753fb19cbebce1891dda98dcea770746e88",
-   "lastmod": "2026-09-03",
+   "contentHash": "14ec1b525bbc086f6118d62a24a90313d951b194",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "9aa40753fb19cbebce1891dda98dcea770746e88"
+   "lastSubmittedHash": "14ec1b525bbc086f6118d62a24a90313d951b194"
   },
   "/civil-war/cavalry-equipment/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "daa146b8cc7dfea50cbbc440c7eaf881c2325d40",
-   "lastmod": "2026-09-03",
+   "contentHash": "bf8d801a4b2646962b113989a437ae6f82344ae1",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/cavalry-equipment/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "30f513e2e08ad8580879e6b99a01ca25d402202b",
-   "lastmod": "2026-09-03",
+   "contentHash": "1eb2c67bd5cf670a06cc9d67196f45e55b4e3ae4",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/cavalry-equipment/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "5282f4523731233e2d40882a3d6af88b00622874",
-   "lastmod": "2026-09-03",
+   "contentHash": "00a450ed3f4a226e359eda4e3d269dd3e1a0d396",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/cavalry-equipment/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "cf8c220ca2781c12560a1faa863d710b8506e869",
-   "lastmod": "2026-09-03",
+   "contentHash": "ceb387909c5665038d880a7c273e8c542163671a",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -1533,40 +1533,40 @@
   "/indian-wars/firearms/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "d46143c619bf909b5e424949bbac173d6f1f6190",
-   "lastmod": "2026-09-01",
+   "contentHash": "0c25acb6044197dc637c4b77971b62244a00d0cc",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "d46143c619bf909b5e424949bbac173d6f1f6190"
+   "lastSubmittedHash": "0c25acb6044197dc637c4b77971b62244a00d0cc"
   },
   "/indian-wars/firearms/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "d2a74ddbe80f51b1d98656849693c33827394ac6",
-   "lastmod": "2026-09-01",
+   "contentHash": "3b904100c00e27a9e7bb8cfb978bdeb4ef7623fb",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/indian-wars/firearms/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "85b9d2537e557c9b21504b9b89813a9c35566b77",
-   "lastmod": "2026-09-01",
+   "contentHash": "695d29bbcadf53fec72e7d5801363a57606f8757",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/indian-wars/firearms/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "e5687dba8e3fd92d451c9c8c05e74dc8936b443f",
-   "lastmod": "2026-09-01",
+   "contentHash": "157b91835ec473f4485170576e46b708d3b77d59",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/indian-wars/firearms/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "dbee3b0debf8700ebff620c9e9c86fe1e9830630",
-   "lastmod": "2026-09-01",
+   "contentHash": "b556c30186c1aac66ae0ef12e024d2d461b3b1ab",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -1581,40 +1581,40 @@
   "/wwi/accoutrements/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "1ff88540598d3967552dde649aea3480adc1481b",
-   "lastmod": "2026-09-04",
+   "contentHash": "651cd4eeef0bd514259839245df97ab1111a84a1",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "1ff88540598d3967552dde649aea3480adc1481b"
+   "lastSubmittedHash": "651cd4eeef0bd514259839245df97ab1111a84a1"
   },
   "/wwi/accoutrements/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "aa7fd0ea9e673f58fd86425fa8b4a944acf1a72f",
-   "lastmod": "2026-09-04",
+   "contentHash": "fe626e5a26f7c72778a69b745f4e269255408cfb",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwi/accoutrements/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "ba4dfde1764a6689f5793d368b8a976a1240eb03",
-   "lastmod": "2026-09-04",
+   "contentHash": "61ca3e4c46a1a2556816aacaae1cab4231f1f561",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwi/accoutrements/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "e392203a0fb62debb9623ac7973c6ae0dd147ca5",
-   "lastmod": "2026-09-04",
+   "contentHash": "f6c81d8ae5c4ae87caacb3adee701326e5e59338",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwi/accoutrements/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "b4ea3005982ab7bdf53710f4379677610799b3f8",
-   "lastmod": "2026-09-04",
+   "contentHash": "8633439454e13f4cb2c258323948eed6edf19f72",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -2061,40 +2061,40 @@
   "/wwii/flags/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "ec421678000facf96178fa5dde3f7765f8c535fa",
-   "lastmod": "2026-09-03",
+   "contentHash": "5641d049bff1e3f1d91ac76cd4852d5a824f4013",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "ec421678000facf96178fa5dde3f7765f8c535fa"
+   "lastSubmittedHash": "5641d049bff1e3f1d91ac76cd4852d5a824f4013"
   },
   "/wwii/flags/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "aeb50658f820894856234cc77ef60839f5765e33",
-   "lastmod": "2026-09-03",
+   "contentHash": "a1a17f68669fab3497af29677f734011cd4d5a87",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwii/flags/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "0a993e4dedea3aec752d5db5bdb0e242b6afac8c",
-   "lastmod": "2026-09-03",
+   "contentHash": "20916aaa999d8fa62124426bc12d8b6df33fa2fe",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwii/flags/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "006e6661132e3ac727e3630f4dbf986e90f87d60",
-   "lastmod": "2026-09-03",
+   "contentHash": "668e23f3a81e7e5af50500cbcd532c57ed0567ae",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-20",
    "lastSubmittedHash": null
   },
   "/wwii/flags/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "b7593f44facebf41a7d5ffb23e7fdd6aa9ed3d83",
-   "lastmod": "2026-09-03",
+   "contentHash": "68507fccc799150ba14d6c98b5bdbbee9770dded",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-20",
    "lastSubmittedHash": null
   },
@@ -2157,40 +2157,40 @@
   "/civil-war/flags/": {
    "type": "market",
    "state": "INDEX",
-   "contentHash": "a33eaae3813a12201b67332374bcfeed7b7f1936",
-   "lastmod": "2026-08-28",
+   "contentHash": "592d1a89d9d6dd53d8cbb9d9dbc043d89c165cb9",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
-   "lastSubmittedHash": "a33eaae3813a12201b67332374bcfeed7b7f1936"
+   "lastSubmittedHash": "592d1a89d9d6dd53d8cbb9d9dbc043d89c165cb9"
   },
   "/civil-war/flags/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "584da375ea34a3561ed785225404bdeaef429b0b",
-   "lastmod": "2026-08-28",
+   "contentHash": "edc768acdaf4dbcc17606204f208293ec00c37d7",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/flags/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "f579971dc2f8430ca9d7cbb39df6e9af9ba684b2",
-   "lastmod": "2026-08-28",
+   "contentHash": "67061904fbb57d487b8bf52fa32514f96e76d741",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/flags/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "55bb71768ed4644b2f74a81965487a484156b8a0",
-   "lastmod": "2026-08-28",
+   "contentHash": "fe7bf324c31ddd74740b76284f86fa06f021c8a3",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/civil-war/flags/page/5/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "c0b8b019d07f446bc5addc999c20248c586592a7",
-   "lastmod": "2026-08-28",
+   "contentHash": "2bd4d0401c1734247bb4b376cf9d6fdae5b619c9",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -2509,40 +2509,40 @@
   "/pre-wwi/photography/": {
    "type": "market",
    "state": "NOINDEX",
-   "contentHash": "467478edf9f15dfaa45d0fa036085d0b93c2d321",
-   "lastmod": "2026-09-04",
+   "contentHash": "39db4259a82ada3fa4fe0b299d4afa1b4f07526b",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/pre-wwi/photography/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "9491db3a666fd5aa6cf234de1f5490fa0955d375",
-   "lastmod": "2026-09-04",
+   "contentHash": "80ea33c81672d8a0c1b0e19383b734431d776ab6",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/pre-wwi/photography/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "1a5f6e2c330973b365cdd915c1636893feb48b84",
-   "lastmod": "2026-09-04",
+   "contentHash": "c5686ece9efbcf75c10db2e3275002fbc1433f4b",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/pre-wwi/photography/page/4/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "2f0e3546aeb68b7e0a56ee6f46d10b8c3469046e",
-   "lastmod": "2026-09-04",
+   "contentHash": "93a6d3db117070d5f614880c216977deb6f3c0a1",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/price-guide/pre-wwi/photography/": {
    "type": "price-guide",
    "state": "NOINDEX",
-   "contentHash": "aa63b8f632fa9191630d241f0ea225ddb3273450",
-   "lastmod": "2026-08-15",
+   "contentHash": "0dcd8f0d974126aa0f5bc178583294286e1d2ac9",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -2869,25 +2869,33 @@
   "/spanish-american-war/photography/": {
    "type": "market",
    "state": "NOINDEX",
-   "contentHash": "ea80404dba1d573f44e6991052c38538432bb9e1",
-   "lastmod": "2026-09-04",
+   "contentHash": "74afa0635845818ead2e40e2c7a8cdca9fd5749a",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/spanish-american-war/photography/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "57f21bb0477d55482664bf1da7ca3a226b0c7b41",
-   "lastmod": "2026-09-04",
+   "contentHash": "a39f4806587cf48b4048adb383b410ba622a69ed",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/spanish-american-war/photography/page/3/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "332690b2eb2fff22809995ee75f83ae9791da56a",
-   "lastmod": "2026-09-04",
+   "contentHash": "01839a50f194f373f8ae4d0b427633fb0203e59f",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
+  "/price-guide/spanish-american-war/photography/": {
+   "type": "price-guide",
+   "state": "NOINDEX",
+   "contentHash": "0bd227e30d219e4245d4fb5cc696dffa8a589a85",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-09-05",
    "lastSubmittedHash": null
   },
   "/early-republic/uniforms/": {
@@ -3573,16 +3581,16 @@
   "/wwi/personal-items/": {
    "type": "market",
    "state": "NOINDEX",
-   "contentHash": "4d78daa457f6b65d152986d40d6b2c288909e832",
-   "lastmod": "2026-09-04",
+   "contentHash": "4390656fb2c646623735810017184926be1c8399",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
   "/wwi/personal-items/page/2/": {
    "type": "pagination",
    "state": "NOINDEX",
-   "contentHash": "3da8b196d81653b36adaa6ced2e946aaf66e0066",
-   "lastmod": "2026-09-04",
+   "contentHash": "9d0b196697aeaf61981128ccfb888e73d13dedd6",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -3591,6 +3599,30 @@
    "state": "NOINDEX",
    "contentHash": "9e68f2d7e66f3a19f72ab17d5044e64e40371297",
    "lastmod": "2026-08-15",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
+  "/early-republic/firearms/": {
+   "type": "market",
+   "state": "NOINDEX",
+   "contentHash": "33b7daa5edfe7752db16569414071a15065c8a0c",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
+  "/early-republic/firearms/page/2/": {
+   "type": "pagination",
+   "state": "NOINDEX",
+   "contentHash": "189e42ef7083732395a234551527cfc925b74a11",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
+  "/price-guide/early-republic/firearms/": {
+   "type": "price-guide",
+   "state": "NOINDEX",
+   "contentHash": "d3ff007807204b5b0652e6edfcebd98c39023c3a",
+   "lastmod": "2026-09-03",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -3631,30 +3663,6 @@
    "state": "NOINDEX",
    "contentHash": "25ec4942e394e6209c3a4679adb836b4c65d682b",
    "lastmod": "2026-08-26",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
-  "/early-republic/firearms/": {
-   "type": "market",
-   "state": "NOINDEX",
-   "contentHash": "1f871144d9750b7de099d22fe92e6301b24e2fd5",
-   "lastmod": "2026-09-03",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
-  "/early-republic/firearms/page/2/": {
-   "type": "pagination",
-   "state": "NOINDEX",
-   "contentHash": "787e9efd8709e97578777053603be55158eb0814",
-   "lastmod": "2026-09-03",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
-  "/price-guide/early-republic/firearms/": {
-   "type": "price-guide",
-   "state": "NOINDEX",
-   "contentHash": "d3ff007807204b5b0652e6edfcebd98c39023c3a",
-   "lastmod": "2026-09-03",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -4042,6 +4050,22 @@
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
+  "/wwii/belt-plates/": {
+   "type": "market",
+   "state": "NOINDEX",
+   "contentHash": "02e9fd4fb470d4a2c83999bd562ca5df955d1370",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
+  "/price-guide/wwii/belt-plates/": {
+   "type": "price-guide",
+   "state": "NOINDEX",
+   "contentHash": "a9fe15048dfbe19114f6ee19cd04e609467a5a16",
+   "lastmod": "2026-08-15",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
   "/wwii/postcards/": {
    "type": "market",
    "state": "NOINDEX",
@@ -4130,22 +4154,6 @@
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
-  "/wwii/belt-plates/": {
-   "type": "market",
-   "state": "NOINDEX",
-   "contentHash": "e966552e799898f92e9c58e648d641fd768ce85b",
-   "lastmod": "2026-08-26",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
-  "/price-guide/wwii/belt-plates/": {
-   "type": "price-guide",
-   "state": "NOINDEX",
-   "contentHash": "a9fe15048dfbe19114f6ee19cd04e609467a5a16",
-   "lastmod": "2026-08-15",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
   "/wwi/optics/": {
    "type": "market",
    "state": "NOINDEX",
@@ -4186,19 +4194,11 @@
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
-  "/vietnam/edged-weapons/": {
+  "/antebellum-frontier/firearms/": {
    "type": "market",
    "state": "NOINDEX",
-   "contentHash": "5a7c6e852ec1d5febf6a8cec48911f5ff6502457",
-   "lastmod": "2026-09-01",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
-  "/price-guide/vietnam/edged-weapons/": {
-   "type": "price-guide",
-   "state": "NOINDEX",
-   "contentHash": "bd43f4b7a8f4e35ae915c4bbc8e34d194994c8d3",
-   "lastmod": "2026-08-15",
+   "contentHash": "b10c6bebcefe9412aaa508ae90222c20395ac2ea",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -4234,11 +4234,19 @@
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
-  "/antebellum-frontier/firearms/": {
+  "/vietnam/edged-weapons/": {
    "type": "market",
    "state": "NOINDEX",
-   "contentHash": "86279e1e71ba97504c27a767a1088dee656b01bd",
-   "lastmod": "2026-08-26",
+   "contentHash": "8366a12ac12009a6080f9f94b50d70363507ffd8",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
+  "/price-guide/vietnam/edged-weapons/": {
+   "type": "price-guide",
+   "state": "NOINDEX",
+   "contentHash": "1790ea1afa84c8c81a2c282e24d33f8cbca4b89e",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -4893,8 +4901,8 @@
   "/postwar-occupation/photography/": {
    "type": "market",
    "state": "NOINDEX",
-   "contentHash": "7d9c49f8a451583536149f1ff9855c4f50a9735d",
-   "lastmod": "2026-09-04",
+   "contentHash": "7e6ca7ea09eb901d12b48fcc38a1605abdedc508",
+   "lastmod": "2026-09-05",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
@@ -5474,6 +5482,14 @@
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
   },
+  "/revolution/flags/": {
+   "type": "market",
+   "state": "NOINDEX",
+   "contentHash": "00a62fec71b9f616dfd926651e9c4a53bc0b6105",
+   "lastmod": "2026-09-05",
+   "firstSeen": "2026-08-15",
+   "lastSubmittedHash": null
+  },
   "/spanish-american-war/musical-instruments/": {
    "type": "market",
    "state": "NOINDEX",
@@ -5694,14 +5710,6 @@
    "type": "market",
    "state": "NOINDEX",
    "contentHash": "dd0d0f1b818e256a84cff3555b4e14b74ff2b4f4",
-   "lastmod": "2026-08-24",
-   "firstSeen": "2026-08-15",
-   "lastSubmittedHash": null
-  },
-  "/revolution/flags/": {
-   "type": "market",
-   "state": "NOINDEX",
-   "contentHash": "679776f6576e6fb25c7a5874905f84ff1feef5da",
    "lastmod": "2026-08-24",
    "firstSeen": "2026-08-15",
    "lastSubmittedHash": null
@@ -7025,6 +7033,7 @@
   "price-guide/spanish-american-war/edged-weapons/index.html",
   "price-guide/spanish-american-war/firearms/index.html",
   "price-guide/spanish-american-war/personal-items/index.html",
+  "price-guide/spanish-american-war/photography/index.html",
   "price-guide/spanish-american-war/uniforms/index.html",
   "price-guide/spanish-american-war/veteran-organizations/index.html",
   "price-guide/vietnam/accoutrements/index.html",

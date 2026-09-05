@@ -1,28 +1,28 @@
 # RelicsOfWar — SEO Index Report
 
-_Generated 2026-09-04 from ArtifactSearch data exported 2026-09-04T11:37:49.167Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
+_Generated 2026-09-05 from ArtifactSearch data exported 2026-09-05T11:37:31.774Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
 
-## Index state (2026-09-04)
+## Index state (2026-09-05)
 
 | | Count | Week-over-week |
 |---|---:|---|
-| Total public URLs generated | 817 | 817 (+1, +0% vs 2026-08-28) |
-| **INDEX** | **88** | 88 (+0, +0% vs 2026-08-28) |
-| NOINDEX | 729 | 729 (+1, +0% vs 2026-08-28) |
-| Canonicalized (to parent / ArtifactSearch) | 0 | 0 (+0, +0% vs 2026-08-28) |
-| Not generated (would be empty/thin) | 296 | 296 (+0, +0% vs 2026-08-28) |
+| Total public URLs generated | 818 | 818 (+3, +0% vs 2026-08-29) |
+| **INDEX** | **88** | 88 (+1, +1% vs 2026-08-29) |
+| NOINDEX | 730 | 730 (+2, +0% vs 2026-08-29) |
+| Canonicalized (to parent / ArtifactSearch) | 0 | 0 (+0, +0% vs 2026-08-29) |
+| Not generated (would be empty/thin) | 295 | 295 (-2, -1% vs 2026-08-29) |
 
 | Page type | INDEX | NOINDEX | Canonicalized |
 |---|---:|---:|---:|
 | Era hubs | 10 | 5 | — |
 | Market pages (era × category) | 41 | 317 | 0 |
 | Pagination pages | 0 | 286 | — |
-| Price-guide pages | 18 | 120 | — |
+| Price-guide pages | 18 | 121 | — |
 | Research / identification guides | 6 | 0 | — |
 | Site & trust pages | 13 | 1 | — |
 | Item pages | 0 | 0 | 0 |
 
-Data: 37,007 public listings (9,956 without an era, so on no market page), 18,300 recorded sales (8,959 without era+category), 52 sources.
+Data: 37,034 public listings (9,960 without an era, so on no market page), 18,316 recorded sales (8,963 without era+category), 52 sources.
 
 ## Growth gate (§13 / §51)
 
@@ -47,7 +47,7 @@ Data: 37,007 public listings (9,956 without an era, so on no market page), 18,30
 
 ## IndexNow (§26–§27)
 
-Added 0 · Updated 37 · Removed 0 · Submitted this run 37
+Added 0 · Updated 33 · Removed 0 · Submitted this run 33
 
 ## Review queue (§49)
 
@@ -547,7 +547,7 @@ Added 0 · Updated 37 · Removed 0 · Submitted this run 37
 | /price-guide/postwar-occupation/medals-orders/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/postwar-occupation/optics/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/postwar-occupation/personal-items/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
-| /price-guide/postwar-occupation/photography/ | price-guide | NOT_GENERATED | 0 | 2 recorded sales (< 5) |
+| /price-guide/postwar-occupation/photography/ | price-guide | NOT_GENERATED | 0 | 3 recorded sales (< 5) |
 | /price-guide/postwar-occupation/post-1945-firearms/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/postwar-occupation/post-wwii-militaria/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/postwar-occupation/postcards/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
@@ -633,7 +633,7 @@ Added 0 · Updated 37 · Removed 0 · Submitted this run 37
 | /price-guide/spanish-american-war/native-american/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/optics/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/personal-items/ | price-guide | NOINDEX | 23 | 8 recorded sales (< 10 for INDEX) |
-| /price-guide/spanish-american-war/photography/ | price-guide | NOT_GENERATED | 0 | 4 recorded sales (< 5) |
+| /price-guide/spanish-american-war/photography/ | price-guide | NOINDEX | 20 | 5 recorded sales (< 10 for INDEX) |
 | /price-guide/spanish-american-war/postcards/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/spanish-american-war/prints-paintings/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/spanish-american-war/uniforms/ | price-guide | NOINDEX | 43 | score 43 < 60 |
@@ -649,7 +649,7 @@ Added 0 · Updated 37 · Removed 0 · Submitted this run 37
 | /price-guide/vietnam/bullets-cartridges/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/vietnam/currency-bonds/ | price-guide | NOT_GENERATED | 0 | 0 recorded sales (< 5) |
 | /price-guide/vietnam/documents/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
-| /price-guide/vietnam/edged-weapons/ | price-guide | NOINDEX | 46 | score 46 < 60 |
+| /price-guide/vietnam/edged-weapons/ | price-guide | NOINDEX | 48 | score 48 < 60 |
 | /price-guide/vietnam/firearms/ | price-guide | NOINDEX | 39 | 1 sale source(s) (< 2 for INDEX) |
 | /price-guide/vietnam/flags/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
 | /price-guide/vietnam/grenades-ordnance/ | price-guide | NOT_GENERATED | 0 | 1 recorded sales (< 5) |
@@ -755,7 +755,7 @@ Added 0 · Updated 37 · Removed 0 · Submitted this run 37
 | /revolution/documents/ | market | NOINDEX | 51 | score 51 < 60 |
 | /revolution/edged-weapons/ | market | NOINDEX | 53 | score 53 < 60 |
 | /revolution/firearms/ | market | NOINDEX | 51 | score 51 < 60 |
-| /revolution/flags/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
+| /revolution/flags/ | market | NOINDEX | 3 | only 3 active listings (< 10) |
 | /revolution/medals-orders/ | market | NOINDEX | 1 | only 3 active listings (< 10) |
 | /revolution/medical/ | market | NOINDEX | 1 | only 3 active listings (< 10) |
 | /revolution/optics/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
@@ -787,7 +787,7 @@ Added 0 · Updated 37 · Removed 0 · Submitted this run 37
 | /spanish-american-war/native-american/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /spanish-american-war/optics/ | market | NOINDEX | -2 | only 3 active listings (< 10); only 1 source(s) (< 2) |
 | /spanish-american-war/personal-items/ | market | NOINDEX | 33 | score 33 < 60 |
-| /spanish-american-war/photography/ | market | NOINDEX | 42 | score 42 < 60 |
+| /spanish-american-war/photography/ | market | NOINDEX | 49 | score 49 < 60 |
 | /spanish-american-war/postcards/ | market | NOINDEX | 1 | only 3 active listings (< 10) |
 | /spanish-american-war/prints-paintings/ | market | NOINDEX | 3 | only 3 active listings (< 10) |
 | /spanish-american-war/uniforms/ | market | NOINDEX | 55 | score 55 < 60 |
@@ -866,7 +866,7 @@ Added 0 · Updated 37 · Removed 0 · Submitted this run 37
 | /wwii/antique-toys/ | market | NOINDEX | 19 | only 9 active listings (< 10) |
 | /wwii/armor/ | market | NOINDEX | -2 | only 3 active listings (< 10); only 1 source(s) (< 2) |
 | /wwii/artillery/ | market | NOINDEX | 47 | score 47 < 60 |
-| /wwii/belt-plates/ | market | NOINDEX | 42 | score 42 < 60 |
+| /wwii/belt-plates/ | market | NOINDEX | 44 | score 44 < 60 |
 | /wwii/books-publications/ | market | INDEX | 62 |  |
 | /wwii/bullets-cartridges/ | market | NOINDEX | 55 | score 55 < 60 |
 | /wwii/buttons/ | market | NOINDEX | 1 | only 3 active listings (< 10) |
