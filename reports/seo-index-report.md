@@ -1,16 +1,16 @@
 # RelicsOfWar — SEO Index Report
 
-_Generated 2026-09-05 from ArtifactSearch data exported 2026-09-05T11:37:31.774Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
+_Generated 2026-09-06 from ArtifactSearch data exported 2026-09-06T11:37:48.608Z. This file is the index-bloat dashboard (§50); it is rewritten by every build and committed so the history lives in git._
 
-## Index state (2026-09-05)
+## Index state (2026-09-06)
 
 | | Count | Week-over-week |
 |---|---:|---|
-| Total public URLs generated | 818 | 818 (+3, +0% vs 2026-08-29) |
-| **INDEX** | **88** | 88 (+1, +1% vs 2026-08-29) |
-| NOINDEX | 730 | 730 (+2, +0% vs 2026-08-29) |
-| Canonicalized (to parent / ArtifactSearch) | 0 | 0 (+0, +0% vs 2026-08-29) |
-| Not generated (would be empty/thin) | 295 | 295 (-2, -1% vs 2026-08-29) |
+| Total public URLs generated | 818 | 818 (+3, +0% vs 2026-08-30) |
+| **INDEX** | **88** | 88 (+1, +1% vs 2026-08-30) |
+| NOINDEX | 730 | 730 (+2, +0% vs 2026-08-30) |
+| Canonicalized (to parent / ArtifactSearch) | 0 | 0 (+0, +0% vs 2026-08-30) |
+| Not generated (would be empty/thin) | 295 | 295 (-2, -1% vs 2026-08-30) |
 
 | Page type | INDEX | NOINDEX | Canonicalized |
 |---|---:|---:|---:|
@@ -22,7 +22,7 @@ _Generated 2026-09-05 from ArtifactSearch data exported 2026-09-05T11:37:31.774Z
 | Site & trust pages | 13 | 1 | — |
 | Item pages | 0 | 0 | 0 |
 
-Data: 37,034 public listings (9,960 without an era, so on no market page), 18,316 recorded sales (8,963 without era+category), 52 sources.
+Data: 37,046 public listings (9,962 without an era, so on no market page), 18,323 recorded sales (8,964 without era+category), 52 sources.
 
 ## Growth gate (§13 / §51)
 
@@ -47,7 +47,7 @@ Data: 37,034 public listings (9,960 without an era, so on no market page), 18,31
 
 ## IndexNow (§26–§27)
 
-Added 0 · Updated 33 · Removed 0 · Submitted this run 33
+Added 0 · Updated 21 · Removed 0 · Submitted this run 21
 
 ## Review queue (§49)
 
@@ -71,10 +71,10 @@ Added 0 · Updated 33 · Removed 0 · Submitted this run 33
 - /wwi/photography/ — NOINDEX score=57 inventoryDepth=20 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 57 < 60
 - /mexican-american-war/firearms/ — NOINDEX score=57 inventoryDepth=20 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 57 < 60
 - /mexican-american-war/documents/ — NOINDEX score=57 inventoryDepth=20 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 57 < 60
+- /early-republic/uniforms/ — NOINDEX score=57 inventoryDepth=20 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 57 < 60
 - /price-guide/wwi/uniforms/ — NOINDEX score=57 inventoryDepth=22 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 57 < 60
 - /price-guide/indian-wars/documents/ — NOINDEX score=57 inventoryDepth=22 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 57 < 60
 - /price-guide/wwi/edged-weapons/ — NOINDEX score=57 inventoryDepth=22 sourceDiversity=15 userUtility=12 internalLinkValue=8 — score 57 < 60
-- /early-republic/uniforms/ — NOINDEX score=56 inventoryDepth=19 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 56 < 60
 - /pre-wwi/documents/ — NOINDEX score=56 inventoryDepth=19 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 56 < 60
 - /indian-wars/books-publications/ — NOINDEX score=56 inventoryDepth=19 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 56 < 60
 - /wwi/documents/ — NOINDEX score=56 inventoryDepth=19 sourceDiversity=15 userUtility=15 internalLinkValue=7 — score 56 < 60
@@ -209,7 +209,7 @@ Added 0 · Updated 33 · Removed 0 · Submitted this run 33
 | /early-republic/photography/ | market | NOINDEX | 58 | score 58 < 60 |
 | /early-republic/prints-paintings/ | market | NOINDEX | 4 | only 4 active listings (< 10) |
 | /early-republic/steins-drinkware/ | market | NOINDEX | 0 | only 2 active listings (< 10) |
-| /early-republic/uniforms/ | market | NOINDEX | 56 | score 56 < 60 |
+| /early-republic/uniforms/ | market | NOINDEX | 57 | score 57 < 60 |
 | /early-republic/veteran-organizations/ | market | NOINDEX | -5 | only 1 active listings (< 10); only 1 source(s) (< 2) |
 | /indian-wars/ | era | INDEX | 65 |  |
 | /indian-wars/accoutrements/ | market | NOINDEX | 58 | score 58 < 60 |
